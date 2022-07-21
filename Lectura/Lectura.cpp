@@ -99,7 +99,7 @@ void load ( string input_file, unsigned method ) {
     int_vector<> BWT; // barrows wheeler
 
     // Creamos Texto de simbolos
-    ifstream stream("../Data/"+input_file);
+    ifstream stream("../../../../data/pizzachili/"+input_file);
 
     fs::create_directories(input_file);
 
