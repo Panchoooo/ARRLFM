@@ -1,0 +1,20 @@
+
+Lectura se encarga de leer el texto original y transformar a simbolos todo el contenido
+
+- Crea una carpeta para todos los archivos donde podemos encontrar:
+    * BWT | int_vecto<>
+    * C | int_vector<>
+    * t0 | int_vector<> : texto en simbolos sin 0 alfinal
+    * binario.bin | *uint64_t : BWT en archivo binario
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+- Para compilar:
+
+g++ Lectura.cpp -o cargar -std=c++17 -Wall -Wno-missing-braces -L ~/lib -lsdsl -ldivsufsort -O3 -DNDEBUG -I ~/include 
+
+- Para correr:
+
+./cargar *nombre_archivo*
