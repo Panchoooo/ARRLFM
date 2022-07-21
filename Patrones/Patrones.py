@@ -1,0 +1,46 @@
+
+from random import seed
+from random import randint
+seed(1)
+
+filep = "einstein.en.txt"
+path_lectura = "../Lectura/"+filep+"/Simbolos.txt"
+
+f = open(path_lectura, "r")
+texto = f.read().split(" ")
+
+patrones = 50000
+cantidad_largo = [ 2,4,8,16 ]
+
+for largo in cantidad_largo:
+    print("Patron largo: "+str(largo))
+    
+    fo = open("../Lectura/"+filep+"/Patrones/Largo"+str(largo)+".txt", "w")  
+    
+    fo = open("../Lectura/"+filep+"/Patrones/Largo"+str(largo)+".txt", "a")  
+    patrones_dict = {}
+    contador = 0
+
+    values_dict = {}
+
+    limite = len(texto)
+    value = 0
+    while(contador < patrones and value < limite-(largo)):
+        largo_patron_aux = 1
+        #value = randint(0, len(texto)-largo)
+        value = value + 1
+        if(value not in values_dict.keys()):
+            values_dict[value] = 1
+            patron = texto[value]
+            while(largo_patron_aux < largo):
+                patron = patron + " " + texto[value+largo_patron_aux]
+                largo_patron_aux+=1
+
+            #print(str(contador) + "  "+ str(value)+"  "+ patron)
+ 
+            if(patron not in patrones_dict.keys()):
+                patrones_dict[patron] = 1  
+                fo.write(patron)
+                contador+=1
+                if(contador != patrones and value < limite-(largo)):
+                    fo.write("\n")
