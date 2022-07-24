@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
   //char *nasap1 = "/ARRLFM1";
   //char *nasap1 = "/ARRLFM2";
   //char *nasap1 = "/ARRLFM3";
-  /*
+  
   char path_asap1[100];           
   char path_asapfolder[100];           
   clock_t begin, end;
@@ -127,7 +127,7 @@ int main(int argc, char *argv[]) {
   strcpy(path_output,lectura_path); 
   strcat(path_output,file); 
   strcat(path_output,out_path); 
-*/
+
 
   //char *nasap1 = "ARRLFM_SD_INT";
   //char *nasap1 = "ARRLFM_PEF_INT";
