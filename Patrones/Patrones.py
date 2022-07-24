@@ -2,8 +2,8 @@
 from random import seed
 from random import randint
 seed(1)
-
-filep = "einstein.en.txt"
+import sys
+filep = sys.argv[1]
 path_lectura = "../Lectura/"+filep+"/Simbolos.txt"
 
 f = open(path_lectura, "r")
