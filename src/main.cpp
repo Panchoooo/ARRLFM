@@ -40,13 +40,13 @@
 
 #include <bits/stdc++.h>
 #include <cstdlib>
-#include <filesystem>
-//#include <experimental/filesystem>
-//namespace fs = std::experimental::filesystem;
+//#include <filesystem>
+#include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
 using namespace std;
 using namespace sdsl;
 
-namespace fs = std::filesystem;
+//namespace fs = std::filesystem;
 template <class T>
 T parse(const std::string& s)
 {
