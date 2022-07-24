@@ -105,7 +105,7 @@ void load ( string input_file, unsigned method ) {
     ifstream stream("/data/pizzachili/"+input_file);
 
     fs::create_directories(prepath+input_file);
-
+/*
     ofstream myfile2 (prepath+input_file+"/Simbolos.txt");
     ofstream myfileInfo (prepath+input_file+"/InfoTexto.txt");
     vector<string> words = readWords(stream); // Leemos todas las palabras y las ingresmaos a un arreglo
@@ -217,6 +217,8 @@ void load ( string input_file, unsigned method ) {
     strcpy(char_array, s.c_str());
     pFile = fopen (char_array, "wb");
     fwrite (buffer, sizeof(uint64_t), BWT.size(), pFile);
+
+    */
 }
 
 

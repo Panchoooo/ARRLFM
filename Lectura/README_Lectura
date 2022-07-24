@@ -13,7 +13,7 @@ Lectura se encarga de leer el texto original y transformar a simbolos todo el co
 
 - Para compilar:
 
-g++ Lectura.cpp -o cargar -std=c++17 -Wall -Wno-missing-braces -L ~/lib -lsdsl -ldivsufsort -O3 -DNDEBUG -I ~/include 
+g++ Lectura.cpp -o cargar -std=c++17 -Wall -Wno-missing-braces -L ~/lib -lsdsl -ldivsufsort -lstdc++fs -O3 -DNDEBUG -I ~/include 
 
 - Para correr:
 
