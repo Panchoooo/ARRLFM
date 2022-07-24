@@ -168,12 +168,12 @@ void load ( string input_file, unsigned method ) {
 
     file = "BWT";
     store_to_file(BWT, prepath+input_file+"/"+file);
-    /*int_vector<> bwwt = int_vector<>();
-    load_from_file(bwwt, "BWT");
-    cout << "BWT:  " << bwwt.size() << "\n";
-    for (long unsigned int i = 0; i < bwwt.size(); i++) {
-        cout << bwwt[i] << " ";
-    }*/
+    //int_vector<> bwwt = int_vector<>();
+    //load_from_file(bwwt, "BWT");
+    //cout << "BWT:  " << bwwt.size() << "\n";
+    //for (long unsigned int i = 0; i < bwwt.size(); i++) {
+    //    cout << bwwt[i] << " ";
+    //}
 
       ofstream myfile4 (prepath+input_file+"/bwtsimbolos.txt");
     for (long unsigned int i = 0; i < BWT.size(); i++) {
@@ -183,12 +183,12 @@ void load ( string input_file, unsigned method ) {
    
     file = "C";
     store_to_file(C, prepath+input_file+"/"+file);
-    /*int_vector<> cc = int_vector<>();
-    load_from_file(cc, "C");
-    cout << "C:  " << cc.size() << "\n";
-    for (long unsigned int i = 0; i < cc.size(); i++) {
-        cout << cc[i] << " ";
-    }*/
+    //int_vector<> cc = int_vector<>();
+    //load_from_file(cc, "C");
+    //cout << "C:  " << cc.size() << "\n";
+    //for (long unsigned int i = 0; i < cc.size(); i++) {
+    //    cout << cc[i] << " ";
+    //}
     uint64_t* buffer = new uint64_t[BWT.size()];
     uint64_t largo_runs_promedio = 0; 
     uint64_t largo_runs = 0; 
