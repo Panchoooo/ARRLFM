@@ -80,7 +80,7 @@ int main(int argc, char *argv[]) {
 
   char *separate = "_";
   char *separate2 = "/";
-  char *lectura_path = "Lectura/";
+  char *lectura_path = "/data/pizzachili/Resultados/";
   char *bwt_path = "/BWT";
   char *c_path = "/C";
   char *bin_path = "/binario.bin";
