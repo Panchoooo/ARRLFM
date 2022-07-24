@@ -98,13 +98,16 @@ void load ( string input_file, unsigned method ) {
     unordered_map<string, uint64_t> W2S; // Word to Symbol
     int_vector<> BWT; // barrows wheeler
 
+    string prepath = "/data/pizzachili/";
+
+
     // Creamos Texto de simbolos
     ifstream stream("/data/pizzachili/"+input_file);
 
-    fs::create_directories(input_file);
+    fs::create_directories(prepath+input_file);
 
-    ofstream myfile2 (input_file+"/Simbolos.txt");
-    ofstream myfileInfo (input_file+"/InfoTexto.txt");
+    ofstream myfile2 (prepath+input_file+"/Simbolos.txt");
+    ofstream myfileInfo (prepath+input_file+"/InfoTexto.txt");
     vector<string> words = readWords(stream); // Leemos todas las palabras y las ingresmaos a un arreglo
     for (const string& e : words) { 
         if (W2S.find(e) == W2S.end() ) { // Si no existe en el diccionario, lo agregamos y seteamos simbolo nuevo
@@ -125,12 +128,12 @@ void load ( string input_file, unsigned method ) {
     myfileInfo << "Simbolos_distintos=" << (ultimo_simbolo-1) << "\n";
 
     string file = "T0";
-    store_to_file(t0, input_file+"/"+file);
+    store_to_file(t0, prepath+input_file+"/"+file);
 
     t.resize(t.size()+1);
     t[t.size()-1] = 0;
 
-    ofstream myfile3 (input_file+"/dict.txt");
+    ofstream myfile3 (prepath+input_file+"/dict.txt");
     for (auto const &pair: W2S) {
         myfile3 << "{" << pair.first << ": " << pair.second << "}\n";
         std::cout << "{" << pair.first << ": " << pair.second << "}\n";
@@ -164,7 +167,7 @@ void load ( string input_file, unsigned method ) {
     //BWT[i]= 0;
 
     file = "BWT";
-    store_to_file(BWT, input_file+"/"+file);
+    store_to_file(BWT, prepath+input_file+"/"+file);
     /*int_vector<> bwwt = int_vector<>();
     load_from_file(bwwt, "BWT");
     cout << "BWT:  " << bwwt.size() << "\n";
@@ -172,14 +175,14 @@ void load ( string input_file, unsigned method ) {
         cout << bwwt[i] << " ";
     }*/
 
-      ofstream myfile4 (input_file+"/bwtsimbolos.txt");
+      ofstream myfile4 (prepath+input_file+"/bwtsimbolos.txt");
     for (long unsigned int i = 0; i < BWT.size(); i++) {
         myfile4 << BWT[i] << " ";
     }
 
    
     file = "C";
-    store_to_file(C, input_file+"/"+file);
+    store_to_file(C, prepath+input_file+"/"+file);
     /*int_vector<> cc = int_vector<>();
     load_from_file(cc, "C");
     cout << "C:  " << cc.size() << "\n";
@@ -208,7 +211,7 @@ void load ( string input_file, unsigned method ) {
     myfileInfo << "BWT_cantidad_runs=" << (camtidad_runs) << "\n";
     myfileInfo << "BWT_largo_promedio=" << (largo_runs_promedio/camtidad_runs) << "\n";
 
-    string s = input_file+"/binario.bin";
+    string s = prepath+input_file+"/binario.bin";
     int n = s.length();
     char char_array[n + 1];
     strcpy(char_array, s.c_str());
