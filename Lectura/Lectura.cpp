@@ -22,7 +22,7 @@
 using namespace std;
 #include <cstdlib>
 #include <experimental/filesystem>
-namespace fs = std::filesystem;
+namespace fs = std::experimental::filesystem;
 using namespace sdsl;
 
 template <class T>
