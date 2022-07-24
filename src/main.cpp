@@ -19,15 +19,15 @@
 #include "../PEF/pef_vector_opt.hpp" // Elias-Fano | Gabriel
 #include "../PEF/pef_vector_unif.hpp"
 
-#include "../s18_vector-master/s18/head/s18_vector.hpp" // s18_vector | Manuel Weitzman
-#include "../s18_vector-master/s18/head/constants.hpp" // s18_vector | Manuel Weitzman
+//#include "../s18_vector-master/s18/head/s18_vector.hpp" // s18_vector | Manuel Weitzman
+//#include "../s18_vector-master/s18/head/constants.hpp" // s18_vector | Manuel Weitzman
 
 
 
 #include "../csa/Csa.h" // Elias-Fano | Gabriel
 
-#include "../bitvectors/BVTtipo1.hpp" // Estructuras para poder utilizar rank y select con bitvector sin *
-#include "../bitvectors/BVTtipo2.hpp" // Estructuras para poder utilizar rank y select con bitvector con *
+//#include "../bitvectors/BVTtipo1.hpp" // Estructuras para poder utilizar rank y select con bitvector sin *
+//#include "../bitvectors/BVTtipo2.hpp" // Estructuras para poder utilizar rank y select con bitvector con *
 
 #include "Asap.h" // ASAP | Sepulveda
 #include "bit_vectors.h"
