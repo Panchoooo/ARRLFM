@@ -98,7 +98,7 @@ void load ( string input_file, unsigned method ) {
     unordered_map<string, uint64_t> W2S; // Word to Symbol
     int_vector<> BWT; // barrows wheeler
 
-    string prepath = "/data/pizzachili/";
+    string prepath = "/data/pizzachili/Resultados/";
 
 
     // Creamos Texto de simbolos
