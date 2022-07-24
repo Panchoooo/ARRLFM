@@ -44,3 +44,5 @@ for largo in cantidad_largo:
                 contador+=1
                 if(contador != patrones and value < limite-(largo)):
                     fo.write("\n")
+
+        print(str(contador*100/patrones)+"% | "+str(contador))
