@@ -26,8 +26,8 @@
 
 #include "../csa/Csa.h" // Elias-Fano | Gabriel
 
-//#include "../bitvectors/BVTtipo1.hpp" // Estructuras para poder utilizar rank y select con bitvector sin *
-//#include "../bitvectors/BVTtipo2.hpp" // Estructuras para poder utilizar rank y select con bitvector con *
+#include "../bitvectors/BVTtipo1.hpp" // Estructuras para poder utilizar rank y select con bitvector sin *
+#include "../bitvectors/BVTtipo2.hpp" // Estructuras para poder utilizar rank y select con bitvector con *
 
 #include "Asap.h" // ASAP | Sepulveda
 #include "bit_vectors.h"
@@ -40,13 +40,13 @@
 
 #include <bits/stdc++.h>
 #include <cstdlib>
-//#include <filesystem>
-#include <experimental/filesystem>
-namespace fs = std::experimental::filesystem;
+#include <filesystem>
+//#include <experimental/filesystem>
+//namespace fs = std::experimental::filesystem;
 using namespace std;
 using namespace sdsl;
 
-//namespace fs = std::filesystem;
+namespace fs = std::filesystem;
 template <class T>
 T parse(const std::string& s)
 {
