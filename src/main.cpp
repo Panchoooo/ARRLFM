@@ -195,7 +195,7 @@ int main(int argc, char *argv[]) {
 
 if(true){
 
-/* PATRONES 
+// PATRONES 
   for(int lp = 2 ; lp < 17 ; lp=lp*2){
       
     largo_patroncito = lp;
