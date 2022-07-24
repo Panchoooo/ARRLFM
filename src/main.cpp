@@ -151,7 +151,7 @@ int main(int argc, char *argv[]) {
 
 
 
-/*
+
   strcpy(path_asap1,path_output);
   strcat(path_asap1,nasap1); 
   strcat(path_asap1,separate2); 
@@ -162,7 +162,7 @@ int main(int argc, char *argv[]) {
   cout << path_bin;
   fs::create_directories(path_asapfolder); // Crear carpeta si no existe
 
-*/
+
 
 
 
