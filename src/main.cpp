@@ -200,7 +200,7 @@ char *nasap1 = "ARRLFM_PEF_RUNS_AP";
 if(true){
 
 // PATRONES 
-  for(int lp = 4 ; lp < 17 ; lp=lp*2){
+  for(int lp = 2 ; lp < 17 ; lp=lp*2){
       
     largo_patroncito = lp;
 
