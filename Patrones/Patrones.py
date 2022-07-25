@@ -29,20 +29,23 @@ for largo in cantidad_largo:
         largo_patron_aux = 1
         #value = randint(0, len(texto)-largo)
         value = value + 1
-        if(value not in values_dict.keys()):
-            values_dict[value] = 1
-            patron = texto[value]
-            while(largo_patron_aux < largo):
-                patron = patron + " " + texto[value+largo_patron_aux]
-                largo_patron_aux+=1
+    
+        #if(value not in values_dict.keys()):
 
-            #print(str(contador) + "  "+ str(value)+"  "+ patron)
- 
-            if(patron not in patrones_dict.keys()):
-                patrones_dict[patron] = 1  
-                fo.write(patron)
-                contador+=1
-                if(contador != patrones and value < limite-(largo)):
-                    fo.write("\n")
+        values_dict[value] = 1
+
+        patron = texto[value]
+        while(largo_patron_aux < largo):
+            patron = patron + " " + texto[value+largo_patron_aux]
+            largo_patron_aux+=1
+
+        #print(str(contador) + "  "+ str(value)+"  "+ patron)
+
+        if(patron not in patrones_dict.keys()):
+            patrones_dict[patron] = 1  
+            fo.write(patron)
+            contador+=1
+            if(contador != patrones and value < limite-(largo)):
+                fo.write("\n")
 
             print(str(contador*100/patrones)+"% | "+str(contador))
