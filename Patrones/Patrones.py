@@ -4,7 +4,7 @@ from random import randint
 seed(1)
 import sys
 filep = sys.argv[1]
-path_lectura = "../Lectura/"+filep+"/Simbolos.txt"
+path_lectura = "/data/pizzachili/Resultados/"+filep+"/Simbolos.txt"
 
 f = open(path_lectura, "r")
 texto = f.read().split(" ")
@@ -15,9 +15,9 @@ cantidad_largo = [ 2,4,8,16 ]
 for largo in cantidad_largo:
     print("Patron largo: "+str(largo))
     
-    fo = open("../Lectura/"+filep+"/Patrones/Largo"+str(largo)+".txt", "w")  
+    fo = open("/data/pizzachili/Resultados/"+filep+"/Patrones/Largo"+str(largo)+".txt", "w")  
     
-    fo = open("../Lectura/"+filep+"/Patrones/Largo"+str(largo)+".txt", "a")  
+    fo = open("/data/pizzachili/Resultados/"+filep+"/Patrones/Largo"+str(largo)+".txt", "a")  
     patrones_dict = {}
     contador = 0
 
@@ -45,4 +45,4 @@ for largo in cantidad_largo:
                 if(contador != patrones and value < limite-(largo)):
                     fo.write("\n")
 
-        print(str(contador*100/patrones)+"% | "+str(contador))
+            print(str(contador*100/patrones)+"% | "+str(contador))
