@@ -186,7 +186,7 @@ int main(int argc, char *argv[]) {
 
 // Arrlfm< Asap< SDBV, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
   //Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
-  Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>>, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
+  //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>>, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
 
 
 /*
@@ -196,9 +196,10 @@ int main(int argc, char *argv[]) {
  */ 
 
 
+  ofstream myfile2 ("/data/pizzachili/Resultados/"+file+"/Memoria");
+  myfile2 << TWA.size();
 
-
-if(true){
+if(false){
 
 // PATRONES 
   for(int lp = 2 ; lp < 17 ; lp=lp*2){
