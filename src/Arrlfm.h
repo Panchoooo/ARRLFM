@@ -62,6 +62,8 @@ public:
   unsigned countbyIntVectorSave (int_vector<> patron,char* output);
   unsigned countbyString (string patron);
 
+  unsigned long size ();
+
   void saveBWT(char* output);
 
   string buscarPatron(int largo_patron);
