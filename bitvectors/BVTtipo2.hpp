@@ -32,7 +32,7 @@ public:
     return (*b_select)(i);
   }
   int size () {
-    return size_in_bytes(b_rank) + size_in_bytes(b_select) + size_in_bytes(*B);
+    return size_in_bytes(*b_rank) + size_in_bytes(*b_select) + size_in_bytes(*B);
   }
 };
 #endif
