@@ -195,8 +195,14 @@ int main(int argc, char *argv[]) {
  // Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>>, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
  */ 
 
-
-  ofstream myfile2 ("/data/pizzachili/Resultados/"+file+"/Patrones/"+nasap1+"_Memoria.txt");
+  
+  char path_mem[100];   
+  strcpy(path_mem,"/data/pizzachili/Resultados/");
+  strcat(path_mem,file); 
+  strcat(path_mem,"/Patrones/"); 
+  strcat(path_mem,nasap1); 
+  strcat(path_mem,"_Memoria.txt"); 
+  ofstream myfile2 (path_mem, std::ios::app);
   myfile2 << TWA.size();
 
 if(false){
