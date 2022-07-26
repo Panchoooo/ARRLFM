@@ -199,7 +199,7 @@ int main(int argc, char *argv[]) {
   char path_mem[100];   
   strcpy(path_mem,"/data/pizzachili/Resultados/");
   strcat(path_mem,file); 
-  strcat(path_mem,"/Patrones/"); 
+  strcat(path_mem,"/Memoria/"); 
   strcat(path_mem,nasap1); 
   strcat(path_mem,"_Memoria.txt"); 
   ofstream myfile2 (path_mem, std::ios::app);
