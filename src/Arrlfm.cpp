@@ -41,8 +41,8 @@ std::vector<std::string> readWords(std::ifstream& file, size_t reservedSize = 0)
         }
         for(size_t start = 0, end = 0; start < buffer.length();) { 
             if (buffer[start] == ' ') { // En caso de encontrar un espacio
-                //++start;  // ignoramos el primero
-                //end = start;
+                ++start;  // ignoramos el primero
+                end = start;
                 while(end < buffer.length() && buffer[end] == ' ') // Contamos cuantos espacios consecutivos existen
                     ++end;
                 for (; start != end; ++start)  // Se guardan en el arreglo de palabras
@@ -79,8 +79,8 @@ std::vector<std::string> readWordsOfString(string buffer, size_t reservedSize = 
     words.reserve(reservedSize);
     for(size_t start = 0, end = 0; start < buffer.length();) { 
         if (buffer[start] == ' ') { // En caso de encontrar un espacio
-            //++start;  // ignoramos el primero
-            //end = start;
+            ++start;  // ignoramos el primero
+            end = start;
             while(end < buffer.length() && buffer[end] == ' ') // Contamos cuantos espacios consecutivos existen
                 ++end;
             for (; start != end; ++start)  // Se guardan en el arreglo de palabras
