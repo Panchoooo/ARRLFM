@@ -138,9 +138,9 @@ int main(int argc, char *argv[]) {
  // char *nasap1 = "ARRLFM_S18_AP";
 
 
-  char *nasap1 = "ARRLFM_SD_RLMN";
+  // char *nasap1 = "ARRLFM_SD_RLMN";
  //char *nasap1 = "ARRLFM_PEF_RLMN";
-  //char *nasap1 = "ARRLFM_S18_RLMN";
+ char *nasap1 = "ARRLFM_S18_RLMN";
 
  //char *nasap1 = "ARRLFM_SD_RUNS_AP";
   //char *nasap1 = "ARRLFM_PEF_RUNS_AP";
