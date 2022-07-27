@@ -166,8 +166,8 @@ char *nasap1 = "ARRLFM_RLMN";
   fs::create_directories(path_asapfolder); // Crear carpeta si no existe
 
 
-
- Arrlfm< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   > >  TWA(path_bin,bwt,civ,"a"); 
+string a = "aaa";
+ Arrlfm< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   > >  TWA(path_bin,bwt,civ,a); 
 
  //  Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
 //Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
