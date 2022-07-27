@@ -161,9 +161,9 @@ int main(int argc, char *argv[]) {
   // char *nasap1 = "ARRLFM_S18_RUNS_AP";
 
   // rl RUNS rlmn
- //   char *nasap1 = "ARRLFM_SD_RUNS_RLMN";
+    char *nasap1 = "ARRLFM_SD_RUNS_RLMN";
   // char *nasap1 = "ARRLFM_PEF_RUNS_RLMN";
-  char *nasap1 = "ARRLFM_S18_RUNS_RLMN";
+ // char *nasap1 = "ARRLFM_S18_RUNS_RLMN";
 
 
   strcpy(path_asap1,path_output);
