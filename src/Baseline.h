@@ -50,6 +50,7 @@ public:
   int_vector<> BWT; // barrows wheeler
 
   ~Baseline<Estructura> (void);
+  Baseline<Estructura> ( char*,int_vector<>,int_vector<>);
 
 
   
