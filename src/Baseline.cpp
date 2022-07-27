@@ -22,13 +22,13 @@ using namespace std;
 using namespace sdsl;
 
 
-bool checkSymbol(char w){
+bool checkSymbolb(char w){
     if( isalpha(w) || isdigit(w) ){
         return false;
     }
     return true;
 }
-std::vector<std::string> readWords(std::ifstream& file, size_t reservedSize = 0) {
+std::vector<std::string> readWordsb(std::ifstream& file, size_t reservedSize = 0) {
     std::string buffer;
     std::vector<std::string> words;
     words.reserve(reservedSize);
@@ -74,7 +74,7 @@ std::vector<std::string> readWords(std::ifstream& file, size_t reservedSize = 0)
     }
     return words;
 }
-std::vector<std::string> readWordsOfString(string buffer, size_t reservedSize = 0) {
+std::vector<std::string> readWordsOfStringb(string buffer, size_t reservedSize = 0) {
     std::vector<std::string> words;
     words.reserve(reservedSize);
     for(size_t start = 0, end = 0; start < buffer.length();) { 
