@@ -231,7 +231,7 @@ Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, unsigne
     if(method>0){
         AWT = new Estructura(file, method); // Creamos nuestra estructura entregandole la BWT construida*/
     }else{
-        AWT = construct_sa(AWT,file,1)
+        AWT = construct_sa(AWT,file,1);
     }
 }
 
