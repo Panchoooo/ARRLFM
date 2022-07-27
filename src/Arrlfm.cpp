@@ -216,7 +216,7 @@ Arrlfm<Estructura>::Arrlfm ( int_vector<> tp, unsigned method ) {
 }
 
 template<class Estructura >
-Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, unsigned method ) {
+Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, uint64_t method ) {
     C = c;
     BWT = bwt;
     /*uint64_t* buffer = new uint64_t[BWT.size()]; 

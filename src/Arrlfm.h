@@ -49,7 +49,7 @@ public:
   int_vector<> t0; // texto de simbolos sin 0 final
   int_vector<> BWT; // barrows wheeler
 
-  Arrlfm<Estructura> ( char*,int_vector<>,int_vector<>,unsigned);
+  Arrlfm<Estructura> ( char*,int_vector<>,int_vector<>,uint64_t);
   Arrlfm<Estructura> ( int_vector<>,unsigned);:
   Arrlfm<Estructura> ( string, unsigned);
   ~Arrlfm<Estructura> (void);
