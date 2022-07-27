@@ -1,5 +1,5 @@
-#ifndef ARRLFM
-#define ARRLFM
+#ifndef Baseline
+#define Baseline
 
 #include <ctime>
 #include <string>
@@ -49,7 +49,7 @@ public:
   int_vector<> t0; // texto de simbolos sin 0 final
   int_vector<> BWT; // barrows wheeler
 
-  ~Arrlfm<Estructura> (void);
+  ~Baseline<Estructura> (void);
 
 
   
