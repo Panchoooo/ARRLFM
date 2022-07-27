@@ -130,8 +130,8 @@ int main(int argc, char *argv[]) {
 
 
   /* Baselines */
-   char *nasap1 = "ARRLFM_AP";
-  // char *nasap1 = "ARRLFM_RLMN";
+  //  char *nasap1 = "ARRLFM_AP";
+  char *nasap1 = "ARRLFM_RLMN";
  //  char *nasap1 = "ARRLFM_RUNS";
 
   /* ARRLMNS */
@@ -176,8 +176,8 @@ int main(int argc, char *argv[]) {
   cout << path_bin << "\n";
   fs::create_directories(path_asapfolder); // Crear carpeta si no existe
 
-  Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
-  //Baseline< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  >  TWA(path_bin,bwt,civ); 
+  //Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
+  Baseline< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  >  TWA(path_bin,bwt,civ); 
   //Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
  
   // wt INT
