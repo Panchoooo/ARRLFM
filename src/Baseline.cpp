@@ -121,4 +121,5 @@ template<class Estructura >
 Baseline<Estructura>::Baseline (char* file, int_vector<> bwt,int_vector<> c ) {
     C = c;
     BWT = bwt;
+    construct_im(AWT,file,0)
 }
