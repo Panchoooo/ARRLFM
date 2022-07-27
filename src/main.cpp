@@ -212,7 +212,7 @@ int main(int argc, char *argv[]) {
 if(true){
 
 // PATRONES 
-  for(int lp = 2 ; lp < 65 ; lp=lp*2){
+  for(int lp = 2 ; lp < 17 ; lp=lp*2){
       
     largo_patroncito = lp;
 
@@ -232,14 +232,6 @@ if(true){
     else if(largo_patroncito == 16){
       largo = "/Patrones/Largo16.txt";
       lectura_patron = "%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n";
-    }
-    else if(largo_patroncito == 32){
-      largo = "/Patrones/Largo32.txt";
-      lectura_patron = "%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n";
-    }
-    else if(largo_patroncito == 64){
-      largo = "/Patrones/Largo64.txt";
-      lectura_patron = "%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n";
     }
 
 
