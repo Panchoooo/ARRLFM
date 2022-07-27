@@ -203,7 +203,7 @@ char* a = "aaa";
   strcat(path_mem,nasap1); 
   strcat(path_mem,"_Memoria.txt"); 
   cout << path_mem << "\n";
-  ofstream myfile2 (path_mem, std::ios::app);
+  ofstream myfile2 (path_mem);
   myfile2 << TWA.size();
   cout << TWA.size();
 if(false){
