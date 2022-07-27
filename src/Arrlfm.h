@@ -50,7 +50,7 @@ public:
   int_vector<> BWT; // barrows wheeler
 
   Arrlfm<Estructura> ( char*,int_vector<>,int_vector<>,uint64_t);
-  Arrlfm<Estructura> ( int_vector<>,unsigned);:
+  Arrlfm<Estructura> ( int_vector<>,unsigned);
   Arrlfm<Estructura> ( string, unsigned);
   ~Arrlfm<Estructura> (void);
 
