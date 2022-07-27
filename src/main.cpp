@@ -71,7 +71,7 @@ int main(int argc, char *argv[]) {
   int largo_patroncito = 4;
   FILE *fichero;
   unsigned int i, x1, x2, x3, x4, x5, x6 , x7, x8, x9, x10 , x11, x12, x13, x14 , x15, x16;
-  uint32_t cantidad_patrones = 50000;
+  uint32_t cantidad_patrones = 49000;
   char *largo, path_out_patron ;
   char* lectura_patron;
 
@@ -158,12 +158,12 @@ int main(int argc, char *argv[]) {
   // rl RUNS ap
   // char *nasap1 = "ARRLFM_SD_RUNS_AP";
   // char *nasap1 = "ARRLFM_PEF_RUNS_AP";
-   char *nasap1 = "ARRLFM_S18_RUNS_AP";
+  // char *nasap1 = "ARRLFM_S18_RUNS_AP";
 
   // rl RUNS rlmn
  //   char *nasap1 = "ARRLFM_SD_RUNS_RLMN";
  //  char *nasap1 = "ARRLFM_PEF_RUNS_RLMN";
- // char *nasap1 = "ARRLFM_S18_RUNS_RLMN";
+  char *nasap1 = "ARRLFM_S18_RUNS_RLMN";
 
 
   strcpy(path_asap1,path_output);
@@ -203,13 +203,13 @@ int main(int argc, char *argv[]) {
   // rl RUNS AP
   //  Arrlfm< Asap< SDBV, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
   // Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
-  Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>>, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
+ // Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>>, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
 
 
   // rl RUNS rlmn ap
   //Arrlfm< Asap< SDBV, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
   //Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
-  // Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>>, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
+   Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>>, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
 
   char path_mem[100];   
   strcpy(path_mem,"/data/pizzachili/Resultados/");
