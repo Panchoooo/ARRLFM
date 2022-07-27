@@ -168,7 +168,7 @@ char *nasap1 = "ARRLFM_RLMN";
 
 
 char* a = "aaa";
- Baseline< wt_int< > >  TWA(path_bin,bwt,civ,0); 
+ Baseline< wt_int< > >  TWA(); 
 
  //  Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
 //Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
