@@ -163,7 +163,7 @@ char *nasap1 = "ARRLFM_RLMN";
 
   strcpy(path_asapfolder,path_output);
   strcat(path_asapfolder,nasap1); 
-  cout << path_bin;
+  cout << path_bin << "\n";
   fs::create_directories(path_asapfolder); // Crear carpeta si no existe
 
 
@@ -202,6 +202,7 @@ char* a = "aaa";
   strcat(path_mem,"/Memoria/"); 
   strcat(path_mem,nasap1); 
   strcat(path_mem,"_Memoria.txt"); 
+  cout << path_mem << "\n";
   ofstream myfile2 (path_mem, std::ios::app);
   myfile2 << TWA.size();
   cout << TWA.size();
