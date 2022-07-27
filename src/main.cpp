@@ -132,7 +132,7 @@ int main(int argc, char *argv[]) {
   /* Baselines */
   // char *nasap1 = "ARRLFM_AP";
   // char *nasap1 = "ARRLFM_RLMN";
-   char *nasap1 = "ARRLFM_RUNS";
+ //  char *nasap1 = "ARRLFM_RUNS";
 
   /* ARRLMNS */
   // wt INT
