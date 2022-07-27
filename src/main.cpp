@@ -204,6 +204,7 @@ char* a = "aaa";
   strcat(path_mem,"_Memoria.txt"); 
   ofstream myfile2 (path_mem, std::ios::app);
   myfile2 << TWA.size();
+  cout << TWA.size();
 if(false){
 
 /* PATRONES 
