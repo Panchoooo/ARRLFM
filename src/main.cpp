@@ -129,6 +129,12 @@ int main(int argc, char *argv[]) {
   strcat(path_output,out_path); 
 
 
+  /* Baselines */
+  char *nasap1 = "ARRLFM_AP";
+  //char *nasap1 = "ARRLFM_RLMN";
+  //char *nasap1 = "ARRLFM_RUNS";
+
+  /* ARRLMNS */
   // wt INT
   // char *nasap1 = "ARRLFM_SD_INT";
   // char *nasap1 = "ARRLFM_PEF_INT";
@@ -148,12 +154,6 @@ int main(int argc, char *argv[]) {
   // char *nasap1 = "ARRLFM_SD_RUNS_AP";
   // char *nasap1 = "ARRLFM_PEF_RUNS_AP";
   // char *nasap1 = "ARRLFM_S18_RUNS_AP";
-
-  /* Baselines */
-  char *nasap1 = "ARRLFM_AP";
-  //char *nasap1 = "ARRLFM_RLMN";
-  //char *nasap1 = "ARRLFM_RUNS";
-
 
   /*
   // char *nasap1 = "ARRLFM_SD_RUNS_RLMN";
