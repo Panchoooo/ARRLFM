@@ -56,13 +56,13 @@ std::vector<std::string> readWordsb(std::ifstream& file, size_t reservedSize = 0
                         buffer[start] == '\n')
                         ++start;
                 // Se cuentan caracteres distintos de espacio o caracteres especiales
-                if(end < buffer.length() && checkSymbol((char)buffer[start])){ // Si comienza con caracter especial evitamos ciclo para añadirlo al arreglo
+                if(end < buffer.length() && checkSymbolb((char)buffer[start])){ // Si comienza con caracter especial evitamos ciclo para añadirlo al arreglo
                     ++end;
                 }else{
                     while(end < buffer.length() && !isspace(buffer[end]) ){ // En caso contrario, avanzamos en la palabra hasta encontrar un espacio
                         ++end;
                     }
-                    while(checkSymbol((char)buffer[end-1]) ){ // Luego verificamos si termina en caracteres especiales para actualizar indice
+                    while(checkSymbolb((char)buffer[end-1]) ){ // Luego verificamos si termina en caracteres especiales para actualizar indice
                         --end;
                     }
                 }
@@ -94,13 +94,13 @@ std::vector<std::string> readWordsOfStringb(string buffer, size_t reservedSize =
                     buffer[start] == '\n')
                     ++start;
             // Se cuentan caracteres distintos de espacio o caracteres especiales
-            if(end < buffer.length() && checkSymbol((char)buffer[start])){ // Si comienza con caracter especial evitamos ciclo para añadirlo al arreglo
+            if(end < buffer.length() && checkSymbolb((char)buffer[start])){ // Si comienza con caracter especial evitamos ciclo para añadirlo al arreglo
                 ++end;
             }else{
                 while(end < buffer.length() && !isspace(buffer[end]) ){ // En caso contrario, avanzamos en la palabra hasta encontrar un espacio
                     ++end;
                 }
-                while(checkSymbol((char)buffer[end-1]) ){ // Luego verificamos si termina en caracteres especiales para actualizar indice
+                while(checkSymbolb((char)buffer[end-1]) ){ // Luego verificamos si termina en caracteres especiales para actualizar indice
                     --end;
                 }
             }
