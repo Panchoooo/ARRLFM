@@ -228,12 +228,7 @@ Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, unsigne
     //fwrite (buffer, sizeof(uint64_t), BWT.size(), pFile);
     //AWT = new Estructura("binario.bin", method); // Creamos nuestra estructura entregandole la BWT construida
     AWT = new Estructura(file, method); // Creamos nuestra estructura entregandole la BWT construida*/
-    
 }
-
-
-
-
 
 template<class Estructura>
 Arrlfm<Estructura>::~Arrlfm ( void ) {
