@@ -216,7 +216,7 @@ Arrlfm<Estructura>::Arrlfm ( int_vector<> tp, unsigned method ) {
 }
 
 template<class Estructura >
-Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, uint64_t method ) {
+Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, unsigned method ) {
     C = c;
     BWT = bwt;
     /*uint64_t* buffer = new uint64_t[BWT.size()]; 
@@ -227,13 +227,27 @@ Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, uint64_
     //pFile = fopen (file, "wb");
     //fwrite (buffer, sizeof(uint64_t), BWT.size(), pFile);
     //AWT = new Estructura("binario.bin", method); // Creamos nuestra estructura entregandole la BWT construida
-
-    if(method>0){
-        AWT = new Estructura(file, method); // Creamos nuestra estructura entregandole la BWT construida*/
-    }else{
-        AWT = construct_sa(AWT,file,1);
-    }
+    AWT = new Estructura(file, method); // Creamos nuestra estructura entregandole la BWT construida*/
+    
 }
+
+template<class Estructura >
+Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, string tipo_wt ) {
+    C = c;
+    BWT = bwt;
+    /*uint64_t* buffer = new uint64_t[BWT.size()]; 
+    for (uint64_t i = 0; i < BWT.size(); i++) { 
+        buffer[i] = BWT[i];
+    }*/
+    //FILE * pFile;
+    //pFile = fopen (file, "wb");
+    //fwrite (buffer, sizeof(uint64_t), BWT.size(), pFile);
+    //AWT = new Estructura("binario.bin", method); // Creamos nuestra estructura entregandole la BWT construida
+    AWT = new Estructura(file, method); // Creamos nuestra estructura entregandole la BWT construida*/
+    
+}
+
+
 
 template<class Estructura>
 Arrlfm<Estructura>::~Arrlfm ( void ) {
