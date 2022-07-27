@@ -43,7 +43,7 @@ private:
 
 
 public:
-  Estructura* AWT; // ASAP
+  Estructura AWT; // ASAP
   int_vector<> C; // arreglo C
 
   int_vector<> t0; // texto de simbolos sin 0 final
