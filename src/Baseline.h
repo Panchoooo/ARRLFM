@@ -1,5 +1,5 @@
-#ifndef Baseline
-#define Baseline
+#ifndef BASELINE
+#define BASELINE
 
 #include <ctime>
 #include <string>
