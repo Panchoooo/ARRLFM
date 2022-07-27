@@ -169,7 +169,7 @@ char *nasap1 = "ARRLFM_RLMN";
 
 char* a = "aaa";
  Baseline< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  >  TWA(path_bin,bwt,civ); 
- Baseline< rl_runs< 64,wt_ap<> >  >  TWA2(path_bin,bwt,civ); 
+ //Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
 
  //  Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
 //Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
@@ -207,9 +207,9 @@ char* a = "aaa";
   ofstream myfile2 (path_mem);
   myfile2 << TWA.size();
   cout << TWA.size();
-if(false){
+if(true){
 
-/* PATRONES 
+// PATRONES 
   for(int lp = 2 ; lp < 17 ; lp=lp*2){
       
     largo_patroncito = lp;
