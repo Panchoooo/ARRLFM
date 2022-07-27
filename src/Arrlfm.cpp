@@ -227,7 +227,12 @@ Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, unsigne
     //pFile = fopen (file, "wb");
     //fwrite (buffer, sizeof(uint64_t), BWT.size(), pFile);
     //AWT = new Estructura("binario.bin", method); // Creamos nuestra estructura entregandole la BWT construida
-    AWT = new Estructura(file, method); // Creamos nuestra estructura entregandole la BWT construida*/
+
+    if(method>0){
+        AWT = new Estructura(file, method); // Creamos nuestra estructura entregandole la BWT construida*/
+    }else{
+        AWT = construct_sa(AWT,file,1)
+    }
 }
 
 template<class Estructura>
@@ -285,18 +290,14 @@ unsigned Arrlfm<Estructura>::countbyIntVectorSave (int_vector<> patron,char* out
     uint64_t c = patron[patron.size()-1];
     uint64_t b = C[c];
     uint64_t e = C[c+1];
-  //  cout << "\nPaso 0 |  C: " << c << " |  b: " << b << "  | e: " << e << "  | C[c]: " << C[c] << "  | C[c+1]: " << C[c+1] << "\n"; 
     if( patron.size() > 1){
         for ( long int  i = patron.size() - 2 ; i >= 0 ; i = i - 1) { // long int porque al llegar a 0 y hace el -1 se rompe 
             if(b==e){
                 break;
             }
-
             c = patron[i];
             b = C[c] + AWT->rank(b,c);
             e = C[c] + AWT->rank(e,c);
-    //   cout << "\nPaso 0 |  C: " << c << " |  b: " << b << "  | e: " << e << "  | C[c]: " << C[c] << "  | C[c+1]: " << C[c+1] << "\n"; 
-           // contador+=1;
         }
     }
     end = clock();
