@@ -232,7 +232,7 @@ Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, unsigne
 }
 
 template<class Estructura >
-Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, string tipo_wt ) {
+Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, char* tipo_wt ) {
     C = c;
     BWT = bwt;
     /*uint64_t* buffer = new uint64_t[BWT.size()]; 
