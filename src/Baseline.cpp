@@ -148,3 +148,10 @@ unsigned Baseline<Estructura>::countbyIntVectorSave (int_vector<> patron,char* o
     myfile2 << e-b << " " << cpu_time_used <<   "\n";
     return e-b;
 }
+
+template<class Estructura>
+unsigned long Baseline<Estructura>::size () {  
+    unsigned long sum = AWT.size();
+    sum+= size_in_bytes(C);
+    return sum;
+}

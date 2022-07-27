@@ -53,7 +53,7 @@ public:
   Baseline<Estructura> ( char*,int_vector<>,int_vector<>);
 
   unsigned countbyIntVectorSave (int_vector<> patron,char* output);
-  
+  unsigned long size ();
 };
 
 #include "Baseline.cpp"

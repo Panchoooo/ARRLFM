@@ -54,18 +54,17 @@ public:
   Arrlfm<Estructura> ( string, unsigned);
   ~Arrlfm<Estructura> (void);
 
+  unsigned countbyIntVector (int_vector<> patron);
+  unsigned countbyString (string patron);
+  unsigned countbyIntVectorSave (int_vector<> patron,char* output);
+  unsigned long size ();
+
   void getC ();
   void getBWT ();
   void getT ();
   void getSA ();
-  unsigned countbyIntVector (int_vector<> patron);
-  unsigned countbyIntVectorSave (int_vector<> patron,char* output);
-  unsigned countbyString (string patron);
-
-  unsigned long size ();
 
   void saveBWT(char* output);
-
   string buscarPatron(int largo_patron);
   void printW2S ();
   

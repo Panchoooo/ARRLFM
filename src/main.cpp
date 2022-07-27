@@ -196,7 +196,6 @@ char* a = "aaa";
  // Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>>, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
  */ 
 
-  /*
   char path_mem[100];   
   strcpy(path_mem,"/data/pizzachili/Resultados/");
   strcat(path_mem,file); 
@@ -205,7 +204,6 @@ char* a = "aaa";
   strcat(path_mem,"_Memoria.txt"); 
   ofstream myfile2 (path_mem, std::ios::app);
   myfile2 << TWA.size();
-*/
 if(false){
 
 /* PATRONES 
