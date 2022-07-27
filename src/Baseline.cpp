@@ -118,7 +118,7 @@ Baseline<Estructura>::~Baseline ( void ) {
 
 
 template<class Estructura >
-Arrlfm<Estructura>::Baseline (char* file, int_vector<> bwt,int_vector<> c, unsigned method ) {
+Baseline<Estructura>::Baseline (char* file, int_vector<> bwt,int_vector<> c, unsigned method ) {
     C = c;
     BWT = bwt;
 }
