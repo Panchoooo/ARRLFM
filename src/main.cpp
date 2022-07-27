@@ -207,7 +207,7 @@ char* a = "aaa";
 */
 if(false){
 
-// PATRONES 
+/* PATRONES 
   for(int lp = 2 ; lp < 17 ; lp=lp*2){
       
     largo_patroncito = lp;
