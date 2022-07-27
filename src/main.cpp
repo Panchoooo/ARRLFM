@@ -136,9 +136,9 @@ int main(int argc, char *argv[]) {
 
   /* ARRLMNS */
   // wt INT
-   char *nasap1 = "ARRLFM_SD_INT";
+  // char *nasap1 = "ARRLFM_SD_INT";
   // char *nasap1 = "ARRLFM_PEF_INT";
-  // char *nasap1 = "ARRLFM_S18_INT";
+   char *nasap1 = "ARRLFM_S18_INT";
 
   // wt AP
   // char *nasap1 = "ARRLFM_SD_AP";
@@ -181,9 +181,9 @@ int main(int argc, char *argv[]) {
   //Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
  
   // wt INT
-   Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+  // Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
   // Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
-  // Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+   Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<>, sdsl::s18::rank_support<> , sdsl::s18::select_support<>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
   
   // wt AP
   // Arrlfm< Asap< SDBV, uint64_t ,wt_ap<>> >  TWA(path_bin,bwt,civ,0);  
