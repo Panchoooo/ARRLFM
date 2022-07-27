@@ -151,7 +151,7 @@ unsigned Baseline<Estructura>::countbyIntVectorSave (int_vector<> patron,char* o
 
 template<class Estructura>
 unsigned long Baseline<Estructura>::size () {  
-    unsigned long sum = AWT.size();
+    unsigned long sum = size_in_bytes(AWT);
     sum+= size_in_bytes(C);
     return sum;
 }
