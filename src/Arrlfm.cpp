@@ -231,20 +231,7 @@ Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, unsigne
     
 }
 
-template<class Estructura >
-Arrlfm<Estructura>::Arrlfm (char* file, int_vector<> bwt,int_vector<> c, char* tipo_wt ) {
-    C = c;
-    BWT = bwt;
-    /*uint64_t* buffer = new uint64_t[BWT.size()]; 
-    for (uint64_t i = 0; i < BWT.size(); i++) { 
-        buffer[i] = BWT[i];
-    }*/
-    //FILE * pFile;
-    //pFile = fopen (file, "wb");
-    //fwrite (buffer, sizeof(uint64_t), BWT.size(), pFile);
-    //AWT = new Estructura("binario.bin", method); // Creamos nuestra estructura entregandole la BWT construida
-    
-}
+
 
 
 
