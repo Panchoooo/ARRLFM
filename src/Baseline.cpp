@@ -123,3 +123,28 @@ Baseline<Estructura>::Baseline (char* file, int_vector<> bwt,int_vector<> c ) {
     BWT = bwt;
     construct_im(AWT,bwt,0);
 }
+
+template<class Estructura>
+unsigned Baseline<Estructura>::countbyIntVectorSave (int_vector<> patron,char* output) {  
+    clock_t begin, end;
+    double cpu_time_used;
+    ofstream myfile2 (output, std::ios::app);
+    begin = clock();
+    uint64_t c = patron[patron.size()-1];
+    uint64_t b = C[c];
+    uint64_t e = C[c+1];
+    if( patron.size() > 1){
+        for ( long int  i = patron.size() - 2 ; i >= 0 ; i = i - 1) { // long int porque al llegar a 0 y hace el -1 se rompe 
+            if(b==e){
+                break;
+            }
+            c = patron[i];
+            b = C[c] + AWT.rank(b,c);
+            e = C[c] + AWT.rank(e,c);
+        }
+    }
+    end = clock();
+    cpu_time_used = ((double) (end - begin)) / CLOCKS_PER_SEC;
+    myfile2 << e-b << " " << cpu_time_used <<   "\n";
+    return e-b;
+}

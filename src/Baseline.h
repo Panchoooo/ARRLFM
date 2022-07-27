@@ -52,7 +52,7 @@ public:
   ~Baseline<Estructura> (void);
   Baseline<Estructura> ( char*,int_vector<>,int_vector<>);
 
-
+  unsigned countbyIntVectorSave (int_vector<> patron,char* output);
   
 };
 
