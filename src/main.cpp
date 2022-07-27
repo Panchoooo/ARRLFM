@@ -131,29 +131,31 @@ int main(int argc, char *argv[]) {
 
 
   // char *nasap1 = "ARRLFM_SD_INT";
- //char *nasap1 = "ARRLFM_PEF_INT";
- // char *nasap1 = "ARRLFM_S18_INT";
+  // char *nasap1 = "ARRLFM_PEF_INT";
+  // char *nasap1 = "ARRLFM_S18_INT";
 
- // char *nasap1 = "ARRLFM_SD_AP";
- // char *nasap1 = "ARRLFM_PEF_AP";
- //char *nasap1 = "ARRLFM_S18_AP";
+  // char *nasap1 = "ARRLFM_SD_AP";
+  // char *nasap1 = "ARRLFM_PEF_AP";
+  // char *nasap1 = "ARRLFM_S18_AP";
 
 
   // char *nasap1 = "ARRLFM_SD_RLMN";
- //char *nasap1 = "ARRLFM_PEF_RLMN";
- //char *nasap1 = "ARRLFM_S18_RLMN";
+  // char *nasap1 = "ARRLFM_PEF_RLMN";
+  // char *nasap1 = "ARRLFM_S18_RLMN";
 
- //char *nasap1 = "ARRLFM_SD_RUNS_AP";
-  //char *nasap1 = "ARRLFM_PEF_RUNS_AP";
-  //char *nasap1 = "ARRLFM_S18_RUNS_AP";
+  // char *nasap1 = "ARRLFM_SD_RUNS_AP";
+  // char *nasap1 = "ARRLFM_PEF_RUNS_AP";
+  // char *nasap1 = "ARRLFM_S18_RUNS_AP";
 
-  
-  /*
-  //char *nasap1 = "ARRLFM_SD_RUNS_RLMN";
-// char *nasap1 = "ARRLFM_PEF_RUNS_RLMN";
-  //char *nasap1 = "ARRLFM_S18_RUNS_RLMN";
+  /* Baselines */
+  //char *nasap1 = "ARRLFM_RLMN";
+  char *nasap1 = "ARRLFM_RUNS";
+
+/*
+  // char *nasap1 = "ARRLFM_SD_RUNS_RLMN";
+  // char *nasap1 = "ARRLFM_PEF_RUNS_RLMN";
+  // char *nasap1 = "ARRLFM_S18_RUNS_RLMN";
 */
-char *nasap1 = "ARRLFM_RLMN";
 
 
   strcpy(path_asap1,path_output);
