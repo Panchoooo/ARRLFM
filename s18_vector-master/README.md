@@ -1,44 +1,26 @@
-# s18_vector
-[![Build Status](https://travis-ci.com/mudetz/s18_vector.svg?token=Zzkozptv3erZZycPNKT4&branch=master)](https://travis-ci.com/mudetz/s18_vector_definitive)
+# PEF
 
-Add-on for [sdsl-lite](https://github.com/simongog/sdsl-lite) which implements the `s18_vector`
-compressed bit vector.  
-Supports `access`, `rank<1>`, `select<1>`, as proposed by [Arroyuelo (et al)][1].
+## PEF Uniform
 
-## Usage
+### rank operation
 
-Install [sdsl-lite](https://github.com/simongog/sdsl-lite).  
-Then include the `s18_vector` header from `include/sdsl/s18_vector.hpp`.
+#### Description
 
-For example:
-```cpp
-#include <iostream>
-#include <sdsl/int_vector.hpp>
-#include <sdsl/rrr_vector.hpp>
-#include <sdsl/sd_vector.hpp>
-#include "s18_vector.hpp"
+Given an position `i`, do `rank(i)`
 
-int main(void)
-{
-    sdsl::bit_vector b = sdsl::bit_vector(80 * (1 << 20), 0);
-    for (size_t i = 0; i < b.size(); i += 100)
-        b[i] = 1;
+#### Algorithm
 
-    std::cout << "Size in bytes" << std::endl;
-    std::cout << "\toriginal:\t" << sdsl::size_in_bytes(b) << std::endl;
+The rank operation first of all has to do a rank in the vector `L` to know in which block the bit i is.
 
-    sdsl::rrr_vector<63> rrrb(b);
-    std::cout << "\trrr\t\t" << sdsl::size_in_bytes(rrrb) << std::endl;
+Then, if the block is not the first block, it has to sum `b` ones times the number of blocks before the actual block, this is because before this block there is `b` ones for each block.
 
-    sdsl::sd_vector<> sdb(b);
-    std::cout << "\tsd\t\t" << sdsl::size_in_bytes(sdb) << std::endl;
-
-    sdsl::s18_vector<> s18b(b);
-    sdt::cout << "\ts18\t\t" << sdsl::size_in_bytes(s18b) << std::endl;
-
-    return 0;
-}
-```
-
-[1]: Arroyuelo, D., Oyarzún, M., González, S., & Sepulveda, V. (2018). Hybrid compression of inverted
-lists for reordered document collections. Information Processing & Management, 54(6), 1308-1324.
+Then, depending of the value of `B[blk]` and `P[blk]` it will use different rank operations:
+* if `B[blk] = 1` the block uses Elias-Fano Encoding, so we will use rank operation of that encoding, then:
+  * if the block is the first block it can do the operation rank with the value of `i`
+  * if the block is not the first block, then it has to know the position of the `i` bit in that block, to do that is has to do the difference between `i - 1`and the result of a select in `L` with the value of the block, to know what was the position of the last `1` from the previous block, and finally we can do rank with that value
+* if `B[blk] = 0 && P[blk] != NULL` the block uses a plan bit vector encoding, so we will use rank operation of that encoding, then:
+  * if the block is the first block it can do the operation rank with the value of `i`
+  * if the block is not the first block, then is has to know the position of the `i` bit in that block, to do that it has to do the difference between `i - 1` and the result of a select in `L` with the value of the block, to know what was the position of the last `1` from the previous block, and finally we can do rank with that value
+* if `B[blk] = 0 && P[blk] == NULL` the block is full of ones, then:
+  * if the block is the first block the result of the rank is just `i`
+  * if the block is not the first block, it has to know the position of the `i` bit in that block, to do that have to do the difference between `i - 1` and the result of a select in `L` with the value of the block, to know what was the position of the last `1` from the previous block, and the rank of in that block will be that value
