@@ -221,7 +221,7 @@ int main(int argc, char *argv[]) {
   ofstream myfile2 (path_mem);
   //myfile2 << TWA.size();
   myfile2 << TWA.size2();
- cout << TWA.size();
+ cout << TWA.size2();
 if(true){
 
 /* PATRONES 
