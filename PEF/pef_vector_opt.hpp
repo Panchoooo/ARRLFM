@@ -439,7 +439,7 @@ class pef_vector_opt {
       }
     }
 
-    pef_vector_opt(sdsl::bit_vector &bv, double eps1, double eps2) {
+    pef_vector_opt(sdsl::bit_vector &bv, double eps1 = 0.03 , double eps2 = 0.3) {
       // setup fixed_cost 
       fixed_cost = _fixed_cost;
 
