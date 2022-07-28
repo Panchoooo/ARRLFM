@@ -224,7 +224,7 @@ int main(int argc, char *argv[]) {
  cout << TWA.size2();
 if(true){
 
-/* PATRONES 
+// PATRONES 
   for(int lp = 4 ; lp < 17 ; lp=lp*2){
       
     largo_patroncito = lp;
