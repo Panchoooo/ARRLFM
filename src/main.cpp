@@ -151,7 +151,7 @@ int main(int argc, char *argv[]) {
   // wt RLMN INT
   // char *nasap1 = "ARRLFM_SD_RLMN";
   // char *nasap1 = "ARRLFM_PEF_RLMN";
-   char *nasap1 = "ARRLFM_S18-32_RLMN";
+   char *nasap1 = "ARRLFM_S18H-8_RLMN";
 
   // wt RLMN AP
   // char *nasap1 = "ARRLFM_SD_RLMN_AP";

@@ -20,8 +20,8 @@
 #include <sdsl/rrr_vector.hpp>
 #include <sdsl/sd_vector.hpp>
 #include <sdsl/hyb_vector.hpp>
-#include "../head/s18_vector.hpp"
-#include "../../s9/include/sdsl/s9_vector.hpp"
+#include "s18_vector.hpp"
+#include "s9_vector.hpp"
 
 #define SIZE 100000000
 #define RUNS 1000
