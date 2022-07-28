@@ -325,7 +325,12 @@ unsigned long Arrlfm<Estructura>::size () {
     sum+= size_in_bytes(C);
     return sum;
 }
-
+template<class Estructura>
+unsigned long Arrlfm<Estructura>::size2 () {  
+    unsigned long sum = AWT->size2();
+    sum+= size_in_bytes(C);
+    return sum;
+}
 template<class Estructura>
 void Arrlfm<Estructura>::getBWT () {  
     cout << "BWT:  ";

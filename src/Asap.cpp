@@ -162,6 +162,17 @@ unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size () {
     sum += size_in_bytes(x.second);
   return sum;*/
 }
+template<class BitVectorClass, class IntType, class WaveletClass>
+unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size2 () {
+  unsigned long sum = m->size();
+  for ( auto &x: s_wt_trees )
+    if ( x.second.sigma > 1 )
+      sum += size_in_bytes(x.second);
+  for ( auto &x: bit_vectors )
+    sum += size_in_bytes(x.second);
+  return sum;
+}
+
 
 template<class BitVectorClass, class IntType, class WaveletClass>
 unsigned long Asap<BitVectorClass, IntType, WaveletClass>::m_size () {

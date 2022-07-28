@@ -58,6 +58,7 @@ public:
   unsigned countbyString (string patron);
   unsigned countbyIntVectorSave (int_vector<> patron,char* output);
   unsigned long size ();
+  unsigned long size2 ();
 
   void getC ();
   void getBWT ();
