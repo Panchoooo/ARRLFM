@@ -39,7 +39,10 @@ class pef_vector_opt {
   uint64_t n; // set size (number of 1s in the bitvector)
   uint64_t nBlocks; 
     
+  // this will be erased later
+  uint64_t size_in_bits_auxiliar;
   public:
+    using size_type = size_t;
 
     pef_vector_opt() {;}
 
@@ -185,11 +188,11 @@ class pef_vector_opt {
                     + 3 * sizeof(uint64_t) * 8
                     + nBlocks * sizeof(void *) * 8;
 */
-      cout << u << " " << n << " " 
-           << size << " " << (double) size / n << " "
-           << size_L << " " << (double) size_L / n << " "
-           << size_E << " " << (double) size_E / n << " "
-           << size_B << " " << (double) size_B / n << " ";
+      //cout << u << " " << n << " " 
+      //     << size << " " << (double) size / n << " "
+      //     << size_L << " " << (double) size_L / n << " "
+      //     << size_E << " " << (double) size_E / n << " "
+      //     << size_B << " " << (double) size_B / n << " ";
       
       uint64_t ef_times = 0;
       uint64_t ef_size = 0;
@@ -245,12 +248,16 @@ class pef_vector_opt {
           }
         }
       }
-      cout << "EF " << ef_times << " BIT " << bit_times << " ALL_ONES " << all_ones_times 
-           << " " << ef_size << " " << bit_size << " "
-           << (double) ef_size / n << " " << (double) bit_size / n << " "
-           << only_blocks << " "
-           << (double) only_blocks / n << "\n";
+      //cout << "EF " << ef_times << " BIT " << bit_times << " ALL_ONES " << all_ones_times 
+      //     << " " << ef_size << " " << bit_size << " "
+      //     << (double) ef_size / n << " " << (double) bit_size / n << " "
+      //     << only_blocks << " "
+      //     << (double) only_blocks / n << "\n";
       return size;
+    }
+    
+    size_t serialize(std::ostream& out, sdsl::structure_tree_node *v = nullptr, const std::string &name = "") const {
+      return size_in_bits_auxiliar / 8;
     }
     
     uint64_t size_in_bits_formula_no_select(){
@@ -432,7 +439,7 @@ class pef_vector_opt {
       }
     }
 
-    pef_vector_opt(sdsl::bit_vector &bv, double eps1 = 0.03 , double eps2 = 0.3 ) {
+    pef_vector_opt(sdsl::bit_vector &bv, double eps1, double eps2) {
       // setup fixed_cost 
       fixed_cost = _fixed_cost;
 
@@ -448,13 +455,14 @@ class pef_vector_opt {
 
       for (uint64_t i = 0; i < n; i++)
         ones_bv.push_back(select_1(i+1));
-      //cout << n << "\n"; 
+      //cout << n << " "; 
       //cout << "size sd: " << bitsize_elias_fano(u, n) <<  " " << bitsize_plain_bitvector(u, n) << "\n";
       //----- Optimal partition -----
       pair<std::vector<uint64_t>, uint64_t> ret = optimal_partition(ones_bv, eps1, eps2);
       std::vector<uint64_t> partition = ret.first;
       uint64_t cost_opt = ret.second;
       //-----------------------------
+
       if(partition[0] == 1){
         nBlocks = partition.size()-1; // OJO, ver esto, el tamaño de ese vector debería ser el número de bloques
         partition.erase(partition.begin());
@@ -462,9 +470,6 @@ class pef_vector_opt {
       }else{
         nBlocks = partition.size(); // OJO, ver esto, el tamaño de ese vector debería ser el número de bloques
       }
-
-
-      //cout << "nBlocks: " << nBlocks << "\n";
 
       P.resize(nBlocks, NULL);
       block_select.resize(nBlocks, NULL);
@@ -474,18 +479,11 @@ class pef_vector_opt {
 
       uint64_t start = 0;
       uint64_t first_elem = 1;
+
       uint64_t last_elem, end, size_block, i = 0;
       for(i = 0; i < nBlocks - 1; i++){
-        //cout << "nBlock_i: "<< i << "\n";
         last_elem = partition[i];
-        if(last_elem == 1){
-          continue;
-        }
-        //cout << "last_elem : " << last_elem << "\n";
-
         end = select_1(last_elem - 1);
-        //cout << "end : " << end << "\n";
-
         size_block = end - start + 1;
 
         block_bv.resize(size_block);
@@ -504,10 +502,7 @@ class pef_vector_opt {
         add_block(block_bv, type_encoding_block, i);
         start = end + 1;
         first_elem = partition[i];
-        sdsl::util::clear(block_bv);
       }
-      //cout << "nBlock_i: "<< i << "\n";
-
       // last block
       last_elem = partition[i];
       end = u;
@@ -533,6 +528,8 @@ class pef_vector_opt {
       E = sdsl::sd_vector<>(elements_of_E.begin(), elements_of_E.end());
       sdsl::util::init_support(select_E, &E);
       sdsl::util::init_support(rank_E, &E);
+
+      size_in_bits_auxiliar = size_in_bits_formula();
     } 
 
     pef_vector_opt(std::vector<uint64_t> &pb, uint64_t universe, double eps1, double eps2) {
@@ -640,6 +637,8 @@ class pef_vector_opt {
       E = sdsl::sd_vector<>(elements_of_E.begin(), elements_of_E.end());
       sdsl::util::init_support(select_E, &E);
       sdsl::util::init_support(rank_E, &E);
+      
+      size_in_bits_auxiliar = size_in_bits_formula();
     } 
 
     uint64_t select(uint64_t i){
