@@ -156,7 +156,7 @@ int main(int argc, char *argv[]) {
   // wt RLMN AP
   // char *nasap1 = "ARRLFM_SD_RLMN_AP";
   // char *nasap1 = "ARRLFM_PEF_RLMN_AP";
-  // char *nasap1 = "ARRLFM_PEFv_RLMN_AP";
+   char *nasap1 = "ARRLFM_PEFv_RLMN_AP";
   //char *nasap1 = "ARRLFM_S18_RLMN_AP";
 
   // rl RUNS ap
@@ -167,7 +167,7 @@ int main(int argc, char *argv[]) {
   // rl RUNS rlmn
    // char *nasap1 = "ARRLFM_SD_RUNS_RLMN";
   // char *nasap1 = "ARRLFM_PEF_RUNS_RLMN";
-   char *nasap1 = "ARRLFM_PEFv_RUNS_RLMN";
+   //char *nasap1 = "ARRLFM_PEFv_RUNS_RLMN";
   //char *nasap1 = "ARRLFM_S18_RUNS_RLMN";
 
 
