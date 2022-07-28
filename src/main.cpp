@@ -219,9 +219,9 @@ int main(int argc, char *argv[]) {
   strcat(path_mem,"_Memoria.txt"); 
   cout << path_mem << "\n";
   ofstream myfile2 (path_mem);
-  //myfile2 << TWA.size();
+  myfile2 << TWA.size();
   myfile2 << TWA.size2();
- cout << TWA.size2();
+ //cout << TWA.size2();
 if(true){
 
 // PATRONES 
