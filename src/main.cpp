@@ -151,7 +151,7 @@ int main(int argc, char *argv[]) {
   // wt RLMN INT
   // char *nasap1 = "ARRLFM_SD_RLMN";
   // char *nasap1 = "ARRLFM_PEF_RLMN";
-   char *nasap1 = "ARRLFM_S18-8_RLMN";
+   char *nasap1 = "ARRLFM_S18-16_RLMN";
 
   // wt RLMN AP
   // char *nasap1 = "ARRLFM_SD_RLMN_AP";
@@ -198,7 +198,7 @@ int main(int argc, char *argv[]) {
   // wt RLMN INT
  //  Arrlfm< Asap< SDBV, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
   //  Arrlfm< Asap<pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
-   Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
+   Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<16>, sdsl::s18::rank_support<1,16> , sdsl::s18::select_support<1,16>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
   
   // wt RLMN AP
    //Arrlfm< Asap< SDBV, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,0);  
