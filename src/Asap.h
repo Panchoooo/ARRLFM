@@ -45,6 +45,7 @@ class Asap{
 
     unsigned length();
     unsigned long size ();
+    unsigned long size2 ();
     unsigned long m_size ();
     unsigned partitions ();
     unsigned long b_size ();
