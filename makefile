@@ -29,9 +29,9 @@ cleanall:
 	rm -f $(EXEC)
 
 run:
-	./$(EXEC) coreutils
+#	./$(EXEC) coreutils
 #	./$(EXEC) einstein.de.txt
-#	./$(EXEC) einstein.en.txt
+	./$(EXEC) einstein.en.txt
 #	./$(EXEC) english.001.2
 #	./$(EXEC) world_leaders
 
