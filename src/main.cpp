@@ -220,7 +220,7 @@ int main(int argc, char *argv[]) {
   cout << path_mem << "\n";
   ofstream myfile2 (path_mem);
   //myfile2 << TWA.size();
-  myfile2 << TWA.size2();
+  //myfile2 << TWA.size2();
   cout << TWA.size();
 if(true){
 
