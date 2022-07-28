@@ -35,7 +35,8 @@
 #include <string>
 #include <sys/mman.h>
 
-namespace sux::util {
+namespace sux {
+namespace util {
 
 /** Possible types of memory allocation.
  *
@@ -290,4 +291,5 @@ template <typename T, AllocType AT = MALLOC> class Vector : public Expandable {
 	}
 };
 
+}
 } // namespace sux::util

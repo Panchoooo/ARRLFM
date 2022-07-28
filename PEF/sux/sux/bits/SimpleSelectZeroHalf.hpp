@@ -33,7 +33,8 @@
 #include "SelectZero.hpp"
 #include <cstdint>
 
-namespace sux::bits {
+namespace sux {
+namespace bits {
 
 using namespace std;
 using namespace sux;
@@ -173,8 +174,8 @@ template <util::AllocType AT = util::AllocType::MALLOC> class SimpleSelectZeroHa
 		assert(rank < num_zeros);
 
 		const uint64_t inventory_index = rank >> log2_zeros_per_inventory;
-		assert(inventory_index <= inventory_size);
-		const int64_t *inventory_start = &inventory + (inventory_index << log2_longwords_per_subinventory) + inventory_index;
+    assert(inventory_index <= inventory_size);
+    const int64_t *inventory_start = &inventory + (inventory_index << log2_longwords_per_subinventory) + inventory_index;
 
 		const int64_t inventory_rank = *inventory_start;
 		const int subrank = rank & zeros_per_inventory_mask;
@@ -231,4 +232,5 @@ template <util::AllocType AT = util::AllocType::MALLOC> class SimpleSelectZeroHa
 	size_t bitCount() const { return inventory.bitCount() - sizeof(inventory) * 8 + sizeof(*this) * 8; };
 };
 
-} // namespace sux::bits
+} // namespace bits
+} // namespace sux

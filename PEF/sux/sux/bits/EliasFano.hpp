@@ -34,7 +34,7 @@
 #include <cstdint>
 #include <vector>
 
-namespace sux{
+namespace sux {
 namespace bits {
 
 using namespace std;
@@ -93,6 +93,8 @@ template <util::AllocType AT = util::AllocType::MALLOC> class EliasFano : public
 	}
 
   public:
+
+  EliasFano() {;}
 	/** Creates a new instance using a given bit vector.
 	 *
 	 * Note that the bit vector is read only at construction time.
@@ -135,8 +137,8 @@ template <util::AllocType AT = util::AllocType::MALLOC> class EliasFano : public
 		//       upper_bits[2], upper_bits[3]);
 #endif
 
-		select_upper = SimpleSelectHalf(&upper_bits, num_ones + (num_bits >> l));
-		selectz_upper = SimpleSelectZeroHalf(&upper_bits, num_ones + (num_bits >> l));
+		select_upper = SimpleSelectHalf<>(&upper_bits, num_ones + (num_bits >> l));
+		selectz_upper = SimpleSelectZeroHalf<>(&upper_bits, num_ones + (num_bits >> l));
 
 		block_size = 0;
 		do
@@ -191,7 +193,7 @@ template <util::AllocType AT = util::AllocType::MALLOC> class EliasFano : public
 
 		lower_bits.size((num_ones * l + 63) / 64 + 2 * (l == 0));
 		upper_bits.size(((num_ones + (num_bits >> l) + 1) + 63) / 64);
-
+ 
 		for (uint64_t i = 0; i < num_ones; i++) {
 			if (l != 0) set_bits(lower_bits, i * l, l, ones[i] & lower_bits_mask);
 			set(upper_bits, (ones[i] >> l) + i);
@@ -202,8 +204,8 @@ template <util::AllocType AT = util::AllocType::MALLOC> class EliasFano : public
 		printf("First upper: %016llx %016llx %016llx %016llx\n", upper_bits[0], upper_bits[1], upper_bits[2], upper_bits[3]);
 #endif
 
-		select_upper = SimpleSelectHalf(&upper_bits, num_ones + (num_bits >> l));
-		selectz_upper = SimpleSelectZeroHalf(&upper_bits, num_ones + (num_bits >> l));
+		select_upper = SimpleSelectHalf<>(&upper_bits, num_ones + (num_bits >> l));
+		selectz_upper = SimpleSelectZeroHalf<>(&upper_bits, num_ones + (num_bits >> l));
 
 		block_size = 0;
 		do
@@ -347,10 +349,11 @@ template <util::AllocType AT = util::AllocType::MALLOC> class EliasFano : public
 
 	/** Returns an estimate of the size in bits of this structure. */
 	uint64_t bitCount() {
-		return upper_bits.bitCount() - sizeof(upper_bits) * 8 + lower_bits.bitCount() - sizeof(lower_bits) * 8 + select_upper.bitCount() - sizeof(select_upper) * 8 + selectz_upper.bitCount() -
+		//cout << upper_bits.bitCount() / 8 - sizeof(upper_bits) << " " << lower_bits.bitCount() / 8 - sizeof(lower_bits) << " " << select_upper.bitCount() / 8 - sizeof(select_upper) << " " << selectz_upper.bitCount() / 8 - sizeof(selectz_upper) << " ";
+    return upper_bits.bitCount() - sizeof(upper_bits) * 8 + lower_bits.bitCount() - sizeof(lower_bits) * 8 + select_upper.bitCount() - sizeof(select_upper) * 8 + selectz_upper.bitCount() -
 			   sizeof(selectz_upper) * 8 + sizeof(*this) * 8;
 	}
 };
 
-} // namespace sux::bits
-}
+} // namespace bits
+} // namespace sux

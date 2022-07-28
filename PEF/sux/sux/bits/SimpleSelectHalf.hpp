@@ -33,7 +33,8 @@
 #include "Select.hpp"
 #include <cstdint>
 
-namespace sux::bits {
+namespace sux {
+namespace bits {
 
 using namespace std;
 using namespace sux;
@@ -231,4 +232,5 @@ template <util::AllocType AT = util::AllocType::MALLOC> class SimpleSelectHalf {
 	size_t bitCount() const { return inventory.bitCount() - sizeof(inventory) * 8 + sizeof(*this) * 8; };
 };
 
-} // namespace sux::bits
+} // namespace bits
+} // namespace sux

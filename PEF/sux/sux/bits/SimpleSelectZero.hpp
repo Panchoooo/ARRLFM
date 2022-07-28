@@ -33,7 +33,8 @@
 #include "SelectZero.hpp"
 #include <cstdint>
 
-namespace sux::bits {
+namespace sux {
+namespace bits {
 using namespace std;
 
 /** A simple SelectZero implementation based on a two-level inventory, a spill list and broadword bit search.
@@ -272,4 +273,5 @@ template <util::AllocType AT = util::AllocType::MALLOC> class SimpleSelectZero {
 	size_t bitCount() const { return inventory.bitCount() - sizeof(inventory) * 8 + exact_spill.bitCount() - sizeof(exact_spill) * 8 + sizeof(*this) * 8; }
 };
 
-} // namespace sux::bits
+} // namespace bits
+} // namespace sux
