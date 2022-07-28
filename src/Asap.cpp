@@ -169,7 +169,7 @@ unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size2 () {
     if ( x.second.sigma > 1 )
       sum += size_in_bytes(x.second);
   for ( auto &x: bit_vectors )
-    sum += size_in_bytes(x.second);
+    sum += size_in_bytes(*x.second);
   return sum;
 }
 
