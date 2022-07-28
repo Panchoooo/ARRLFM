@@ -3,6 +3,7 @@
 
 #include <vector>
 #include <utility>
+#include "sux/sux/bits/EliasFano.hpp"
 
 using namespace std;
 

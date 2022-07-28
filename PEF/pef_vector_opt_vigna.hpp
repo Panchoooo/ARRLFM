@@ -334,7 +334,7 @@ class pef_vector_opt_vigna {
       }
     }
 
-    pef_vector_opt_vigna(sdsl::bit_vector &bv, double eps1, double eps2) {
+    pef_vector_opt_vigna(sdsl::bit_vector &bv, double eps1 = 0.03 , double eps2 = 0.3) {
       // setup fixed_cost 
       fixed_cost = _fixed_cost;
 
@@ -357,8 +357,13 @@ class pef_vector_opt_vigna {
       uint64_t cost_opt = ret.second;
       //-----------------------------
 
-      nBlocks = partition.size(); // OJO, ver esto, el tamaño de ese vector debería ser el número de bloques
+      if(partition[0] == 1){
+        nBlocks = partition.size()-1; // OJO, ver esto, el tamaño de ese vector debería ser el número de bloques
+        partition.erase(partition.begin());
 
+      }else{
+        nBlocks = partition.size(); // OJO, ver esto, el tamaño de ese vector debería ser el número de bloques
+      }
       P.resize(nBlocks, NULL);
       block_select.resize(nBlocks, NULL);
       block_rank.resize(nBlocks, NULL);
