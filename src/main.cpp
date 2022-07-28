@@ -227,7 +227,7 @@ int main(int argc, char *argv[]) {
   //myfile2 << TWA.size();
   myfile2 << TWA.size2();
  //cout << TWA.size2();
-if(false){
+if(true){
 
 // PATRONES 
   for(int lp = 4 ; lp < 17 ; lp=lp*2){
