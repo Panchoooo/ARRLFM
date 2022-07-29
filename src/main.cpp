@@ -621,7 +621,6 @@ int main(int argc, char *argv[]) {
     Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
     
     // Tiempos
-    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
@@ -633,16 +632,7 @@ int main(int argc, char *argv[]) {
     cout << path_mem << "\n";
     ofstream myfile2 (path_mem);
     myfile2 << TWA.size();
-    // Memoria 
-    char path_mem[100];   
-    strcpy(path_mem,lectura_path);
-    strcat(path_mem,file); 
-    strcat(path_mem,"/Memoria/"); 
-    strcat(path_mem,nasap1); 
-    strcat(path_mem,"_Memoria.txt"); 
-    cout << path_mem << "\n";
-    ofstream myfile2 (path_mem);
-    myfile2 << TWA.size2();
+
   }
 
 
