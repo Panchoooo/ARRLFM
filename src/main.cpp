@@ -63,7 +63,9 @@ int main(int argc, char *argv[]) {
   //char *nasap1 = "/ARRLFM1";
   //char *nasap1 = "/ARRLFM2";
   //char *nasap1 = "/ARRLFM3";
+  char *lectura_path = "/data/pizzachili/Resultados/"; /* CARPETA QUE CONTIENE TEXTOS */
   
+
   char path_asap1[100];           
   char path_asapfolder[100];           
   clock_t begin, end;
@@ -82,7 +84,6 @@ int main(int argc, char *argv[]) {
 
   char *separate = "_";
   char *separate2 = "/";
-  char *lectura_path = "/data/pizzachili/Resultados/";
   char *bwt_path = "/BWT";
   char *c_path = "/C";
   char *bin_path = "/binario.bin";
@@ -138,8 +139,8 @@ int main(int argc, char *argv[]) {
   /* ARRLMNS */
   // wt INT
    //char *nasap1 = "ARRLFM_SD_INT";
-  // char *nasap1 = "ARRLFM_PEF_INT";
- //  char *nasap1 = "ARRLFM_PEFv_INT";
+ //  char *nasap1 = "ARRLFM_PEF_INT";
+  char *nasap1 = "ARRLFM_PEFv_INT";
  // char *nasap1 = "ARRLFM_S18_INT";
 
   // wt AP
@@ -151,7 +152,7 @@ int main(int argc, char *argv[]) {
   // wt RLMN INT
   // char *nasap1 = "ARRLFM_SD_RLMN";
   // char *nasap1 = "ARRLFM_PEF_RLMN";
-   char *nasap1 = "ARRLFM_S18H-32_RLMN";
+   //char *nasap1 = "ARRLFM_S18H-32_RLMN";
 
   // wt RLMN AP
   // char *nasap1 = "ARRLFM_SD_RLMN_AP";
@@ -187,7 +188,7 @@ int main(int argc, char *argv[]) {
  
   // wt INT
   // Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
- // Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+  Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
  //  Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<32>, sdsl::s18::rank_support<1,32> , sdsl::s18::select_support<1,32>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
   
   // wt AP
@@ -198,7 +199,7 @@ int main(int argc, char *argv[]) {
   // wt RLMN INT
  //  Arrlfm< Asap< SDBV, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
   //  Arrlfm< Asap<pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
-   Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<32>, sdsl::s18::rank_support<1,32> , sdsl::s18::select_support<1,32>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
+   //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<32>, sdsl::s18::rank_support<1,32> , sdsl::s18::select_support<1,32>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
   
   // wt RLMN AP
    //Arrlfm< Asap< SDBV, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,0);  
@@ -217,7 +218,7 @@ int main(int argc, char *argv[]) {
    //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<32>, sdsl::s18::rank_support<1,32> , sdsl::s18::select_support<1,32>>, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
 
   char path_mem[100];   
-  strcpy(path_mem,"/data/pizzachili/Resultados/");
+  strcpy(path_mem,lectura_path);
   strcat(path_mem,file); 
   strcat(path_mem,"/Memoria/"); 
   strcat(path_mem,nasap1); 

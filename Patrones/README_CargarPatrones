@@ -1,4 +1,6 @@
 
+Version c++
+
 Utiliza el archivo T0 de un texto para buscar patrones de manera aleatoria de distintos largos y almacenarlos en archivos para
 ser utilizados en pruebas
 
@@ -16,3 +18,7 @@ g++ CargarPatrones.cpp -o cargar -std=c++17 -Wall -Wno-missing-braces -L ~/lib -
 ./cargar
 
 
+
+Version python | Preferencia
+
+python Patrones.py *nombre_texto*
