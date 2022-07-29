@@ -141,7 +141,7 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
-    TWA.testing(file,0,nasap1,lectura_path);
+    TWA.testing(file,nasap1,lectura_path);
   }
   // PEF | WT-INT
   if(tipo == 2){
@@ -155,7 +155,7 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
-    TWA.testing(file,1,nasap1,lectura_path);
+    TWA.testing(file,nasap1,lectura_path);
   }
   // S18 || WT-INT
   if(tipo == 3){
@@ -169,7 +169,7 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
-    TWA.testing(file,0,nasap1,lectura_path);
+    TWA.testing(file,nasap1,lectura_path);
   }
 
 
@@ -185,7 +185,7 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder);
     Arrlfm< Asap< SDBV, uint64_t ,wt_ap<>> >  TWA(path_bin,bwt,civ,0);  
-    TWA.testing(file,0,nasap1,lectura_path);
+    TWA.testing(file,nasap1,lectura_path);
   }
   // PEF | WT-AP
   if(tipo == 5){
@@ -199,7 +199,7 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder);
     Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_ap<>> >  TWA(path_bin,bwt,civ,0);  
-    TWA.testing(file,1,nasap1,lectura_path);
+    TWA.testing(file,nasap1,lectura_path);
   }
   // S18 | WT-AP
   if(tipo == 6){
@@ -213,7 +213,7 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder);
     Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_ap<>> >  TWA(path_bin,bwt,civ,0);  
-    TWA.testing(file,0,nasap1,lectura_path);
+    TWA.testing(file,nasap1,lectura_path);
   }
 
 

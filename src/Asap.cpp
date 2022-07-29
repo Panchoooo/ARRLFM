@@ -172,17 +172,6 @@ unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size2 () {
     sum += (x.second->size_in_bits_formula()/8);
   return sum;
 }
-template<class BitVectorClass, class IntType, class WaveletClass>
-unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size3 (int tipo) {
-
-  if(tipo == 0){
-    return size()
-  }
-  if(tipo == 1){
-    return size2()
-  }
-
-}
 
 template<class BitVectorClass, class IntType, class WaveletClass>
 unsigned long Asap<BitVectorClass, IntType, WaveletClass>::m_size () {

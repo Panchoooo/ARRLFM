@@ -69,7 +69,7 @@ public:
   string buscarPatron(int largo_patron);
   void printW2S ();
 
-  void testing(char* file,int tipo,char* nasap1, char *lectura_path);
+  void testing(char* file,char* nasap1, char *lectura_path);
   
 };
 
