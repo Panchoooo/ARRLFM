@@ -177,9 +177,6 @@ int main(int argc, char *argv[]) {
   //Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
  
   // wt INT
-  char path_bin[100] = "";  
-  strcpy(path_bin,path_output);
-  strcat(path_bin,"nasap1"); 
    Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
   //Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
  //  Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<32>, sdsl::s18::rank_support<1,32> , sdsl::s18::select_support<1,32>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
