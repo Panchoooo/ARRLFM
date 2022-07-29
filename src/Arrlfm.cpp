@@ -280,10 +280,10 @@ unsigned Arrlfm<Estructura>::countbyIntVector (int_vector<> patron) {
 
 template<class Estructura>
 unsigned Arrlfm<Estructura>::countbyIntVectorSave (int_vector<> patron,char* output) {  
-    clock_t begin, end;
-    double cpu_time_used;
-    ofstream myfile2 (output, std::ios::app);
-    begin = clock();
+    //clock_t begin, end;
+    //double cpu_time_used;
+    //ofstream myfile2 (output, std::ios::app);
+    //begin = clock();
     uint64_t c = patron[patron.size()-1];
     uint64_t b = C[c];
     uint64_t e = C[c+1];
@@ -297,9 +297,9 @@ unsigned Arrlfm<Estructura>::countbyIntVectorSave (int_vector<> patron,char* out
             e = C[c] + AWT->rank(e,c);
         }
     }
-    end = clock();
-    cpu_time_used = ((double) (end - begin)) / CLOCKS_PER_SEC;
-    myfile2 << e-b << " " << cpu_time_used <<   "\n";
+    //end = clock();
+    //cpu_time_used = ((double) (end - begin)) / CLOCKS_PER_SEC;
+    //myfile2 << e-b << " " << cpu_time_used <<   "\n";
     return e-b;
 }
 
@@ -603,7 +603,16 @@ if(true){
         }
         //cout << patron_lectura << "\n\n";
 
+        clock_t begin, end;
+        double cpu_time_used;
+        ofstream myfile2 (path_asap1_largo, std::ios::app);
+        begin = clock();
         countbyIntVectorSave(patron_lectura,path_asap1_largo) ;
+        end = clock();
+        cpu_time_used = ((double) (end - begin)) / CLOCKS_PER_SEC;
+        myfile2 << e-b << " " << cpu_time_used <<   "\n";
+
+
     }
 
     if( !fclose(fichero) )
