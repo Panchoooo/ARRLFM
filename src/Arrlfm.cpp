@@ -442,7 +442,7 @@ void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) {
     cout << lectura_path << "\n"; 
 
 
-  char path_asap1[100];           
+  char path_asap1[100];              
   char path_asapfolder[100];           
   clock_t begin, end;
   double cpu_time_used;
@@ -506,7 +506,9 @@ void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) {
   strcpy(path_output,lectura_path); 
   strcat(path_output,file); 
   strcat(path_output,out_path); 
-
+     
+  strcpy(path_asap1,path_output); 
+  strcat(path_asap1,nasap1); 
 
 
   strcpy(path_asapfolder,path_output);
