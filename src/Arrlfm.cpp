@@ -569,7 +569,7 @@ if(true){
     else
     {
         printf( "Error (NO ABIERTO)\n" );
-        return 1;
+        return;
     }
 
     printf( "Datos leidos del fichero: %s\n", path_file_patrones );

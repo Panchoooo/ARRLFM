@@ -56,7 +56,6 @@ int main(int argc, char *argv[]) {
   char* tipo = argv[2];
 
   char *lectura_path = "/data/pizzachili/Resultados/"; /* CARPETA QUE CONTIENE TEXTOS */
-  char *nasap1 = "ARRLFM_PEFv_INT";
 
 
 
