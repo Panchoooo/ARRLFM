@@ -128,6 +128,12 @@ int main(int argc, char *argv[]) {
   //char *nasap1 = "ARRLFM_RLMN";
   //char *nasap1 = "ARRLFM_RUNS";
 
+  //Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
+  //Baseline< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  >  TWA(path_bin,bwt,civ); 
+  //Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
+ 
+
+
   /* ARRLMNS */
   // SD | WT-INT
   if(tipo == 11){
@@ -287,7 +293,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
   }
   // S18 || RUNS-RLMN
-  if(tipo == 25){
+  if(tipo == 26){
     char *nasap1 = "ARRLFM_S18_RUNS_RLMN";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
@@ -312,15 +318,39 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+    TWA.testing(file,nasap1,lectura_path);
+  }
+  // PEF | WT-AP
+  if(tipo == 32){
+    char *nasap1 = "ARRLFM_PEF_AP";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_ap<>> >  TWA(path_bin,bwt,civ,0);  
+    TWA.testing(file,nasap1,lectura_path);
+  }
+  // PEF | RLMN
+  if(tipo == 33){
+    char *nasap1 = "ARRLFM_PEF_RLMN";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    Arrlfm< Asap<pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
     TWA.testing(file,nasap1,lectura_path);
   }
 
-  // wt AP
- //  char *nasap1 = "ARRLFM_PEF_AP";
 
-  // wt RLMN INT
-  // char *nasap1 = "ARRLFM_PEF_RLMN";
 
   // wt RLMN AP
   // char *nasap1 = "ARRLFM_PEF_RLMN_AP";
@@ -335,25 +365,17 @@ int main(int argc, char *argv[]) {
 
 
 
-  //Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
-  //Baseline< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  >  TWA(path_bin,bwt,civ); 
-  //Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
- 
-  // wt AP
- //Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_ap<>> >  TWA(path_bin,bwt,civ,0);  
   
   // wt RLMN INT
-  //  Arrlfm< Asap<pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
   
   // wt RLMN AP
-   //Arrlfm< Asap<pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,0);  
+   //Arrlfm< Asap<pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,0);  
   
   // rl RUNS AP
-  //Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
-
+  //Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
 
   // rl RUNS rlmn ap
-  // Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
+  // Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
 
 
 
