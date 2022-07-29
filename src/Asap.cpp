@@ -176,22 +176,10 @@ template<class BitVectorClass, class IntType, class WaveletClass>
 unsigned long Asap<BitVectorClass, IntType, WaveletClass>::size3 (int tipo) {
 
   if(tipo == 0){
-    unsigned long sum = m->size();
-    for ( auto &x: s_wt_trees )
-      if ( x.second.sigma > 1 )
-        sum += size_in_bytes(x.second);
-    for ( auto &x: bit_vectors )
-      sum += (x.second)->size();
-    return sum;
+    return size()
   }
   if(tipo == 1){
-    unsigned long sum = m->size();
-    for ( auto &x: s_wt_trees )
-      if ( x.second.sigma > 1 )
-        sum += size_in_bytes(x.second);
-    for ( auto &x: bit_vectors )
-      sum += size_in_bytes(x.second);
-    return sum;
+    return size2()
   }
 
 }

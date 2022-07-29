@@ -34,6 +34,5 @@ public:
   int size () {
     return  size_in_bytes(*B);
   }
-  void size_in_bytes();
 };
 #endif
