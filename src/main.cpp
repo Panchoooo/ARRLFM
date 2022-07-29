@@ -130,7 +130,7 @@ int main(int argc, char *argv[]) {
 
   /* ARRLMNS */
   // SD | WT-INT
-  if(tipo == 1){
+  if(tipo == 11){
     char *nasap1 = "ARRLFM_SD_INT";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
@@ -143,10 +143,10 @@ int main(int argc, char *argv[]) {
     Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
     TWA.testing(file,nasap1,lectura_path);
   }
-  // PEF | WT-INT
-  if(tipo == 2){
-    char *nasap1 = "ARRLFM_PEF_INT";
-      strcpy(path_asap1,path_output);
+  // SD | WT-INT
+  if(tipo == 12){
+    char *nasap1 = "ARRLFM_SD_AP";
+    strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
     strcat(path_asap1,nasap1); 
@@ -154,11 +154,12 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
     TWA.testing(file,nasap1,lectura_path);
   }
+
   // S18 || WT-INT
-  if(tipo == 3){
+  if(tipo == 21){
     char *nasap1 = "ARRLFM_S18_INT";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
@@ -173,8 +174,22 @@ int main(int argc, char *argv[]) {
   }
 
   
+  // PEF | WT-INT
+  if(tipo == 31){
+    char *nasap1 = "ARRLFM_PEF_INT";
+      strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+    TWA.testing(file,nasap1,lectura_path);
+  }
+
   // wt AP
-   // char *nasap1 = "ARRLFM_SD_AP";
  //  char *nasap1 = "ARRLFM_PEF_AP";
   // char *nasap1 = "ARRLFM_PEFv_AP";
 ///   char *nasap1 = "ARRLFM_S18_AP";
