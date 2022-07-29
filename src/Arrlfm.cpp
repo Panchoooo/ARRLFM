@@ -524,7 +524,7 @@ void Arrlfm<Estructura>::testing (char* file, char* tipo,char* nasap1, char *lec
   strcat(path_mem,"_Memoria.txt"); 
   cout << path_mem << "\n";
   ofstream myfile2 (path_mem);
-  myfile2 << TWA.size();
+  myfile2 << AWT->size();
   //myfile2 << TWA.size2();
  //cout << TWA.size2();
 
@@ -605,7 +605,7 @@ if(true){
         }
         //cout << patron_lectura << "\n\n";
 
-        TWA->countbyIntVectorSave(patron_lectura,path_asap1_largo) ;
+        AWT->countbyIntVectorSave(patron_lectura,path_asap1_largo) ;
     }
 
     if( !fclose(fichero) )
