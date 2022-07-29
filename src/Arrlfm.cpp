@@ -523,10 +523,10 @@ void Arrlfm<Estructura>::testing (char* file,int tipo,char* nasap1, char *lectur
   cout << path_mem << "\n";
   ofstream myfile2 (path_mem);
   if(tipo == 0){
-    myfile2 << AWT->size();
+    myfile2 << AWT->size3(0);
   }
   if(tipo == 1){
-    myfile2 << AWT->size2();
+    myfile2 << AWT->size3(1);
   }
   //myfile2 << TWA.size2();
  //cout << TWA.size2();
