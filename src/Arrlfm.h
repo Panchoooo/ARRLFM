@@ -68,6 +68,8 @@ public:
   void saveBWT(char* output);
   string buscarPatron(int largo_patron);
   void printW2S ();
+
+  void testing();
   
 };
 
