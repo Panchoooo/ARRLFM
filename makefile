@@ -30,9 +30,12 @@ cleanall:
 
 run:
 #	./$(EXEC) coreutils
-	./$(EXEC) einstein.de.txt 1
-	./$(EXEC) einstein.de.txt 2
+#	./$(EXEC) einstein.de.txt 1
+#	./$(EXEC) einstein.de.txt 2
+#	./$(EXEC) einstein.de.txt 3
 #	./$(EXEC) einstein.en.txt
-#	./$(EXEC) english.001.2
+	./$(EXEC) english.001.2 1
+	./$(EXEC) english.001.2 2
+	./$(EXEC) english.001.2 3
 #	./$(EXEC) world_leaders
 
