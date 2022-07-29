@@ -29,12 +29,34 @@ cleanall:
 	rm -f $(EXEC)
 
 run:
+
+# XX : BV + WT 
+
+# BV:
+# 1:SD
+# 2:S18
+# 3:PEF 
+
+# WT: 
+# 1:INT
+# 2:AP
+# 3:RLMN-INT
+# 4:RLMN-AP
+# 5:RUNS-AP
+# 6:RUNS-RLMN
+
+
 #	./$(EXEC) coreutils
+
 #	./$(EXEC) einstein.de.txt 1
 #	./$(EXEC) einstein.de.txt 2
 #	./$(EXEC) einstein.de.txt 3
+
 #	./$(EXEC) einstein.en.txt
-	./$(EXEC) english.001.2 1
-	./$(EXEC) english.001.2 3
+
+	./$(EXEC) english.001.2 11
+	./$(EXEC) english.001.2 12
+
+	
 #	./$(EXEC) world_leaders
 
