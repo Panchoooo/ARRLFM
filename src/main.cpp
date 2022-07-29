@@ -264,7 +264,7 @@ int main(int argc, char *argv[]) {
 */
 
   // S18 || WT-INT
-  if(tipo == 3){
+  if(tipo == 7){
     char *nasap1 = "ARRLFM_S18_INT";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
@@ -281,7 +281,7 @@ int main(int argc, char *argv[]) {
 
 
   // S18 | WT-AP
-  if(tipo == 6){
+  if(tipo == 8){
     char *nasap1 = "ARRLFM_S18_AP"; 
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
