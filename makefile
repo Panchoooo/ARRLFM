@@ -66,18 +66,37 @@ run:
 #	./$(EXEC) english.001.2 1
 #	./$(EXEC) english.001.2 0
 #	./$(EXEC) english.001.2 2
-	./$(EXEC) english.001.2 11
-	./$(EXEC) english.001.2 12
-	./$(EXEC) english.001.2 13
-	./$(EXEC) english.001.2 14
-	./$(EXEC) english.001.2 15
-	./$(EXEC) english.001.2 16
-	./$(EXEC) english.001.2 21
-	./$(EXEC) english.001.2 22
-	./$(EXEC) english.001.2 23
-	./$(EXEC) english.001.2 24
-	./$(EXEC) english.001.2 25
-	./$(EXEC) english.001.2 26
+#	./$(EXEC) english.001.2 11
+#	./$(EXEC) english.001.2 12
+#	./$(EXEC) english.001.2 13
+#	./$(EXEC) english.001.2 14
+#	./$(EXEC) english.001.2 15
+#	./$(EXEC) english.001.2 16
+#	./$(EXEC) english.001.2 21
+#	./$(EXEC) english.001.2 22
+#	./$(EXEC) english.001.2 23
+#	./$(EXEC) english.001.2 24
+#	./$(EXEC) english.001.2 25
+#	./$(EXEC) english.001.2 26
 
 #	./$(EXEC) world_leaders
+
+	./$(EXEC) world_leaders 11
+	./$(EXEC) world_leaders 12
+	./$(EXEC) world_leaders 13
+	./$(EXEC) world_leaders 14
+	./$(EXEC) world_leaders 15
+	./$(EXEC) world_leaders 16
+	./$(EXEC) world_leaders 21
+	./$(EXEC) world_leaders 22
+	./$(EXEC) world_leaders 23
+	./$(EXEC) world_leaders 24
+	./$(EXEC) world_leaders 25
+	./$(EXEC) world_leaders 26
+	./$(EXEC) world_leaders 31
+	./$(EXEC) world_leaders 32
+	./$(EXEC) world_leaders 33
+	./$(EXEC) world_leaders 34
+	./$(EXEC) world_leaders 35
+	./$(EXEC) world_leaders 36
 
