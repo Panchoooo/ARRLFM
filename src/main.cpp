@@ -56,7 +56,70 @@ int main(int argc, char *argv[]) {
   char* tipo = argv[2];
 
   char *lectura_path = "/data/pizzachili/Resultados/"; /* CARPETA QUE CONTIENE TEXTOS */
+  char path_asap1[100];           
+  char path_asapfolder[100];           
+  clock_t begin, end;
+  double cpu_time_used;
 
+
+  int largo_patroncito = 4;
+  FILE *fichero;
+  unsigned int i, x1, x2, x3, x4, x5, x6 , x7, x8, x9, x10 , x11, x12, x13, x14 , x15, x16;
+  uint32_t cantidad_patrones = 49000;
+  char *largo, path_out_patron ;
+  char* lectura_patron;
+
+  int_vector<> civ = int_vector<>();
+  int_vector<> bwt = int_vector<>();
+  int_vector<> t0 = int_vector<>();
+
+  char *separate = "_";
+  char *separate2 = "/";
+  char *bwt_path = "/BWT";
+  char *c_path = "/C";
+  char *bin_path = "/binario.bin";
+  char *t0_path = "/T0";
+  char *out_path = "/Patrones/";
+  char *csa_rl_runs = "/csa_rl_runs";
+  char *csa_wt_rlmn = "/csa_wt_rlmn";
+
+  char path_bwt[100];   
+  strcpy(path_bwt,lectura_path); 
+  strcat(path_bwt,file); 
+  strcat(path_bwt,bwt_path); 
+  load_from_file(bwt, path_bwt);
+ 
+  char path_c[100];   
+  strcpy(path_c,lectura_path); 
+  strcat(path_c,file); 
+  strcat(path_c,c_path); 
+  load_from_file(civ, path_c);
+  
+  char path_t0[100];   
+  strcpy(path_t0,lectura_path); 
+  strcat(path_t0,file); 
+  strcat(path_t0,t0_path); 
+  load_from_file(t0, path_t0);
+
+  char path_bin[100];   
+  strcpy(path_bin,lectura_path); 
+  strcat(path_bin,file); 
+  strcat(path_bin,bin_path); 
+
+  char path_csa_rl_runs[100];   
+  strcpy(path_csa_rl_runs,lectura_path); 
+  strcat(path_csa_rl_runs,file); 
+  strcat(path_csa_rl_runs,csa_rl_runs); 
+
+  char path_csa_wt_rlmn[100];   
+  strcpy(path_csa_wt_rlmn,lectura_path); 
+  strcat(path_csa_wt_rlmn,file); 
+  strcat(path_csa_wt_rlmn,csa_wt_rlmn); 
+
+  char path_output[100];   
+  strcpy(path_output,lectura_path); 
+  strcat(path_output,file); 
+  strcat(path_output,out_path); 
 
 
   /* Baselines */
@@ -114,6 +177,9 @@ int main(int argc, char *argv[]) {
   //Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
  
   // wt INT
+  char path_bin[100] = "";  
+  strcpy(path_bin,path_output);
+  strcat(path_bin,"nasap1"); 
    Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
   //Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
  //  Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<32>, sdsl::s18::rank_support<1,32> , sdsl::s18::select_support<1,32>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  

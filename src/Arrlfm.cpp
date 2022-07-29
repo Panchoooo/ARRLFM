@@ -439,7 +439,6 @@ template<class Estructura>
 void Arrlfm<Estructura>::testing (char* file, char* tipo,char* nasap1, char *lectura_path) {  
 
 
-
   char path_asap1[100];           
   char path_asapfolder[100];           
   clock_t begin, end;
@@ -506,10 +505,6 @@ void Arrlfm<Estructura>::testing (char* file, char* tipo,char* nasap1, char *lec
   strcat(path_output,out_path); 
 
 
-  strcpy(path_asap1,path_output);
-  strcat(path_asap1,nasap1); 
-  strcat(path_asap1,separate2); 
-  strcat(path_asap1,nasap1); 
 
   strcpy(path_asapfolder,path_output);
   strcat(path_asapfolder,nasap1); 
