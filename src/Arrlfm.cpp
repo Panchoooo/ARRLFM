@@ -434,7 +434,7 @@ T parse(const std::string& s)
 
 
 template<class Estructura>
-void Arrlfm<Estructura>::testing (char* nasap1, char *lectura_path) {  
+void Arrlfm<Estructura>::testing (char* file, char* tipo,char* nasap1, char *lectura_path) {  
 
 
 
@@ -442,7 +442,6 @@ void Arrlfm<Estructura>::testing (char* nasap1, char *lectura_path) {
   char path_asapfolder[100];           
   clock_t begin, end;
   double cpu_time_used;
-  cout << tipo;
 
 
   int largo_patroncito = 4;
@@ -514,7 +513,7 @@ void Arrlfm<Estructura>::testing (char* nasap1, char *lectura_path) {
   strcat(path_asapfolder,nasap1); 
   cout << path_bin << "\n";
   fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-  
+
   char path_mem[100];   
   strcpy(path_mem,lectura_path);
   strcat(path_mem,file); 
