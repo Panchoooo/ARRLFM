@@ -56,7 +56,11 @@ run:
 
 	./$(EXEC) english.001.2 11
 	./$(EXEC) english.001.2 12
+	./$(EXEC) english.001.2 13
+	./$(EXEC) english.001.2 14
+	./$(EXEC) english.001.2 15
+	./$(EXEC) english.001.2 16
 
-	
+
 #	./$(EXEC) world_leaders
 
