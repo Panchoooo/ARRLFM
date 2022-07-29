@@ -56,7 +56,7 @@ run:
 ##############################
 
 #	coreutils
-#	./$(EXEC) coreutils 0
+	./$(EXEC) coreutils 0
 #	./$(EXEC) coreutils 1
 #	./$(EXEC) coreutils 2
 #	./$(EXEC) coreutils 11
@@ -80,7 +80,7 @@ run:
 
 
 #	english.001.2
-#	./$(EXEC) english.001.2 0
+	./$(EXEC) english.001.2 0
 #	./$(EXEC) english.001.2 1
 #	./$(EXEC) english.001.2 2
 #	./$(EXEC) english.001.2 11
@@ -104,7 +104,7 @@ run:
 
 
 #	world_leaders | Listo
-#	./$(EXEC) world_leaders 0
+	./$(EXEC) world_leaders 0
 #	./$(EXEC) world_leaders 1
 #	./$(EXEC) world_leaders 2
 #	./$(EXEC) world_leaders 11
@@ -128,7 +128,7 @@ run:
 
 
 #	einstein.de.txt
-#	./$(EXEC) einstein.de.txt 0
+	./$(EXEC) einstein.de.txt 0
 #	./$(EXEC) einstein.de.txt 1
 #	./$(EXEC) einstein.de.txt 2
 #	./$(EXEC) einstein.de.txt 11
@@ -152,7 +152,7 @@ run:
 
 
 #	einstein.en.txt
-#	./$(EXEC) einstein.en.txt 0
+	./$(EXEC) einstein.en.txt 0
 #	./$(EXEC) einstein.en.txt 1
 #	./$(EXEC) einstein.en.txt 2
 #	./$(EXEC) einstein.en.txt 11
@@ -172,5 +172,5 @@ run:
 #	./$(EXEC) einstein.en.txt 33
 #	./$(EXEC) einstein.en.txt 34
 #	./$(EXEC) einstein.en.txt 35
-	./$(EXEC) einstein.en.txt 36
+#	./$(EXEC) einstein.en.txt 36
 

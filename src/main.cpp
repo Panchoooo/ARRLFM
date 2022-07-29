@@ -129,7 +129,7 @@ int main(int argc, char *argv[]) {
  
   // AP BASELINE
   if(tipo == 0){
-    char *nasap1 = "ARRLFM_AP";
+    char *nasap1 = "ARRLFM_AP_RLMN";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -138,7 +138,8 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
+    //Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
+    Baseline< wt_ap<wt_rlmn<>,wt_rlmn<>>  >  TWA(path_bin,bwt,civ); 
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
