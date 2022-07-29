@@ -516,7 +516,7 @@ void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) {
   cout << path_bin << "\n";
   fs::create_directories(path_asapfolder); // Crear carpeta si no existe
 
-  char path_mem[100];   
+  /*char path_mem[100];   
   strcpy(path_mem,lectura_path);
   strcat(path_mem,file); 
   strcat(path_mem,"/Memoria/"); 
@@ -525,8 +525,8 @@ void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) {
   cout << path_mem << "\n";
   ofstream myfile2 (path_mem);
   myfile2 << AWT->size();
-  //myfile2 << TWA.size2();
- //cout << TWA.size2();
+  myfile2 << TWA.size2();
+ //cout << TWA.size2();*/
 
 
 if(true){

@@ -30,21 +30,30 @@ cleanall:
 
 run:
 
-# XX : BV + WT 
-
-# BV:
-# 1:SD
-# 2:S18
-# 3:PEF 
-
-# WT: 
-# 1:INT
-# 2:AP
-# 3:RLMN-INT
-# 4:RLMN-AP
-# 5:RUNS-AP
-# 6:RUNS-RLMN
-
+#########################
+# 
+#  X: BASELINES:
+#  0 : AP
+#  1 : RLMN
+#  2 : RUNS
+# 
+# 
+#  XX : BV + WT 
+# 
+#  - BV :
+#  1:SD
+#  2:S18
+#  3:PEF 
+# 
+#  - WT : 
+#  1:INT
+#  2:AP
+#  3:RLMN-INT
+#  4:RLMN-AP
+#  5:RUNS-AP
+#  6:RUNS-RLMN
+# 
+##############################
 
 #	./$(EXEC) coreutils
 
@@ -54,6 +63,9 @@ run:
 
 #	./$(EXEC) einstein.en.txt
 
+#	./$(EXEC) english.001.2 1
+#	./$(EXEC) english.001.2 0
+#	./$(EXEC) english.001.2 2
 	./$(EXEC) english.001.2 11
 	./$(EXEC) english.001.2 12
 	./$(EXEC) english.001.2 13
