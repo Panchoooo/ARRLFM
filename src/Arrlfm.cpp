@@ -436,7 +436,7 @@ T parse(const std::string& s)
 
 
 template<class Estructura>
-void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) { 
+void Arrlfm<Estructura>::testing (char* file,int tipo,char* nasap1, char *lectura_path) { 
     cout << file << "\n"; 
     cout << nasap1 << "\n"; 
     cout << lectura_path << "\n"; 
@@ -522,7 +522,12 @@ void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) {
   strcat(path_mem,"_Memoria.txt"); 
   cout << path_mem << "\n";
   ofstream myfile2 (path_mem);
-  myfile2 << AWT->size();
+  if(tipo == 0){
+    myfile2 << AWT->size();
+  }
+  if(tipo == 1){
+    myfile2 << AWT->size2();
+  }
   //myfile2 << TWA.size2();
  //cout << TWA.size2();
 
