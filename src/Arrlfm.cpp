@@ -610,7 +610,6 @@ if(true){
         clock_t begin, end;
         double cpu_time_used;
 
-        cout << "\n Patron a leer sera guardado en : "<< path_asap1_largo << "\n";
         ofstream myfile2 (path_asap1_largo, std::ios::app);
         begin = clock();
         unsigned r = countbyIntVectorSave(patron_lectura,path_asap1_largo) ;
