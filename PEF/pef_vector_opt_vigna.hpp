@@ -357,7 +357,7 @@ class pef_vector_opt_vigna {
       uint64_t cost_opt = ret.second;
       //-----------------------------
 
-      if(partition[0] == 1){
+      if(partition[0] == 1 && nBlocks > 1 ){
         nBlocks = partition.size()-1; // OJO, ver esto, el tamaño de ese vector debería ser el número de bloques
         partition.erase(partition.begin());
 

@@ -152,25 +152,25 @@ run:
 
 
 #	einstein.en.txt
-	./$(EXEC) einstein.en.txt 0
-	./$(EXEC) einstein.en.txt 1
-	./$(EXEC) einstein.en.txt 2
-	./$(EXEC) einstein.en.txt 11
-	./$(EXEC) einstein.en.txt 12
-	./$(EXEC) einstein.en.txt 13
-	./$(EXEC) einstein.en.txt 14
-	./$(EXEC) einstein.en.txt 15
-	./$(EXEC) einstein.en.txt 16
-	./$(EXEC) einstein.en.txt 21
-	./$(EXEC) einstein.en.txt 22
-	./$(EXEC) einstein.en.txt 23
-	./$(EXEC) einstein.en.txt 24
-	./$(EXEC) einstein.en.txt 25
-	./$(EXEC) einstein.en.txt 26
-	./$(EXEC) einstein.en.txt 31
-	./$(EXEC) einstein.en.txt 32
-	./$(EXEC) einstein.en.txt 33
-	./$(EXEC) einstein.en.txt 34
-	./$(EXEC) einstein.en.txt 35
+#	./$(EXEC) einstein.en.txt 0
+#	./$(EXEC) einstein.en.txt 1
+#	./$(EXEC) einstein.en.txt 2
+#	./$(EXEC) einstein.en.txt 11
+#	./$(EXEC) einstein.en.txt 12
+#	./$(EXEC) einstein.en.txt 13
+#	./$(EXEC) einstein.en.txt 14
+#	./$(EXEC) einstein.en.txt 15
+#	./$(EXEC) einstein.en.txt 16
+#	./$(EXEC) einstein.en.txt 21
+#	./$(EXEC) einstein.en.txt 22
+#	./$(EXEC) einstein.en.txt 23
+#	./$(EXEC) einstein.en.txt 24
+#	./$(EXEC) einstein.en.txt 25
+#	./$(EXEC) einstein.en.txt 26
+#	./$(EXEC) einstein.en.txt 31
+#	./$(EXEC) einstein.en.txt 32
+#	./$(EXEC) einstein.en.txt 33
+#	./$(EXEC) einstein.en.txt 34
+#	./$(EXEC) einstein.en.txt 35
 	./$(EXEC) einstein.en.txt 36
 
