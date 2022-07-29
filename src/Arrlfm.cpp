@@ -21,6 +21,8 @@
 using namespace std;
 using namespace sdsl;
 
+#include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
 
 bool checkSymbol(char w){
     if( isalpha(w) || isdigit(w) ){
