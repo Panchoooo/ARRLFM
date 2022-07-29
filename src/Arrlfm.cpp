@@ -607,10 +607,10 @@ if(true){
         double cpu_time_used;
         ofstream myfile2 (path_asap1_largo, std::ios::app);
         begin = clock();
-        countbyIntVectorSave(patron_lectura,path_asap1_largo) ;
+        unsigned r = countbyIntVectorSave(patron_lectura,path_asap1_largo) ;
         end = clock();
         cpu_time_used = ((double) (end - begin)) / CLOCKS_PER_SEC;
-        myfile2 << e-b << " " << cpu_time_used <<   "\n";
+        myfile2 << r << " " << cpu_time_used <<   "\n";
 
 
     }
