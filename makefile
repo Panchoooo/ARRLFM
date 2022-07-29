@@ -155,22 +155,22 @@ run:
 	./$(EXEC) world_leaders 0
 	./$(EXEC) world_leaders 1
 	./$(EXEC) world_leaders 2
-#	./$(EXEC) world_leaders 11
-#	./$(EXEC) world_leaders 12
-#	./$(EXEC) world_leaders 13
-#	./$(EXEC) world_leaders 14
-#	./$(EXEC) world_leaders 15
-#	./$(EXEC) world_leaders 16
-#	./$(EXEC) world_leaders 21
-#	./$(EXEC) world_leaders 22
-#	./$(EXEC) world_leaders 23
-#	./$(EXEC) world_leaders 24
-#	./$(EXEC) world_leaders 25
-#	./$(EXEC) world_leaders 26
-#	./$(EXEC) world_leaders 31
-#	./$(EXEC) world_leaders 32
-#	./$(EXEC) world_leaders 33
-#	./$(EXEC) world_leaders 34
-#	./$(EXEC) world_leaders 35
+	./$(EXEC) world_leaders 11
+	./$(EXEC) world_leaders 12
+	./$(EXEC) world_leaders 13
+	./$(EXEC) world_leaders 14
+	./$(EXEC) world_leaders 15
+	./$(EXEC) world_leaders 16
+	./$(EXEC) world_leaders 21
+	./$(EXEC) world_leaders 22
+	./$(EXEC) world_leaders 23
+	./$(EXEC) world_leaders 24
+	./$(EXEC) world_leaders 25
+	./$(EXEC) world_leaders 26
+	./$(EXEC) world_leaders 31
+	./$(EXEC) world_leaders 32
+	./$(EXEC) world_leaders 33
+	./$(EXEC) world_leaders 34
+	./$(EXEC) world_leaders 35
 	./$(EXEC) world_leaders 36
 
