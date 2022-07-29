@@ -436,7 +436,7 @@ T parse(const std::string& s)
 
 
 template<class Estructura>
-void Arrlfm<Estructura>::testing (char* file, char* tipo,char* nasap1, char *lectura_path) { 
+void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) { 
     cout << file << "\n"; 
     cout << tipo << "\n"; 
     cout << nasap1 << "\n"; 
