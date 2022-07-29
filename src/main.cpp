@@ -125,11 +125,7 @@ int main(int argc, char *argv[]) {
 
   /* Baselines */
    // char *nasap1 = "ARRLFM_AP";
-  //char *nasap1 = "ARRLFM_RLMN";
-  //char *nasap1 = "ARRLFM_RUNS";
 
-  //Baseline< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  >  TWA(path_bin,bwt,civ); 
-  //Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
  
   // AP BASELINE
   if(tipo == 0){
@@ -158,7 +154,7 @@ int main(int argc, char *argv[]) {
   }
   // AP BASELINE
   if(tipo == 1){
-    char *nasap1 = "ARRLFM_AP";
+    char *nasap1 = "ARRLFM_RLMN";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -167,7 +163,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
+    Baseline< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  >  TWA(path_bin,bwt,civ); 
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
@@ -183,7 +179,7 @@ int main(int argc, char *argv[]) {
   }
     // AP BASELINE
   if(tipo == 2){
-    char *nasap1 = "ARRLFM_AP";
+    char *nasap1 = "ARRLFM_RUNS";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -192,7 +188,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
+    Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
