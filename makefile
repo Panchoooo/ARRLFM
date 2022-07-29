@@ -80,27 +80,27 @@ run:
 
 
 #	einstein.de.txt
-#	./$(EXEC) einstein.de.txt 0
-#	./$(EXEC) einstein.de.txt 1
-#	./$(EXEC) einstein.de.txt 2
-#	./$(EXEC) einstein.de.txt 11
-#	./$(EXEC) einstein.de.txt 12
-#	./$(EXEC) einstein.de.txt 13
-#	./$(EXEC) einstein.de.txt 14
-#	./$(EXEC) einstein.de.txt 15
-#	./$(EXEC) einstein.de.txt 16
-#	./$(EXEC) einstein.de.txt 21
-#	./$(EXEC) einstein.de.txt 22
-#	./$(EXEC) einstein.de.txt 23
-#	./$(EXEC) einstein.de.txt 24
-#	./$(EXEC) einstein.de.txt 25
-#	./$(EXEC) einstein.de.txt 26
-#	./$(EXEC) einstein.de.txt 31
-#	./$(EXEC) einstein.de.txt 32
-#	./$(EXEC) einstein.de.txt 33
-#	./$(EXEC) einstein.de.txt 34
-#	./$(EXEC) einstein.de.txt 35
-#	./$(EXEC) einstein.de.txt 36
+	./$(EXEC) einstein.de.txt 0
+	./$(EXEC) einstein.de.txt 1
+	./$(EXEC) einstein.de.txt 2
+	./$(EXEC) einstein.de.txt 11
+	./$(EXEC) einstein.de.txt 12
+	./$(EXEC) einstein.de.txt 13
+	./$(EXEC) einstein.de.txt 14
+	./$(EXEC) einstein.de.txt 15
+	./$(EXEC) einstein.de.txt 16
+	./$(EXEC) einstein.de.txt 21
+	./$(EXEC) einstein.de.txt 22
+	./$(EXEC) einstein.de.txt 23
+	./$(EXEC) einstein.de.txt 24
+	./$(EXEC) einstein.de.txt 25
+	./$(EXEC) einstein.de.txt 26
+	./$(EXEC) einstein.de.txt 31
+	./$(EXEC) einstein.de.txt 32
+	./$(EXEC) einstein.de.txt 33
+	./$(EXEC) einstein.de.txt 34
+	./$(EXEC) einstein.de.txt 35
+	./$(EXEC) einstein.de.txt 36
 
 
 #	einstein.en.txt
@@ -152,25 +152,25 @@ run:
 
 
 #	world_leaders
-	./$(EXEC) world_leaders 0
-	./$(EXEC) world_leaders 1
-	./$(EXEC) world_leaders 2
-	./$(EXEC) world_leaders 11
-	./$(EXEC) world_leaders 12
-	./$(EXEC) world_leaders 13
-	./$(EXEC) world_leaders 14
-	./$(EXEC) world_leaders 15
-	./$(EXEC) world_leaders 16
-	./$(EXEC) world_leaders 21
-	./$(EXEC) world_leaders 22
-	./$(EXEC) world_leaders 23
-	./$(EXEC) world_leaders 24
-	./$(EXEC) world_leaders 25
-	./$(EXEC) world_leaders 26
-	./$(EXEC) world_leaders 31
-	./$(EXEC) world_leaders 32
-	./$(EXEC) world_leaders 33
-	./$(EXEC) world_leaders 34
-	./$(EXEC) world_leaders 35
-	./$(EXEC) world_leaders 36
+#	./$(EXEC) world_leaders 0
+#	./$(EXEC) world_leaders 1
+#	./$(EXEC) world_leaders 2
+#	./$(EXEC) world_leaders 11
+#	./$(EXEC) world_leaders 12
+#	./$(EXEC) world_leaders 13
+#	./$(EXEC) world_leaders 14
+#	./$(EXEC) world_leaders 15
+#	./$(EXEC) world_leaders 16
+#	./$(EXEC) world_leaders 21
+#	./$(EXEC) world_leaders 22
+#	./$(EXEC) world_leaders 23
+#	./$(EXEC) world_leaders 24
+#	./$(EXEC) world_leaders 25
+#	./$(EXEC) world_leaders 26
+#	./$(EXEC) world_leaders 31
+#	./$(EXEC) world_leaders 32
+#	./$(EXEC) world_leaders 33
+#	./$(EXEC) world_leaders 34
+#	./$(EXEC) world_leaders 35
+#	./$(EXEC) world_leaders 36
 
