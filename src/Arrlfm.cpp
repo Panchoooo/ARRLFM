@@ -604,7 +604,7 @@ if(true){
         }
         //cout << patron_lectura << "\n\n";
 
-        AWT->countbyIntVectorSave(patron_lectura,path_asap1_largo) ;
+        countbyIntVectorSave(patron_lectura,path_asap1_largo) ;
     }
 
     if( !fclose(fichero) )
