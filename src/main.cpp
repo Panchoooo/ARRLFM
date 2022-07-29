@@ -208,7 +208,7 @@ int main(int argc, char *argv[]) {
    //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<32>, sdsl::s18::rank_support<1,32> , sdsl::s18::select_support<1,32>>, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
 
 
-  TWA.testing(file,tipo,nasap1,lectura_path)
+  TWA.testing(file,tipo,nasap1,lectura_path);
 
   return 0;
 
