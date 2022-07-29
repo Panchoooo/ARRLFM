@@ -132,7 +132,7 @@ int main(int argc, char *argv[]) {
   //Baseline< rl_runs< 64,wt_ap<> >  >  TWA(path_bin,bwt,civ); 
  
   // AP BASELINE
-  if(tipo == 11){
+  if(tipo == 0){
     char *nasap1 = "ARRLFM_AP";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
@@ -145,6 +145,35 @@ int main(int argc, char *argv[]) {
     Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
     //TWA.testing(file,nasap1,lectura_path);
   }
+  // AP BASELINE
+  if(tipo == 1){
+    char *nasap1 = "ARRLFM_AP";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
+    //TWA.testing(file,nasap1,lectura_path);
+  }
+    // AP BASELINE
+  if(tipo == 2){
+    char *nasap1 = "ARRLFM_AP";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
+    //TWA.testing(file,nasap1,lectura_path);
+  }
+
 
   /* ARRLMNS */
   // SD | WT-INT
@@ -159,7 +188,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
     
 
   }
@@ -175,7 +215,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< SDBV, uint64_t ,wt_ap<>> >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // SD | RLMN-INT
   if(tipo == 13){
@@ -189,7 +240,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< SDBV, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // SD | RLMN-AP
   if(tipo == 14){
@@ -203,7 +265,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< SDBV, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // SD | RUNS-AP
   if(tipo == 15){
@@ -217,7 +290,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< SDBV, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // SD | RUNS-RLMN
   if(tipo == 16){
@@ -231,7 +315,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< SDBV, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
 
 
@@ -248,7 +343,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // S18 || WT-AP
   if(tipo == 22){
@@ -262,7 +368,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_ap<>> >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // S18 || RLMN
   if(tipo == 23){
@@ -276,7 +393,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // S18 || RLMN-AP
   if(tipo == 24){
@@ -290,7 +418,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // S18 || RUNS-AP
   if(tipo == 25){
@@ -304,7 +443,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // S18 || RUNS-RLMN
   if(tipo == 26){
@@ -318,7 +468,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
 
   // PEF | WT-INT
@@ -333,7 +494,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size2();
   }
   // PEF | WT-AP
   if(tipo == 32){
@@ -347,7 +519,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_ap<>> >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size2();
   }
   // PEF | RLMN
   if(tipo == 33){
@@ -361,7 +544,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap<pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size2();
   }
   // PEF | RLMN AP
   if(tipo == 34){
@@ -375,7 +569,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap<pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size2();
   }
  // PEF | RUNS AP
   if(tipo == 35){
@@ -389,7 +594,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size2();
   }
  // PEF | RUNS RLMN
   if(tipo == 36){
@@ -403,7 +619,30 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
+    
+    // Tiempos
+    // Tiempos
     TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size2();
   }
 
 
