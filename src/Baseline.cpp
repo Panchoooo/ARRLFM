@@ -15,6 +15,8 @@
 #include <sdsl/vectors.hpp>
 
 
+#include <experimental/filesystem>
+namespace fs = std::experimental::filesystem;
 #include <chrono>
 #include <thread>
 
