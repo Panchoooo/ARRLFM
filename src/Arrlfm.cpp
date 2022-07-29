@@ -595,8 +595,10 @@ if(true){
         }
 
 
-        char path_asap1_largo[100];   
+        char path_asap1_largo[500];   
         strcpy(path_asap1_largo,path_asap1); 
+        strcat(path_asap1_largo,separate2); 
+        strcat(path_asap1_largo,nasap1); 
         strcat(path_asap1_largo,separate); 
         strcat(path_asap1_largo,number_path); 
 
