@@ -143,7 +143,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
-    //TWA.testing(file,nasap1,lectura_path);
+    // Tiempos
+    TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
   // AP BASELINE
   if(tipo == 1){
@@ -157,7 +168,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
-    //TWA.testing(file,nasap1,lectura_path);
+    // Tiempos
+    TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
     // AP BASELINE
   if(tipo == 2){
@@ -171,7 +193,18 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
-    //TWA.testing(file,nasap1,lectura_path);
+    // Tiempos
+    TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
   }
 
 
@@ -631,7 +664,7 @@ int main(int argc, char *argv[]) {
     strcat(path_mem,"_Memoria.txt"); 
     cout << path_mem << "\n";
     ofstream myfile2 (path_mem);
-    myfile2 << TWA.size();
+    myfile2 << TWA.size2();
 
   }
 

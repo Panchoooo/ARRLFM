@@ -54,6 +54,8 @@ public:
 
   unsigned countbyIntVectorSave (int_vector<> patron,char* output);
   unsigned long size ();
+  
+  void testing(char* file,char* nasap1, char *lectura_path);
 };
 
 #include "Baseline.cpp"
