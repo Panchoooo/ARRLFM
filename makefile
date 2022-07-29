@@ -56,27 +56,75 @@ run:
 ##############################
 
 #	coreutils
-#	./$(EXEC) coreutils 0
-#	./$(EXEC) coreutils 1
-#	./$(EXEC) coreutils 2
-#	./$(EXEC) coreutils 11
-#	./$(EXEC) coreutils 12
-#	./$(EXEC) coreutils 13
-#	./$(EXEC) coreutils 14
-#	./$(EXEC) coreutils 15
-#	./$(EXEC) coreutils 16
-#	./$(EXEC) coreutils 21
-#	./$(EXEC) coreutils 22
-#	./$(EXEC) coreutils 23
-#	./$(EXEC) coreutils 24
-#	./$(EXEC) coreutils 25
-#	./$(EXEC) coreutils 26
-#	./$(EXEC) coreutils 31
-#	./$(EXEC) coreutils 32
-#	./$(EXEC) coreutils 33
-#	./$(EXEC) coreutils 34
-#	./$(EXEC) coreutils 35
-#	./$(EXEC) coreutils 36
+	./$(EXEC) coreutils 0
+	./$(EXEC) coreutils 1
+	./$(EXEC) coreutils 2
+	./$(EXEC) coreutils 11
+	./$(EXEC) coreutils 12
+	./$(EXEC) coreutils 13
+	./$(EXEC) coreutils 14
+	./$(EXEC) coreutils 15
+	./$(EXEC) coreutils 16
+	./$(EXEC) coreutils 21
+	./$(EXEC) coreutils 22
+	./$(EXEC) coreutils 23
+	./$(EXEC) coreutils 24
+	./$(EXEC) coreutils 25
+	./$(EXEC) coreutils 26
+	./$(EXEC) coreutils 31
+	./$(EXEC) coreutils 32
+	./$(EXEC) coreutils 33
+	./$(EXEC) coreutils 34
+	./$(EXEC) coreutils 35
+	./$(EXEC) coreutils 36
+
+
+#	english.001.2
+	./$(EXEC) english.001.2 0
+	./$(EXEC) english.001.2 1
+	./$(EXEC) english.001.2 2
+	./$(EXEC) english.001.2 11
+	./$(EXEC) english.001.2 12
+	./$(EXEC) english.001.2 13
+	./$(EXEC) english.001.2 14
+	./$(EXEC) english.001.2 15
+	./$(EXEC) english.001.2 16
+	./$(EXEC) english.001.2 21
+	./$(EXEC) english.001.2 22
+	./$(EXEC) english.001.2 23
+	./$(EXEC) english.001.2 24
+	./$(EXEC) english.001.2 25
+	./$(EXEC) english.001.2 26
+	./$(EXEC) english.001.2 31
+	./$(EXEC) english.001.2 32
+	./$(EXEC) english.001.2 33
+	./$(EXEC) english.001.2 34
+	./$(EXEC) english.001.2 35
+	./$(EXEC) english.001.2 36
+
+
+#	world_leaders | Listo
+#	./$(EXEC) world_leaders 0
+#	./$(EXEC) world_leaders 1
+#	./$(EXEC) world_leaders 2
+#	./$(EXEC) world_leaders 11
+#	./$(EXEC) world_leaders 12
+#	./$(EXEC) world_leaders 13
+#	./$(EXEC) world_leaders 14
+#	./$(EXEC) world_leaders 15
+#	./$(EXEC) world_leaders 16
+#	./$(EXEC) world_leaders 21
+#	./$(EXEC) world_leaders 22
+#	./$(EXEC) world_leaders 23
+#	./$(EXEC) world_leaders 24
+#	./$(EXEC) world_leaders 25
+#	./$(EXEC) world_leaders 26
+#	./$(EXEC) world_leaders 31
+#	./$(EXEC) world_leaders 32
+#	./$(EXEC) world_leaders 33
+#	./$(EXEC) world_leaders 34
+#	./$(EXEC) world_leaders 35
+#	./$(EXEC) world_leaders 36
 
 
 #	einstein.de.txt
@@ -125,52 +173,4 @@ run:
 #	./$(EXEC) einstein.en.txt 34
 #	./$(EXEC) einstein.en.txt 35
 #	./$(EXEC) einstein.en.txt 36
-
-
-#	english.001.2
-#	./$(EXEC) english.001.2 0
-#	./$(EXEC) english.001.2 1
-#	./$(EXEC) english.001.2 2
-#	./$(EXEC) english.001.2 11
-#	./$(EXEC) english.001.2 12
-#	./$(EXEC) english.001.2 13
-#	./$(EXEC) english.001.2 14
-#	./$(EXEC) english.001.2 15
-#	./$(EXEC) english.001.2 16
-#	./$(EXEC) english.001.2 21
-#	./$(EXEC) english.001.2 22
-#	./$(EXEC) english.001.2 23
-#	./$(EXEC) english.001.2 24
-#	./$(EXEC) english.001.2 25
-#	./$(EXEC) english.001.2 26
-#	./$(EXEC) english.001.2 31
-#	./$(EXEC) english.001.2 32
-#	./$(EXEC) english.001.2 33
-#	./$(EXEC) english.001.2 34
-#	./$(EXEC) english.001.2 35
-#	./$(EXEC) english.001.2 36
-
-
-#	world_leaders
-#	./$(EXEC) world_leaders 0
-#	./$(EXEC) world_leaders 1
-#	./$(EXEC) world_leaders 2
-#	./$(EXEC) world_leaders 11
-#	./$(EXEC) world_leaders 12
-#	./$(EXEC) world_leaders 13
-#	./$(EXEC) world_leaders 14
-#	./$(EXEC) world_leaders 15
-#	./$(EXEC) world_leaders 16
-#	./$(EXEC) world_leaders 21
-#	./$(EXEC) world_leaders 22
-#	./$(EXEC) world_leaders 23
-#	./$(EXEC) world_leaders 24
-#	./$(EXEC) world_leaders 25
-#	./$(EXEC) world_leaders 26
-#	./$(EXEC) world_leaders 31
-#	./$(EXEC) world_leaders 32
-#	./$(EXEC) world_leaders 33
-#	./$(EXEC) world_leaders 34
-#	./$(EXEC) world_leaders 35
-#	./$(EXEC) world_leaders 36
 
