@@ -135,6 +135,7 @@ int main(int argc, char *argv[]) {
 
   /* ARRLMNS */
   // SD | WT-INT
+  /*
   if(tipo == 1){
     char *nasap1 = "ARRLFM_SD_INT";
     strcpy(path_asap1,path_output);
@@ -217,7 +218,7 @@ int main(int argc, char *argv[]) {
     Arrlfm< Asap< SDBV, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
     TWA.testing(file,nasap1,lectura_path);
   }
-
+*/
   // PEF | WT-INT
   /*if(tipo == 2){
     char *nasap1 = "ARRLFM_PEF_INT";
@@ -262,7 +263,7 @@ int main(int argc, char *argv[]) {
 
 
 */
-
+/*
   // S18 || WT-INT
   if(tipo == 7){
     char *nasap1 = "ARRLFM_S18_INT";
@@ -295,7 +296,7 @@ int main(int argc, char *argv[]) {
     TWA.testing(file,nasap1,lectura_path);
   }
 
-
+*/
   // wt RLMN INT
    //char *nasap1 = "ARRLFM_S18_RLMN";
    //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
