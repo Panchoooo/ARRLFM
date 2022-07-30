@@ -697,10 +697,12 @@ class pef_vector_opt {
         if (P[blk]) {
           if(blk == 0){
             rank_val += (*(rank_support *)block_rank[blk])(i);
+          cout <<  (*(rank_support *)block_rank[blk])(i) << "\n";
           } else{
             //obtain position in the block
             uint64_t i_block = i - 1 - select_L(blk);
             rank_val += (*(rank_support *)block_rank[blk])(i_block);
+          cout << (*(rank_support *)block_rank[blk])(i_block) << "\n";
           }
         } else {
           // block is a run of 1s
