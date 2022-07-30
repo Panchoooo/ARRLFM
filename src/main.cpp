@@ -639,7 +639,7 @@ int main(int argc, char *argv[]) {
   }
  // PEF | RUNS RLMN
   if(tipo == 36){
-    char *nasap1 = "ARRLFM_PEFv_RUNS_RLMN";
+    char *nasap1 = "ARRLFM_PEFt_RUNS_RLMN";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -648,7 +648,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap< pef_vector_opt_vigna< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap< pef_vector_opt< rank_support_v5<1>, select_support_mcl<1>, 1024 >, uint64_t ,rl_runs< 64,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>  > > > >  TWA(path_bin,bwt,civ,0);  
     
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);

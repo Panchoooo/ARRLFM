@@ -557,13 +557,13 @@ class pef_vector_opt_vigna {
       if (B[blk]) {
         if(blk == 0){
           rank_val += (*(sux::bits::EliasFano<> *)P[blk]).rank(i);
-          cout << rank_val << "\n";
+          cout <<  (*(sux::bits::EliasFano<> *)P[blk]).rank(i) << "\n";
 
         } else {
           //obtain position in the block
           uint64_t i_block = i - 1 - L.select(blk - 1);
           rank_val += (*(sux::bits::EliasFano<> *)P[blk]).rank(i_block);
-          cout << rank_val << "\n";
+          cout << (*(sux::bits::EliasFano<> *)P[blk]).rank(i_block) << "\n";
 
         }
       } else {
