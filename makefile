@@ -169,8 +169,8 @@ run:
 #	./$(EXEC) einstein.en.txt 26
 #	./$(EXEC) einstein.en.txt 31
 #	./$(EXEC) einstein.en.txt 32
-#	./$(EXEC) einstein.en.txt 33
+	./$(EXEC) einstein.en.txt 33
 #	./$(EXEC) einstein.en.txt 34
 #	./$(EXEC) einstein.en.txt 35
-	./$(EXEC) einstein.en.txt 36
+#	./$(EXEC) einstein.en.txt 36
 
