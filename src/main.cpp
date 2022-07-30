@@ -639,7 +639,7 @@ int main(int argc, char *argv[]) {
   }
  // PEF | RUNS RLMN
   if(tipo == 36){
-    char *nasap1 = "ARRLFM_PEFt_RUNS_RLMN";
+    char *nasap1 = "ARRLFM_PEF_RUNS_RLMN";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
