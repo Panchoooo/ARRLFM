@@ -6,7 +6,7 @@ import sys
 filep = sys.argv[1]
 
 data_folder = "/data/pizzachili"
-path_lectura = data_folder+filep+"/Resultados/Simbolos.txt"
+path_lectura = data_folder+"/"+filep+"/Resultados/Simbolos.txt"
 
 f = open(path_lectura, "r")
 texto = f.read().split(" ")
