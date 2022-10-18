@@ -130,7 +130,7 @@ int main(int argc, char *argv[]) {
   strcpy(path_asapfolder,path_output);
   strcat(path_asapfolder,nasap1); 
   cout << path_bin << "\n";
-  fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+  //fs::create_directories(path_asapfolder); // Crear carpeta si no existe
   Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
     
 
