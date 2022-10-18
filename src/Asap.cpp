@@ -25,12 +25,14 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
 
   // Obtencion de las frequencias y de la cantidad de caracteres
   tie(s, text_length, freq) = Asap::readfile(input_file);
+
+  cout << "text_length " << text_length << "\n";
   m = new M_WT<IntType>(freq, text_length, method);
 
   unordered_map<unsigned, int_vector<>> s_vectors;
   unordered_map<unsigned, bit_vector> temp_bit_vectors;
   for ( auto &x: m->m_sizes ) {
-    temp_bit_vectors[x.first] = bit_vector(text_length, 0);
+    temp_bit_vectors[x.first] = bit_vector(text_length, 0); // <---
     s_vectors[x.first] = int_vector<>(x.second);
   }
 
@@ -38,7 +40,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   unsigned l;
   for ( unsigned i = 0; i < text_length; i++ ) {
     l = m->map(s[i]);
-    temp_bit_vectors[l][i] = 1;
+    temp_bit_vectors[l][i] = 1; // <---
     s_vectors[l][s_indexes[l]++] = m->rank(m->get_pos_by_char(s[i]), l);
   }
 
