@@ -438,7 +438,7 @@ template<class Estructura>
 void Arrlfm<Estructura>::getBVs () { 
     int contador = 0;
 
-    ofstream myfile3 ("datos.txt");
+    ofstream myfile3 ("datospef.txt");
     for ( auto &x: AWT->bit_vectors ){
         contador+=1;
     }
