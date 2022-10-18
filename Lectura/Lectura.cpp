@@ -99,7 +99,7 @@ void load ( string input_file, unsigned method ) {
     int_vector<> BWT; // barrows wheeler
 
     //string data_folder = "/data/pizzachili";
-    string data_folder = "../../data/";
+    string data_folder = "~/data";
     string prepath = data_folder+"/Resultados/";
 
     // Creamos Texto de simbolos
