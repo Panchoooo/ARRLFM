@@ -1,4 +1,4 @@
-CC = g++-7
+CC = g++
 SDSLFLAGS = -O3 -msse4.2 -DNDEBUG -I ~/include
 LFLAGS = -L ~/lib -lsdsl -ldivsufsort -ldivsufsort64 -lstdc++fs
 CFLAGS = -c -std=c++17 -Wall -Wno-missing-braces $(SDSLFLAGS)
@@ -167,10 +167,10 @@ run:
 #	./$(EXEC) einstein.en.txt 24
 #	./$(EXEC) einstein.en.txt 25
 #	./$(EXEC) einstein.en.txt 26
-	./$(EXEC) einstein.en.txt 31
-	./$(EXEC) einstein.en.txt 32
-	./$(EXEC) einstein.en.txt 33
-	./$(EXEC) einstein.en.txt 34
-	./$(EXEC) einstein.en.txt 35
-	./$(EXEC) einstein.en.txt 36
+#	./$(EXEC) einstein.en.txt 31
+#	./$(EXEC) einstein.en.txt 32
+#	./$(EXEC) einstein.en.txt 33
+#	./$(EXEC) einstein.en.txt 34
+#	./$(EXEC) einstein.en.txt 35
+#	./$(EXEC) einstein.en.txt 36
 

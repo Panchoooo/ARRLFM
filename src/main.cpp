@@ -166,6 +166,7 @@ int main(int argc, char *argv[]) {
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     Baseline< wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  >  TWA(path_bin,bwt,civ); 
     // Tiempos
+    
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
     char path_mem[100];   
