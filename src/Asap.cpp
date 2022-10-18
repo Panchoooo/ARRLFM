@@ -50,6 +50,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
 
   for ( auto &x: temp_bit_vectors ){
     //cout << "x : " << x.first << "\n";
+    cout << "x : " << x.second->size() << "\n";
     bit_vectors.insert(std::make_pair<unsigned, BitVectorClass*>((unsigned int)x.first, new BitVectorClass(x.second)));
     //cout << "\n\n";
   }
