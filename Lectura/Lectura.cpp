@@ -108,9 +108,9 @@ void load ( string input_file, unsigned method ) {
     // Creamos Texto de simbolos
     ifstream stream(data_folder+"/"+input_file);
 
-    //fs::create_directories(prepath+input_file);
-    //ofstream myfile2 (prepath+input_file+"/Simbolos.txt");
-    //ofstream myfileInfo (prepath+input_file+"/InfoTexto.txt");
+    fs::create_directories(prepath+input_file);
+    ofstream myfile2 (prepath+input_file+"/Simbolos.txt");
+    ofstream myfileInfo (prepath+input_file+"/InfoTexto.txt");
     //vector<string> words = readWords(stream); // Leemos todas las palabras y las ingresmaos a un arreglo
     //for (const string& e : words) { 
         //if (W2S.find(e) == W2S.end() ) { // Si no existe en el diccionario, lo agregamos y seteamos simbolo nuevo
