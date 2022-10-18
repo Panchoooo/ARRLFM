@@ -134,7 +134,7 @@ int main(int argc, char *argv[]) {
   Arrlfm< Asap< SDBV, uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
     
 
-
+  TWA.getBVs();
   return 0;
 
 }
