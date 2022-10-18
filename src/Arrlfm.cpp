@@ -439,7 +439,7 @@ void Arrlfm<Estructura>::getBVs () {
 
     for ( auto &x: AWT->bit_vectors ){
         for (size_t i=0; i < x.second().size(); i+=1){
-            cout < x.second()[i] << " ";
+            cout < x.second() << " ";
         }
         cout << "\n\n\n\n\n";
     }
