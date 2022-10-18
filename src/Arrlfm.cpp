@@ -437,17 +437,32 @@ T parse(const std::string& s)
 template<class Estructura>
 void Arrlfm<Estructura>::getBVs () { 
     int contador = 0;
+
+    ofstream myfile3 ("datos.txt");
     for ( auto &x: AWT->bit_vectors ){
+        contador+=1;
+    }
+    myfile3 << contador << "\n";
+
+    int breaka = 0;
+    for ( auto &x: AWT->bit_vectors ){
+        if(breaka == 5){
+            break;
+        }
+
         cout << "\n\n\nBitVector " << contador << "\n";
         cout << "size: " << x.second->size() << "\n";
         cout << x.second << "\n"; 
         cout << x.second->rank(x.second->size()) << "\n";
-        for (size_t i=0; i < x.second->size(); i+=1){
+        
+        for (size_t i=0; i < x.second->size() ; i+=1){
             if(x.second->access(i) == 1){
-                cout << i << " ";
+                myfile3 << i << " ";
             }
         }
-        contador+=1;
+        myfile3 << "\n";
+        breaka += 1;
+
     }
 }
 
