@@ -56,7 +56,7 @@ run:
 ##############################
 
 #	coreutils
-	./$(EXEC) coreutils -1	
+#	./$(EXEC) coreutils -1	
 #	./$(EXEC) coreutils 0
 #	./$(EXEC) coreutils 1
 #	./$(EXEC) coreutils 2
@@ -105,6 +105,7 @@ run:
 
 
 #	world_leaders | Listo
+	./$(EXEC) world_leaders -1
 #	./$(EXEC) world_leaders 0
 #	./$(EXEC) world_leaders 1
 #	./$(EXEC) world_leaders 2
