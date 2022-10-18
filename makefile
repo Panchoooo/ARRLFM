@@ -56,6 +56,7 @@ run:
 ##############################
 
 #	coreutils
+	./$(EXEC) coreutils -1
 #	./$(EXEC) coreutils 0
 #	./$(EXEC) coreutils 1
 #	./$(EXEC) coreutils 2
