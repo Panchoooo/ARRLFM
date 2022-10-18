@@ -1,4 +1,4 @@
-CC = g++
+CC = g++-7
 SDSLFLAGS = -O3 -msse4.2 -DNDEBUG -I ~/include
 LFLAGS = -L ~/lib -lsdsl -ldivsufsort -ldivsufsort64 -lstdc++fs
 CFLAGS = -c -std=c++17 -Wall -Wno-missing-braces $(SDSLFLAGS)
@@ -56,7 +56,7 @@ run:
 ##############################
 
 #	coreutils
-	./$(EXEC) coreutils -1
+	./$(EXEC) coreutils -1	
 #	./$(EXEC) coreutils 0
 #	./$(EXEC) coreutils 1
 #	./$(EXEC) coreutils 2
