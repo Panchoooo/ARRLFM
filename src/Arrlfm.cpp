@@ -434,6 +434,16 @@ T parse(const std::string& s)
   return out;
 }
 
+template<class Estructura>
+void Arrlfm<Estructura>::getBVs () { 
+
+    for ( auto &x: AWT->bit_vectors ){
+        for (size_t i=0; i < x.size(); i+=1){
+            cout < x[i] << " ";
+        }
+        cout << "\n\n\n\n\n";
+    }
+}
 
 template<class Estructura>
 void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) { 
