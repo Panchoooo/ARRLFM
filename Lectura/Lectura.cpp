@@ -116,6 +116,7 @@ void load ( string input_file, unsigned method ) {
         }
         t.resize(t.size()+1);
         t[t.size()-1] = W2S[e];
+        cout << W2S[e] << " ";
         myfile2 << W2S[e] << " ";
         contador+=1;
     }
