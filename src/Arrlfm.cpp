@@ -440,7 +440,10 @@ void Arrlfm<Estructura>::getBVs () {
     for ( auto &x: AWT->bit_vectors ){
         cout << "BitVector " << contador;
         for (size_t i=0; i < x.second->size(); i+=1){
-            cout << x.second->access(i) << " "; 
+            if(x.second->access(i) == 1){
+                cout << contador << " ";
+            }
+            //cout << x.second->access(i) << " "; 
         }
         contador+=1;
     }
