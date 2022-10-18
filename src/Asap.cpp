@@ -48,12 +48,35 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
     if ( ! m->is_singleton(x.first) )
       construct_im(s_wt_trees[x.first], x.second, 0);
 
+  int contador = 0;
+  ofstream myfile3 ("datossd.txt");
+  for ( auto &y: temp_bit_vectors ){
+      contador+=1;
+  }
+  myfile3 << contador << "\n";
+  int breaka = 0;
+  for ( auto &x: temp_bit_vectors ){
+      if(breaka == 5){
+          break;
+      }
+      cout << "size: " << x.second.size() << "\n";
+      cout << x.second << "\n"; 
+      cout << x.second.rank(x.second.size()) << "\n";
+      for (size_t i=0; i < x.second.size() ; i+=1){
+          if(x.second.access(i) == 1){
+              myfile3 << i << " ";
+          }
+      }
+      myfile3 << "\n";
+      breaka += 1;
+  }
+
   for ( auto &x: temp_bit_vectors ){
     //cout << "x : " << x.first << "\n";
     //cout << "x : " << x.second.size() << "\n";
-    cout << "x : " << x.second.size() << " | ";
+    //cout << "x : " << x.second.size() << " | ";
     bit_vectors.insert(std::make_pair<unsigned, BitVectorClass*>((unsigned int)x.first, new BitVectorClass(x.second)));
-    cout << "xn : " << x.second.size() << "\n";
+    //cout << "xn : " << x.second.size() << "\n";
     //cout << "\n\n";
   }
 
