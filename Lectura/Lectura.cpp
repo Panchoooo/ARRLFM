@@ -101,8 +101,8 @@ void load ( string input_file, unsigned method ) {
     string data_folder = "/root/data";
     //string data_folder = "/data/pizzachili";
     string prepath = data_folder+"/Resultados/";
-    cout << data_folder << "\n";
-    cout << prepath << "\n";
+    cout << data_folder+input_file << "\n";
+    cout << prepath+input_file << "\n";
 
 
     // Creamos Texto de simbolos
