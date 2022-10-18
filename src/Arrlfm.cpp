@@ -441,7 +441,7 @@ void Arrlfm<Estructura>::getBVs () {
         cout << "BitVector " << contador;
         for (size_t i=0; i < x.second->size(); i+=1){
             if(x.second->access(i) == 1){
-                cout << contador << " ";
+                cout << i << " ";
             }
             //cout << x.second->access(i) << " "; 
         }
