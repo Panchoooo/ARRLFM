@@ -49,7 +49,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
       construct_im(s_wt_trees[x.first], x.second, 0);
 
   uint64_t contador = 0;
-  ofstream myfile ("/data/pizzachili/Resultados/BV_coreutils.dat",ios::binary);
+  ofstream myfile ("/data/pizzachili/Resultados/BV_english.001.2.dat",ios::binary);
   for ( auto &y: temp_bit_vectors ){
       contador+=1;
   }

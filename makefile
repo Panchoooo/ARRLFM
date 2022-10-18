@@ -56,7 +56,7 @@ run:
 ##############################
 
 #	coreutils
-	./$(EXEC) coreutils -1
+#	./$(EXEC) coreutils -1
 #	./$(EXEC) coreutils 0
 #	./$(EXEC) coreutils 1
 #	./$(EXEC) coreutils 2
@@ -81,6 +81,7 @@ run:
 
 
 #	english.001.2
+	./$(EXEC) english.001.2 -1
 #	./$(EXEC) english.001.2 0
 #	./$(EXEC) english.001.2 1
 #	./$(EXEC) english.001.2 2
