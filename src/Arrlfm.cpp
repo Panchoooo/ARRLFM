@@ -438,8 +438,8 @@ template<class Estructura>
 void Arrlfm<Estructura>::getBVs () { 
 
     for ( auto &x: AWT->bit_vectors ){
-        for (size_t i=0; i < x.size(); i+=1){
-            cout < x[i] << " ";
+        for ( auto &y: x ){
+            cout < y << " ";
         }
         cout << "\n\n\n\n\n";
     }
