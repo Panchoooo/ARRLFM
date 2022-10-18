@@ -61,7 +61,6 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
       }
       cout << "size: " << x.second.size() << "\n";
       cout << x.second << "\n"; 
-      cout << x.second.rank(x.second.size()) << "\n";
       for (size_t i=0; i < x.second.size() ; i+=1){
           if(x.second[i] == 1){
               myfile3 << i << " ";
