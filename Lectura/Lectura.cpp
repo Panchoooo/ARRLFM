@@ -111,19 +111,19 @@ void load ( string input_file, unsigned method ) {
     //fs::create_directories(prepath+input_file);
     //ofstream myfile2 (prepath+input_file+"/Simbolos.txt");
     //ofstream myfileInfo (prepath+input_file+"/InfoTexto.txt");
-    vector<string> words = readWords(stream); // Leemos todas las palabras y las ingresmaos a un arreglo
-    for (const string& e : words) { 
+    //vector<string> words = readWords(stream); // Leemos todas las palabras y las ingresmaos a un arreglo
+    //for (const string& e : words) { 
         //if (W2S.find(e) == W2S.end() ) { // Si no existe en el diccionario, lo agregamos y seteamos simbolo nuevo
         //    W2S[e] = ultimo_simbolo;
         //    ultimo_simbolo+=1;
         //}
         //t.resize(t.size()+1);
         //t[t.size()-1] = W2S[e];
-        cout << W2S[e] << " ";
+    //    cout << W2S[e] << " ";
         //myfile2 << W2S[e] << " ";
-        contador+=1;
-    }
-    contador+=1;
+    //    contador+=1;
+    //}
+    //contador+=1;
     //myfile2 << 0;
 //
     //t0 = t;
