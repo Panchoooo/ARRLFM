@@ -442,7 +442,7 @@ void Arrlfm<Estructura>::getBVs () {
         cout << "size: " << x.second->size() << "\n";
         cout << x.second; 
 
-        for ( auto &y: x ){
+        for ( auto &y: x.second ){
             cout << y << " ";
         }
         //for (size_t i=0; i < x.second->size(); i+=1){
