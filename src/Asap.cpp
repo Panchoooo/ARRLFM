@@ -59,8 +59,8 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
       if(breaka == 5){
           break;
       }
-      cout << "size: " << x.second.size() << "\n";
-      cout << x.second << "\n"; 
+      //cout << "size: " << x.second.size() << "\n";
+      //cout << x.second << "\n"; 
       for (size_t i=0; i < x.second.size() ; i+=1){
           if(x.second[i] == 1){
               myfile3 << i << " ";
