@@ -438,8 +438,8 @@ template<class Estructura>
 void Arrlfm<Estructura>::getBVs () { 
     int contador = 0;
 
-    ofstream myfile3 ("datospef.txt");
-    for ( auto &x: AWT->bit_vectors ){
+    ofstream myfile3 ("datossd.txt");
+    for ( auto &y: AWT->bit_vectors ){
         contador+=1;
     }
     myfile3 << contador << "\n";
@@ -450,7 +450,6 @@ void Arrlfm<Estructura>::getBVs () {
             break;
         }
 
-        cout << "\n\n\nBitVector " << contador << "\n";
         cout << "size: " << x.second->size() << "\n";
         cout << x.second << "\n"; 
         cout << x.second->rank(x.second->size()) << "\n";
