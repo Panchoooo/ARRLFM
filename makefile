@@ -131,7 +131,7 @@ run:
 
 
 #	einstein.de.txt
-	./$(EXEC) einstein.de.txt -1
+#	./$(EXEC) einstein.de.txt -1
 #	./$(EXEC) einstein.de.txt 0
 #	./$(EXEC) einstein.de.txt 1
 #	./$(EXEC) einstein.de.txt 2
@@ -156,6 +156,7 @@ run:
 
 
 #	einstein.en.txt
+	./$(EXEC) einstein.en.txt -1
 #	./$(EXEC) einstein.en.txt 0
 #	./$(EXEC) einstein.en.txt 1
 #	./$(EXEC) einstein.en.txt 2
