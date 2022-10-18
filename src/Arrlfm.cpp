@@ -436,11 +436,14 @@ T parse(const std::string& s)
 
 template<class Estructura>
 void Arrlfm<Estructura>::getBVs () { 
-
+    int contador = 0;
     for ( auto &x: AWT->bit_vectors ){
-        for (size_t i=0; i < x.second->size(); i+=1)
+        cout << "BitVector " << contador;
+        for (size_t i=0; i < x.second->size(); i+=1){
             cout << x.second->access(i) << " "; 
         }
+        contador+=1;
+    }
 }
 
 template<class Estructura>
