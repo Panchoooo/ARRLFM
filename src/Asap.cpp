@@ -50,6 +50,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
 
   uint64_t contador = 0;
   ofstream myfile ("/data/pizzachili/Resultados/"+input_file+"/BV.dat",ios::binary);
+  cout << "/data/pizzachili/Resultados/"+input_file+"/BV.dat";
   for ( auto &y: temp_bit_vectors ){
       contador+=1;
   }
