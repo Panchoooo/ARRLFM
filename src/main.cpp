@@ -165,7 +165,7 @@ int main(int argc, char *argv[]) {
   }
 
   // AP BASELINE
-  if(tipo == 1){
+  /*if(tipo == 1){
     char *nasap1 = "ARRLFM_AP(RLRUNS)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
@@ -189,7 +189,7 @@ int main(int argc, char *argv[]) {
     cout << path_mem << "\n";
     ofstream myfile2 (path_mem);
     myfile2 << TWA.size();
-  }
+  }*/
 
   // S18 || RLMN
   if(tipo == 100){
