@@ -26,21 +26,21 @@ public:
         b_rank = new RBV(B);  
         b_select = new SBV(B);  
     }
-int operator[](size_t i) {
-  return i < vector_size ? B[i] : 0;
-}
 
+    int operator[](size_t i) {
+      return i < vector_size ? B[i] : 0;
+    }
     int rank (size_t i) {
     return (*b_rank)(i);
     }
-
-
     int access (size_t i) {
       return  (*B)[i];
     }
-
     int select (size_t i) {
       return (*b_select)(i);
+    }
+    int size () {
+      return  size_in_bytes(*B);
     }
 
 };
