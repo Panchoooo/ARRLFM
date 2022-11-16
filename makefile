@@ -81,6 +81,11 @@ run:
 
 
 #	english.001.2
+	./$(EXEC) english.001.2 100
+	./$(EXEC) english.001.2 101
+	./$(EXEC) english.001.2 102
+	./$(EXEC) english.001.2 103
+	./$(EXEC) english.001.2 104
 #	./$(EXEC) english.001.2 -1
 #	./$(EXEC) english.001.2 0
 #	./$(EXEC) english.001.2 1
@@ -156,7 +161,7 @@ run:
 
 
 #	einstein.en.txt
-	./$(EXEC) einstein.en.txt -1
+#	./$(EXEC) einstein.en.txt -1
 #	./$(EXEC) einstein.en.txt 0
 #	./$(EXEC) einstein.en.txt 1
 #	./$(EXEC) einstein.en.txt 2
