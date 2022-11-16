@@ -54,7 +54,8 @@ using namespace sdsl;
 int main(int argc, char *argv[]) {
 
   char* file = argv[1];
-
+  int tipo = stoi(argv[2]);
+  
   char *lectura_path = "/data/pizzachili/Resultados/"; /* CARPETA QUE CONTIENE TEXTOS */
   //char *lectura_path = "/root/data/"; /* CARPETA QUE CONTIENE TEXTOS */
   char path_asap1[100];           
