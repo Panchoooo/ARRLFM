@@ -17,8 +17,8 @@
 #include <sdsl/rl_runs.hpp>
 #include <sdsl/wavelet_trees.hpp>
 
-#include "../PEF/pef_vector_opt.hpp"
-#include "../PEF/pef_vector_unif.hpp"
+//#include "../PEF/pef_vector_opt.hpp"
+//#include "../PEF/pef_vector_unif.hpp"
 
 #include "Asap.h"
 #include "bit_vectors.h"
