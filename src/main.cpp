@@ -162,7 +162,7 @@ int main(int argc, char *argv[]) {
     ofstream myfile2 (path_mem);
     myfile2 << TWA.size();
   }
-  /*if(tipo == 201){
+  if(tipo == 201){
     char *nasap1 = "ARRLFM_AP(RLRUNS)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
@@ -186,7 +186,7 @@ int main(int argc, char *argv[]) {
     cout << path_mem << "\n";
     ofstream myfile2 (path_mem);
     myfile2 << TWA.size();
-  }*/
+  }
   if(tipo == 202){
     char *nasap1 = "ARRLFM_RLMN(AP)";
     strcpy(path_asap1,path_output);
