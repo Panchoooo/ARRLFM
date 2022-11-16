@@ -17,9 +17,9 @@
 #include <sdsl/rl_runs.hpp> // Runlenght | Jose Fuentes
 #include <sdsl/wt_rlmn.hpp> // Original de la sdsl Navarro 
 
-#include "../PEF/pef_vector_opt.hpp" // Elias-Fano | Gabriel
-#include "../PEF/pef_vector_opt_vigna.hpp" // Elias-Fano | Gabriel
-#include "../PEF/pef_vector_unif.hpp"
+//#include "../PEF/pef_vector_opt.hpp" // Elias-Fano | Gabriel
+//#include "../PEF/pef_vector_opt_vigna.hpp" // Elias-Fano | Gabriel
+//#include "../PEF/pef_vector_unif.hpp"
 
 #include "../s18_vector-master/s18/head/constants.hpp" // s18_vector | Manuel Weitzman
 #include "../s18_vector-master/s18/head/s18_vector.hpp" // s18_vector | Manuel Weitzman
