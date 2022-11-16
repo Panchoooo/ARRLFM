@@ -81,11 +81,19 @@ run:
 
 
 #	english.001.2
+	./$(EXEC) english.001.2 200
+#	./$(EXEC) english.001.2 201
+	./$(EXEC) english.001.2 202
+#	./$(EXEC) english.001.2 203
+	./$(EXEC) english.001.2 204
+
 	./$(EXEC) english.001.2 100
 	./$(EXEC) english.001.2 101
-	./$(EXEC) english.001.2 102
+#	./$(EXEC) english.001.2 102
 	./$(EXEC) english.001.2 103
-	./$(EXEC) english.001.2 104
+#	./$(EXEC) english.001.2 104
+
+
 #	./$(EXEC) english.001.2 -1
 #	./$(EXEC) english.001.2 0
 #	./$(EXEC) english.001.2 1
