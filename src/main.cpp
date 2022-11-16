@@ -390,6 +390,31 @@ int main(int argc, char *argv[]) {
   }*/
 
 
+  // RLE || RLMN
+  if(tipo == 300){
+    char *nasap1 = "ARRLFM_RLE_RLMN(INT)";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    Arrlfm< Asap<BVTtipo2<sdsl::rle_vector::vector<32>, sdsl::s18::rank_support_rle<1,32> , sdsl::s18::select_support_rle<1,32> >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
+    // Tiempos
+    TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
+  }
 
   //TWA.getBVs();
   return 0;
