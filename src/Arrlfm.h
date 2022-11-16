@@ -31,7 +31,7 @@ using namespace std;
 using namespace sdsl;
 
 
-template<class Estructura = Asap<pef_vector_unif<100, rank_support_v5<1>, select_support_mcl<1>>, uint64_t,sdsl::rl_runs<64,wt_ap<>>> >
+template<class Estructura = Asap<SDBV, uint64_t,sdsl::rl_runs<64,wt_ap<>>> >
 class Arrlfm{
 
 private:
