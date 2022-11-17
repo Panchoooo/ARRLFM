@@ -13,7 +13,7 @@ path_lectura = data_folder+"/Resultados/"+filep+"/Simbolos.txt"
 f = open(path_lectura, "r")
 texto = f.read().split(" ")
 
-patrones = 20000
+patrones = 50000
 cantidad_largo = [ 4,8,16 ]
 
 for largo in cantidad_largo:
@@ -37,7 +37,7 @@ for largo in cantidad_largo:
     
         #if(value not in values_dict.keys()):
 
-        values_dict[value] = 1
+        #values_dict[value] = 1
 
         patron = texto[value]
         while(largo_patron_aux < largo):
