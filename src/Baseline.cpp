@@ -148,8 +148,10 @@ unsigned Baseline<Estructura>::countbyIntVectorSave (int_vector<> patron,char* o
             cout << c << "\n";
             cout << b << " " << e << "\n";
             b = C[c] + AWT.rank(b,c);
+            cout << "bn: "<< b << "\n";
             e = C[c] + AWT.rank(e,c);
-            cout << b << " " << e << "\n\n";
+            cout << "en: "<< e << "\n";
+
 
         }
     }
