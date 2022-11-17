@@ -97,12 +97,12 @@ run:
 #	./$(EXEC) english.001.2 201
 #	./$(EXEC) english.001.2 202
 #	./$(EXEC) english.001.2 203
-	./$(EXEC) english.001.2 204
-	./$(EXEC) english.001.2 205
-	./$(EXEC) english.001.2 206
-	./$(EXEC) english.001.2 207
-	./$(EXEC) english.001.2 208
-	./$(EXEC) english.001.2 209
+#	./$(EXEC) english.001.2 204
+#	./$(EXEC) english.001.2 205
+#	./$(EXEC) english.001.2 206
+#	./$(EXEC) english.001.2 207
+#	./$(EXEC) english.001.2 208
+#	./$(EXEC) english.001.2 209
 #	./$(EXEC) english.001.2 210
 #	./$(EXEC) english.001.2 211
 #	./$(EXEC) english.001.2 212
@@ -142,12 +142,12 @@ run:
 #	world_leaders | 
 
 #	./$(EXEC) world_leaders 200
-#	./$(EXEC) world_leaders 204
-#	./$(EXEC) world_leaders 205
-#	./$(EXEC) world_leaders 206
-#	./$(EXEC) world_leaders 207
-#	./$(EXEC) world_leaders 208
-#	./$(EXEC) world_leaders 209
+	./$(EXEC) world_leaders 204
+	./$(EXEC) world_leaders 205
+	./$(EXEC) world_leaders 206
+	./$(EXEC) world_leaders 207
+	./$(EXEC) world_leaders 208
+	./$(EXEC) world_leaders 209
 #	./$(EXEC) world_leaders 210
 #	./$(EXEC) world_leaders 211
 #	./$(EXEC) world_leaders 212
