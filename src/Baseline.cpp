@@ -137,7 +137,7 @@ unsigned Baseline<Estructura>::countbyIntVectorSave (int_vector<> patron,char* o
     uint64_t e = C[c+1];
     
     cout << "c: " << c << "\n";
-    cout << "b:" << b << "  e:" << e << "\n\n";
+    cout << "b:" << b << "  e:" << e << "\n";
 
     if( patron.size() > 1){
         for ( long int  i = patron.size() - 2 ; i >= 0 ; i = i - 1) { // long int porque al llegar a 0 y hace el -1 se rompe 
@@ -145,7 +145,7 @@ unsigned Baseline<Estructura>::countbyIntVectorSave (int_vector<> patron,char* o
                 break;
             }
             c = patron[i];
-            cout <<  "c: " << c << "\n";
+            cout << "\n" <<  "c: " << c << "\n";
             cout << "b:" << b << "  e:" << e << "\n";
             b = C[c] + AWT.rank(b,c);
             cout << "bn: "<< b << "\n";
