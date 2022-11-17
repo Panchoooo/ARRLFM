@@ -162,7 +162,7 @@ void load ( string input_file, unsigned method ) {
         }
     }
 
-    BWT[sa.size()] = -1;
+    BWT[sa.size()] = 1;
     C.resize(C.size()+1);
     C[C.size()-1] = t.size();
     
