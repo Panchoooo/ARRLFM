@@ -121,7 +121,7 @@ void load ( string input_file, unsigned method ) {
     }
     contador+=2;
     myfile2 << 0;
-    myfile2 << -1;
+    //myfile2 << -1;
 
     t0 = t;
 
@@ -146,7 +146,7 @@ void load ( string input_file, unsigned method ) {
 
     qsufsort::construct_sa(sa, t); // Se crea arreglo de sufijos sa en base a t
     util::bit_compress(sa);
-    BWT = int_vector<>(sa.size()); 
+    BWT = int_vector<>(sa.size()+1); 
     uint64_t i = 0;
     for ( i = 0; i < sa.size(); i++) { // Generamos BWT y arreglo C en base a sa
         if(sa[i]!=0){
@@ -162,6 +162,7 @@ void load ( string input_file, unsigned method ) {
         }
     }
 
+    BWT[sa.size()] = -1;
     C.resize(C.size()+1);
     C[C.size()-1] = t.size();
     
@@ -176,7 +177,7 @@ void load ( string input_file, unsigned method ) {
     //    cout << bwwt[i] << " ";
     //}
 
-      ofstream myfile4 (prepath+input_file+"/bwtsimbolos.txt");
+    ofstream myfile4 (prepath+input_file+"/bwtsimbolos.txt");
     for (long unsigned int i = 0; i < BWT.size(); i++) {
         myfile4 << BWT[i] << " ";
     }
