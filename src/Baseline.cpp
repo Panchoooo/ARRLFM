@@ -137,7 +137,7 @@ unsigned Baseline<Estructura>::countbyIntVectorSave (int_vector<> patron,char* o
     uint64_t e = C[c+1];
     
     cout << c << "\n";
-    cout << b << " " << e << "\n";
+    cout << b << " " << e << "\n\n";
 
     if( patron.size() > 1){
         for ( long int  i = patron.size() - 2 ; i >= 0 ; i = i - 1) { // long int porque al llegar a 0 y hace el -1 se rompe 
@@ -340,7 +340,7 @@ if(true){
         if(i == 1){
           remove( path_asap1_largo );
         }
-        cout << patron_lectura << "\n\n";
+        cout << "\n\n" << patron_lectura << "\n";
 
         clock_t begin, end;
         double cpu_time_used;
