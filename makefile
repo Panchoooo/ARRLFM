@@ -180,7 +180,7 @@ run:
 #	./$(EXEC) einstein.de.txt 204
 #	./$(EXEC) einstein.de.txt 205
 #	./$(EXEC) einstein.de.txt 206
-	./$(EXEC) einstein.de.txt 207
+#	./$(EXEC) einstein.de.txt 207
 #	./$(EXEC) einstein.de.txt 208
 #	./$(EXEC) einstein.de.txt 209
 #	./$(EXEC) einstein.de.txt 210
@@ -215,7 +215,7 @@ run:
 #	./$(EXEC) einstein.en.txt 204
 #	./$(EXEC) einstein.en.txt 205
 #	./$(EXEC) einstein.en.txt 206
-#	./$(EXEC) einstein.en.txt 207
+	./$(EXEC) einstein.en.txt 207
 #	./$(EXEC) einstein.en.txt 208
 #	./$(EXEC) einstein.en.txt 209
 #	./$(EXEC) einstein.en.txt 210
