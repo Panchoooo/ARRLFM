@@ -180,9 +180,9 @@ run:
 #	./$(EXEC) einstein.de.txt 204
 #	./$(EXEC) einstein.de.txt 205
 #	./$(EXEC) einstein.de.txt 206
-#	./$(EXEC) einstein.de.txt 207
+	./$(EXEC) einstein.de.txt 207
 #	./$(EXEC) einstein.de.txt 208
-	./$(EXEC) einstein.de.txt 209
+#	./$(EXEC) einstein.de.txt 209
 #	./$(EXEC) einstein.de.txt 210
 #	./$(EXEC) einstein.de.txt 211
 #	./$(EXEC) einstein.de.txt 212
