@@ -215,9 +215,9 @@ run:
 #	./$(EXEC) einstein.en.txt 204
 #	./$(EXEC) einstein.en.txt 205
 #	./$(EXEC) einstein.en.txt 206
-	./$(EXEC) einstein.en.txt 207
-#	./$(EXEC) einstein.en.txt 208
-#	./$(EXEC) einstein.en.txt 209
+#	./$(EXEC) einstein.en.txt 207
+	./$(EXEC) einstein.en.txt 208
+	./$(EXEC) einstein.en.txt 209
 #	./$(EXEC) einstein.en.txt 210
 #	./$(EXEC) einstein.en.txt 211
 #	./$(EXEC) einstein.en.txt 212
