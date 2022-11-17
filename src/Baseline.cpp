@@ -141,8 +141,11 @@ unsigned Baseline<Estructura>::countbyIntVectorSave (int_vector<> patron,char* o
                 break;
             }
             c = patron[i];
+            cout << c << "\n";
             b = C[c] + AWT.rank(b,c);
             e = C[c] + AWT.rank(e,c);
+            cout << b << " " << e << "\n\n";
+
         }
     }
     end = clock();
