@@ -85,7 +85,15 @@ run:
 #	./$(EXEC) english.001.2 201
 #	./$(EXEC) english.001.2 202
 #	./$(EXEC) english.001.2 203
-#	./$(EXEC) english.001.2 204
+	./$(EXEC) english.001.2 204
+	./$(EXEC) english.001.2 205
+	./$(EXEC) english.001.2 206
+	./$(EXEC) english.001.2 207
+	./$(EXEC) english.001.2 208
+	./$(EXEC) english.001.2 209
+	./$(EXEC) english.001.2 210
+	./$(EXEC) english.001.2 211
+	./$(EXEC) english.001.2 212
 
 #	./$(EXEC) english.001.2 100
 #	./$(EXEC) english.001.2 101
@@ -93,7 +101,7 @@ run:
 #	./$(EXEC) english.001.2 103
 #	./$(EXEC) english.001.2 104
 
-	./$(EXEC) english.001.2 300
+#	./$(EXEC) english.001.2 300
 
 #	./$(EXEC) english.001.2 -1
 #	./$(EXEC) english.001.2 0
