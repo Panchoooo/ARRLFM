@@ -13,7 +13,7 @@ path_lectura = data_folder+"/Resultados/"+filep+"/Simbolos.txt"
 f = open(path_lectura, "r")
 texto = f.read().split(" ")
 
-patrones = 50000
+patrones = 30000
 cantidad_largo = [ 4,8,16 ]
 
 for largo in cantidad_largo:
