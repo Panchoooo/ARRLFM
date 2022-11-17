@@ -1,4 +1,4 @@
-#include <stdio.h>
+    #include <stdio.h>
 #include <stdlib.h>     /* srand, rand */
 #include <time.h>       /* time */
 #include <sys/stat.h>
@@ -119,8 +119,9 @@ void load ( string input_file, unsigned method ) {
         myfile2 << W2S[e] << " ";
         contador+=1;
     }
-    contador+=1;
+    contador+=2;
     myfile2 << 0;
+    myfile2 << -1;
 
     t0 = t;
 
