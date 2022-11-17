@@ -141,7 +141,8 @@ run:
 
 #	world_leaders | 
 
-#	./$(EXEC) world_leaders 204
+	./$(EXEC) world_leaders 200
+	./$(EXEC) world_leaders 204
 #	./$(EXEC) world_leaders 205
 #	./$(EXEC) world_leaders 206
 #	./$(EXEC) world_leaders 207
@@ -210,14 +211,14 @@ run:
 #	./$(EXEC) einstein.de.txt 36
 
 
-#	einstein.en.txt
+#	einstein.en.txt | listo
 
 #	./$(EXEC) einstein.en.txt 204
 #	./$(EXEC) einstein.en.txt 205
 #	./$(EXEC) einstein.en.txt 206
-	./$(EXEC) einstein.en.txt 207
-	./$(EXEC) einstein.en.txt 208
-	./$(EXEC) einstein.en.txt 209
+#	./$(EXEC) einstein.en.txt 207
+#	./$(EXEC) einstein.en.txt 208
+#	./$(EXEC) einstein.en.txt 209
 #	./$(EXEC) einstein.en.txt 210
 #	./$(EXEC) einstein.en.txt 211
 #	./$(EXEC) einstein.en.txt 212
