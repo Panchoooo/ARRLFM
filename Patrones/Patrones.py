@@ -32,8 +32,8 @@ for largo in cantidad_largo:
     while(contador < patrones and value < limite-(largo)):
         largo_patron_aux = 1
         #value = randint(0, len(texto)-largo)
-        value = value + 1
-        #value =randint(1, limite-(largo+10))
+        #value = value + 1
+        value =randint(1, limite-(largo+10))
     
         #if(value not in values_dict.keys()):
 
