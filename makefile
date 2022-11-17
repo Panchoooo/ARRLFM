@@ -58,9 +58,9 @@ run:
 #	coreutils | listo
 
 
-	./$(EXEC) coreutils 204
-	./$(EXEC) coreutils 205
-	./$(EXEC) coreutils 206
+#	./$(EXEC) coreutils 204
+#	./$(EXEC) coreutils 205
+#	./$(EXEC) coreutils 206
 	./$(EXEC) coreutils 207
 	./$(EXEC) coreutils 208
 	./$(EXEC) coreutils 209
@@ -97,12 +97,12 @@ run:
 #	./$(EXEC) english.001.2 201
 #	./$(EXEC) english.001.2 202
 #	./$(EXEC) english.001.2 203
-	./$(EXEC) english.001.2 204
-	./$(EXEC) english.001.2 205
-	./$(EXEC) english.001.2 206
-	./$(EXEC) english.001.2 207
-	./$(EXEC) english.001.2 208
-	./$(EXEC) english.001.2 209
+#	./$(EXEC) english.001.2 204
+#	./$(EXEC) english.001.2 205
+#	./$(EXEC) english.001.2 206
+#	./$(EXEC) english.001.2 207
+#	./$(EXEC) english.001.2 208
+#	./$(EXEC) english.001.2 209
 #	./$(EXEC) english.001.2 210
 #	./$(EXEC) english.001.2 211
 #	./$(EXEC) english.001.2 212
@@ -142,12 +142,12 @@ run:
 #	world_leaders | 
 
 #	./$(EXEC) world_leaders 200
-	./$(EXEC) world_leaders 204
-	./$(EXEC) world_leaders 205
-	./$(EXEC) world_leaders 206
-	./$(EXEC) world_leaders 207
-	./$(EXEC) world_leaders 208
-	./$(EXEC) world_leaders 209
+#	./$(EXEC) world_leaders 204
+#	./$(EXEC) world_leaders 205
+#	./$(EXEC) world_leaders 206
+#	./$(EXEC) world_leaders 207
+#	./$(EXEC) world_leaders 208
+#	./$(EXEC) world_leaders 209
 #	./$(EXEC) world_leaders 210
 #	./$(EXEC) world_leaders 211
 #	./$(EXEC) world_leaders 212
@@ -179,12 +179,12 @@ run:
 #	einstein.de.txt
 
 #	./$(EXEC) einstein.de.txt 200
-	./$(EXEC) einstein.de.txt 204
-	./$(EXEC) einstein.de.txt 205
-	./$(EXEC) einstein.de.txt 206
-	./$(EXEC) einstein.de.txt 207
-	./$(EXEC) einstein.de.txt 208
-	./$(EXEC) einstein.de.txt 209
+#	./$(EXEC) einstein.de.txt 205
+#	./$(EXEC) einstein.de.txt 204
+#	./$(EXEC) einstein.de.txt 206
+#	./$(EXEC) einstein.de.txt 207
+#	./$(EXEC) einstein.de.txt 208
+#	./$(EXEC) einstein.de.txt 209
 #	./$(EXEC) einstein.de.txt 210
 #	./$(EXEC) einstein.de.txt 211
 #	./$(EXEC) einstein.de.txt 212
@@ -214,12 +214,12 @@ run:
 
 #	einstein.en.txt | listo
 
-	./$(EXEC) einstein.en.txt 204
-	./$(EXEC) einstein.en.txt 205
-	./$(EXEC) einstein.en.txt 206
-	./$(EXEC) einstein.en.txt 207
-	./$(EXEC) einstein.en.txt 208
-	./$(EXEC) einstein.en.txt 209
+#	./$(EXEC) einstein.en.txt 204
+#	./$(EXEC) einstein.en.txt 205
+#	./$(EXEC) einstein.en.txt 206
+#	./$(EXEC) einstein.en.txt 207
+#	./$(EXEC) einstein.en.txt 208
+#	./$(EXEC) einstein.en.txt 209
 #	./$(EXEC) einstein.en.txt 210
 #	./$(EXEC) einstein.en.txt 211
 #	./$(EXEC) einstein.en.txt 212
