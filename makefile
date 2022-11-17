@@ -58,15 +58,15 @@ run:
 #	coreutils
 
 
-	./$(EXEC) coreutils 204
-	./$(EXEC) coreutils 205
-	./$(EXEC) coreutils 206
-	./$(EXEC) coreutils 207
-	./$(EXEC) coreutils 208
-	./$(EXEC) coreutils 209
-	./$(EXEC) coreutils 210
-	./$(EXEC) coreutils 211
-	./$(EXEC) coreutils 212
+#	./$(EXEC) coreutils 204
+#	./$(EXEC) coreutils 205
+#	./$(EXEC) coreutils 206
+#	./$(EXEC) coreutils 207
+#	./$(EXEC) coreutils 208
+#	./$(EXEC) coreutils 209
+#	./$(EXEC) coreutils 210
+#	./$(EXEC) coreutils 211
+#	./$(EXEC) coreutils 212
 
 #	./$(EXEC) coreutils -1
 #	./$(EXEC) coreutils 0
@@ -141,9 +141,9 @@ run:
 
 #	world_leaders | Listo
 
-	./$(EXEC) world_leaders 204
-	./$(EXEC) world_leaders 205
-	./$(EXEC) world_leaders 206
+#	./$(EXEC) world_leaders 204
+#	./$(EXEC) world_leaders 205
+#	./$(EXEC) world_leaders 206
 	./$(EXEC) world_leaders 207
 	./$(EXEC) world_leaders 208
 	./$(EXEC) world_leaders 209
