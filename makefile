@@ -141,9 +141,9 @@ run:
 
 #	world_leaders | Listo
 
-#	./$(EXEC) world_leaders 204
-#	./$(EXEC) world_leaders 205
-#	./$(EXEC) world_leaders 206
+	./$(EXEC) world_leaders 204
+	./$(EXEC) world_leaders 205
+	./$(EXEC) world_leaders 206
 	./$(EXEC) world_leaders 207
 #	./$(EXEC) world_leaders 208
 #	./$(EXEC) world_leaders 209
