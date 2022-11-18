@@ -13,7 +13,7 @@ path_lectura = data_folder+"/Resultados/"+filep+"/Simbolos.txt"
 f = open(path_lectura, "r")
 texto = f.read().split(" ")
 
-patrones = 50000
+patrones = 30000
 cantidad_largo = [ 4,8,16 ]
 
 for largo in cantidad_largo:
@@ -22,7 +22,7 @@ for largo in cantidad_largo:
     fo = open(data_folder+"/Resultados/"+filep+"/Patrones/Largo"+str(largo)+".txt", "w")  
     
     fo = open(data_folder+"/Resultados/"+filep+"/Patrones/Largo"+str(largo)+".txt", "a")  
-    patrones_dict = {}
+    patrones_dict = []
     contador = 0
 
     values_dict = {}
@@ -46,8 +46,8 @@ for largo in cantidad_largo:
 
         #print(str(contador) + "  "+ str(value)+"  "+ patron)
 
-        if(patron not in patrones_dict.keys()):
-            patrones_dict[patron] = 1  
+        if(patron not in patrones_dict):
+            patrones_dict.append(patron) 
             fo.write(patron)
             contador+=1
             if(contador != patrones and value < limite-(largo)):
