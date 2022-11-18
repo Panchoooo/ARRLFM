@@ -393,9 +393,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
 
-
   // ARRLFM --------------------------------------------------------
-
   // S18 || RLMN
   if(tipo == 100){
     char *nasap1 = "ARRLFM_S18_RLMN(INT)";
