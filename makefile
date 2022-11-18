@@ -218,8 +218,7 @@ run:
 
 
 
-
-	./$(EXEC) einstein.de.txt 200
+#	./$(EXEC) einstein.de.txt 200
 	./$(EXEC) einstein.de.txt 204
 	./$(EXEC) einstein.de.txt 205
 	./$(EXEC) einstein.de.txt 206
