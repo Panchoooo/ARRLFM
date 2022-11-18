@@ -201,8 +201,7 @@ run:
 	./$(EXEC) einstein.de.txt 1009
 	./$(EXEC) einstein.de.txt 1010
 	./$(EXEC) einstein.de.txt 1011
-	./$(EXEC) einstein.de.txt 1012
-#
+
 	./$(EXEC) coreutils 1000
 	./$(EXEC) coreutils 1001
 	./$(EXEC) coreutils 1002
@@ -215,8 +214,7 @@ run:
 	./$(EXEC) coreutils 1009
 	./$(EXEC) coreutils 1010
 	./$(EXEC) coreutils 1011
-	./$(EXEC) coreutils 1012
-#
+
 	./$(EXEC) english.001.2 1000
 	./$(EXEC) english.001.2 1001
 	./$(EXEC) english.001.2 1002
@@ -229,8 +227,7 @@ run:
 	./$(EXEC) english.001.2 1009
 	./$(EXEC) english.001.2 1010
 	./$(EXEC) english.001.2 1011
-	./$(EXEC) english.001.2 1012
-#
+
 	./$(EXEC) world_leaders 1000
 	./$(EXEC) world_leaders 1001
 	./$(EXEC) world_leaders 1002
@@ -243,8 +240,7 @@ run:
 	./$(EXEC) world_leaders 1009
 	./$(EXEC) world_leaders 1010
 	./$(EXEC) world_leaders 1011
-	./$(EXEC) world_leaders 1012
-#
+
 	./$(EXEC) einstein.en.txt 1000
 	./$(EXEC) einstein.en.txt 1001
 	./$(EXEC) einstein.en.txt 1002
@@ -257,8 +253,6 @@ run:
 	./$(EXEC) einstein.en.txt 1009
 	./$(EXEC) einstein.en.txt 1010
 	./$(EXEC) einstein.en.txt 1011
-	./$(EXEC) einstein.en.txt 1012
-
 
 	./$(EXEC) einstein.de.txt 1000
 	./$(EXEC) einstein.de.txt 1001
@@ -272,8 +266,7 @@ run:
 	./$(EXEC) einstein.de.txt 1009
 	./$(EXEC) einstein.de.txt 1010
 	./$(EXEC) einstein.de.txt 1011
-	./$(EXEC) einstein.de.txt 1012
-#
+
 	./$(EXEC) coreutils 1000
 	./$(EXEC) coreutils 1001
 	./$(EXEC) coreutils 1002
@@ -286,8 +279,7 @@ run:
 	./$(EXEC) coreutils 1009
 	./$(EXEC) coreutils 1010
 	./$(EXEC) coreutils 1011
-	./$(EXEC) coreutils 1012
-#
+
 	./$(EXEC) english.001.2 1000
 	./$(EXEC) english.001.2 1001
 	./$(EXEC) english.001.2 1002
@@ -300,8 +292,7 @@ run:
 	./$(EXEC) english.001.2 1009
 	./$(EXEC) english.001.2 1010
 	./$(EXEC) english.001.2 1011
-	./$(EXEC) english.001.2 1012
-#
+
 	./$(EXEC) world_leaders 1000
 	./$(EXEC) world_leaders 1001
 	./$(EXEC) world_leaders 1002
@@ -314,8 +305,7 @@ run:
 	./$(EXEC) world_leaders 1009
 	./$(EXEC) world_leaders 1010
 	./$(EXEC) world_leaders 1011
-	./$(EXEC) world_leaders 1012
-#
+
 	./$(EXEC) einstein.en.txt 1000
 	./$(EXEC) einstein.en.txt 1001
 	./$(EXEC) einstein.en.txt 1002
@@ -328,4 +318,3 @@ run:
 	./$(EXEC) einstein.en.txt 1009
 	./$(EXEC) einstein.en.txt 1010
 	./$(EXEC) einstein.en.txt 1011
-	./$(EXEC) einstein.en.txt 1012
