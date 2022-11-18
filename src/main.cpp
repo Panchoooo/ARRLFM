@@ -731,7 +731,132 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
 
+  if(tipo == 1007){
+    char *nasap1 = "ARRLFM_RLE_RLRUNS(16,AP)";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    //Baseline< rl_runs<32,wt_gmr<> > >    TWA(path_bin,bwt,civ); 
+    Arrlfm< Asap< BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> > , uint64_t , rl_runs<16,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
+    TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
+  } 
+  if(tipo == 1008){
+    char *nasap1 = "ARRLFM_RLE_RLRUNS(32,AP)";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    //Baseline< rl_runs<32,wt_gmr<> > >    TWA(path_bin,bwt,civ); 
+    Arrlfm< Asap< BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> > , uint64_t , rl_runs<32,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
+    TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
+  } 
+  if(tipo == 1009){
+    char *nasap1 = "ARRLFM_RLE_RLRUNS(4,GMR)";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    //Baseline< rl_runs<32,wt_gmr<> > >    TWA(path_bin,bwt,civ); 
+    Arrlfm< Asap< BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> > , uint64_t , rl_runs<4,wt_gmr<> > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
+    TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
+  } 
+  if(tipo == 1010){
+    char *nasap1 = "ARRLFM_RLE_RLRUNS(16,GMR)";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    //Baseline< rl_runs<32,wt_gmr<> > >    TWA(path_bin,bwt,civ); 
+    Arrlfm< Asap< BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> > , uint64_t , rl_runs<16,wt_gmr<> > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
+    TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
+  } 
 
+  if(tipo == 1011){
+    char *nasap1 = "ARRLFM_RLE_RLRUNS(32,GMR)";
+    strcpy(path_asap1,path_output);
+    strcat(path_asap1,nasap1); 
+    strcat(path_asap1,separate2); 
+    strcat(path_asap1,nasap1); 
+    strcpy(path_asapfolder,path_output);
+    strcat(path_asapfolder,nasap1); 
+    cout << path_bin << "\n";
+    fs::create_directories(path_asapfolder); // Crear carpeta si no existe
+    //Baseline< rl_runs<32,wt_gmr<> > >    TWA(path_bin,bwt,civ); 
+    Arrlfm< Asap< BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> > , uint64_t , rl_runs<32,wt_gmr<> > > >  TWA(path_bin,bwt,civ,0);  
+    // Tiempos
+    TWA.testing(file,nasap1,lectura_path);
+    // Memoria 
+    char path_mem[100];   
+    strcpy(path_mem,lectura_path);
+    strcat(path_mem,file); 
+    strcat(path_mem,"/Memoria/"); 
+    strcat(path_mem,nasap1); 
+    strcat(path_mem,"_Memoria.txt"); 
+    cout << path_mem << "\n";
+    ofstream myfile2 (path_mem);
+    myfile2 << TWA.size();
+  } 
 
   //TWA.getBVs();
   return 0;
