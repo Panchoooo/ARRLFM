@@ -190,7 +190,7 @@ run:
 #	RL RUNS AP Y GMR
 
 #	./$(EXEC) einstein.de.txt 200
-#	./$(EXEC) einstein.de.txt 1000
+	./$(EXEC) einstein.de.txt 1000
 #	./$(EXEC) einstein.de.txt 1001
 #	./$(EXEC) einstein.de.txt 1002
 #	./$(EXEC) einstein.de.txt 1003
