@@ -549,7 +549,7 @@ int main(int argc, char *argv[]) {
 
 
   if(tipo == 1){
-    char *nasap1 = "ARRLFM_S18_RLRUNS(4,AP)";
+    char *nasap1 = "ARRLFM_S18";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -561,19 +561,19 @@ int main(int argc, char *argv[]) {
     //Baseline< rl_runs<32,wt_gmr<> > >    TWA(path_bin,bwt,civ); 
     //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,rl_runs< 64,wt_ap<> > > >  TWA(path_bin,bwt,civ,0); 
     //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>> , uint64_t , rl_runs<4,wt_ap<> > > >  TWA(path_bin,bwt,civ,0);  
-    Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap< SDBV , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
     // Tiempos
-    TWA.testing(file,nasap1,lectura_path);
-    // Memoria 
-    char path_mem[100];   
-    strcpy(path_mem,lectura_path);
-    strcat(path_mem,file); 
-    strcat(path_mem,"/Memoria/"); 
-    strcat(path_mem,nasap1); 
-    strcat(path_mem,"_Memoria.txt"); 
-    cout << path_mem << "\n";
-    ofstream myfile2 (path_mem);
-    myfile2 << TWA.size();
+    // TWA.testing(file,nasap1,lectura_path);
+    // // Memoria 
+    // char path_mem[100];   
+    // strcpy(path_mem,lectura_path);
+    // strcat(path_mem,file); 
+    // strcat(path_mem,"/Memoria/"); 
+    // strcat(path_mem,nasap1); 
+    // strcat(path_mem,"_Memoria.txt"); 
+    // cout << path_mem << "\n";
+    // ofstream myfile2 (path_mem);
+    // myfile2 << TWA.size();
   } 
   if(tipo == 1001){
     char *nasap1 = "ARRLFM_S18_RLRUNS(16,AP)";
