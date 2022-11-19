@@ -26,7 +26,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   // Obtencion de las frequencias y de la cantidad de caracteres
   tie(s, text_length, freq) = Asap::readfile(input_file);
 
-  cout << "text_length " << text_length << "\n";
+  //cout << "text_length " << text_length << "\n";
   m = new M_WT<IntType>(freq, text_length, method);
 
   unordered_map<unsigned, int_vector<>> s_vectors;
@@ -48,29 +48,29 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
     if ( ! m->is_singleton(x.first) )
       construct_im(s_wt_trees[x.first], x.second, 0);
 
-  uint64_t contador = 0;
-  ofstream myfile ("/data/pizzachili/Resultados/BV_einstein_en.dat",ios::binary);
-  for ( auto &y: temp_bit_vectors ){
-      contador+=1;
-  }
+  //uint64_t contador = 0;
+  //ofstream myfile ("/data/pizzachili/Resultados/BV_einstein_en.dat",ios::binary);
+  //for ( auto &y: temp_bit_vectors ){
+  //    contador+=1;
+  //}
 
   //myfile << contador << "\n";
-  myfile.write( (char*)&contador, sizeof(uint64_t)); 
-  int breaka = 0;
-  for ( auto &x: temp_bit_vectors ){
+  //myfile.write( (char*)&contador, sizeof(uint64_t)); 
+  //int breaka = 0;
+  //for ( auto &x: temp_bit_vectors ){
       //cout << "size: " << x.second.size() << "\n";
       //cout << x.second << "\n"; 
-      uint64_t universo = x.second.size();
-      myfile.write( (char*)&universo , sizeof(uint64_t)); 
-      for (uint64_t i=0; i < x.second.size() ; i+=1){
-          if(x.second[i] == 1){
+      //uint64_t universo = x.second.size();
+      //myfile.write( (char*)&universo , sizeof(uint64_t)); 
+      //for (uint64_t i=0; i < x.second.size() ; i+=1){
+          //if(x.second[i] == 1){
               //myfile << i << " ";
-              myfile.write( (char*)&i , sizeof(uint64_t)); 
-          }
-      }
+            //  myfile.write( (char*)&i , sizeof(uint64_t)); 
+          //}
+      //}
       //myfile << "\n";
-  }
-  myfile.close();
+  //}
+  //myfile.close();
 
   for ( auto &x: temp_bit_vectors ){
     //cout << "x : " << x.first << "\n";
