@@ -32,8 +32,8 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   unordered_map<unsigned, int_vector<>> s_vectors;
   unordered_map<unsigned, bit_vector> temp_bit_vectors;
   for ( auto &x: m->m_sizes ) {
-    temp_bit_vectors[x.first] = bit_vector(text_length, 0); // <---
-    s_vectors[x.first] = int_vector<>(x.second);
+    temp_bit_vectors[x.first] = bit_vector(text_length+1, 0); // <---
+    s_vectors[x.first] = int_vector<>(x.second+1);
   }
 
   // creacion de los bitvectors
