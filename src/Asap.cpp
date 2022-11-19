@@ -118,7 +118,7 @@ unsigned Asap<BitVectorClass, IntType,  WaveletClass>::rank ( unsigned position 
   //cout << "l:" << l  <<" ";
   // unsigned k = (bit_vectors[l])->rank(position - 1);
 
-  cout << "Largo de la secuencia: " << (bit_vectors[l])->size() << endl;
+  //cout << "Largo de la secuencia: " << (bit_vectors[l])->size() << endl;
   unsigned k = (bit_vectors[l])->rank(position);
   cout << "k:" << k  <<" ";
 
@@ -128,7 +128,7 @@ unsigned Asap<BitVectorClass, IntType,  WaveletClass>::rank ( unsigned position 
   unsigned c = m->rank(m->get_pos_by_char(target), l);
   //cout << "c_:" << c;
 
-  //cout << "  s_wt:" << s_wt_trees[l].rank(k, c) << "\n";
+  cout << "  s_wt:" << s_wt_trees[l].rank(k, c) << endl;
   return s_wt_trees[l].rank(k, c);
 }
 
