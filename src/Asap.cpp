@@ -132,7 +132,7 @@ unsigned Asap<BitVectorClass, IntType,  WaveletClass>::rank ( unsigned position 
   unsigned c = m->rank(m->get_pos_by_char(target), l);
   cout << "c_:" << c << endl;
 
-  cout << "  s_wt:" << s_wt_trees[l].rank(k, c) << endl;
+  cout << "s_wt:" << s_wt_trees[l].rank(k, c) << endl;
   return s_wt_trees[l].rank(k, c);
 }
 
