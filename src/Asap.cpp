@@ -42,10 +42,9 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
     l = m->map(s[i]);
     temp_bit_vectors[l][i] = 1; // <---
     s_vectors[l][s_indexes[l]++] = m->rank(m->get_pos_by_char(s[i]), l);
-    if(i+1 == text_length){
-      temp_bit_vectors[l][i] = 0; // <---
+    /*if(i+1 == text_length){
       s_vectors[l][s_indexes[l]++] = m->rank(m->get_pos_by_char(s[i]), l);
-    }
+    }*/
   }
 
   for ( auto &x: s_vectors )
@@ -124,15 +123,15 @@ unsigned Asap<BitVectorClass, IntType,  WaveletClass>::rank ( unsigned position 
 
   //cout << "Largo de la secuencia: " << (bit_vectors[l])->size() << endl;
   unsigned k = (bit_vectors[l])->rank(position);
-  cout << "k:" << k  << endl;
+  //cout << "k:" << k  << endl;
 
 //unsigned k = (bit_vectors[l])->rank(position+1);
   if ( m->is_singleton(l) ) return k;
 
   unsigned c = m->rank(m->get_pos_by_char(target), l);
-  cout << "c_:" << c << endl;
+  //cout << "c_:" << c << endl;
 
-  cout << "s_wt:" << s_wt_trees[l].rank(k, c) << endl;
+  //cout << "s_wt:" << s_wt_trees[l].rank(k, c) << endl;
   return s_wt_trees[l].rank(k, c);
 }
 
