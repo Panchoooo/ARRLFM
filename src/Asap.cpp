@@ -43,6 +43,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
     temp_bit_vectors[l][i] = 1; // <---
     s_vectors[l][s_indexes[l]++] = m->rank(m->get_pos_by_char(s[i]), l);
     if(i+1 == text_length){
+      temp_bit_vectors[l][i] = 1; // <---
       s_vectors[l][s_indexes[l]++] = m->rank(m->get_pos_by_char(s[i]), l);
     }
   }
