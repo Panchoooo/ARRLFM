@@ -207,12 +207,15 @@ run:
 #	./$(EXEC) coreutils 1000
 #	./$(EXEC) coreutils 1001
 #	./$(EXEC) coreutils 1002
-	./$(EXEC) coreutils 1003
-	./$(EXEC) coreutils 1004
-	./$(EXEC) coreutils 1005
+
+#	./$(EXEC) coreutils 1003
+#	./$(EXEC) coreutils 1004
+#	./$(EXEC) coreutils 1005
+
 	./$(EXEC) coreutils 1006
 	./$(EXEC) coreutils 1007
 	./$(EXEC) coreutils 1008
+
 	./$(EXEC) coreutils 1009
 	./$(EXEC) coreutils 1010
 	./$(EXEC) coreutils 1011
