@@ -575,7 +575,7 @@ if(true){
       lectura_patron = "%d\t%d\t%d\t%d\n";
     }
     else if(largo_patroncito == 8){
-      largo = "/Patrones/Largo8.txt";
+      largo = "/Patrones/Largo8.txt";   
       lectura_patron = "%d\t%d\t%d\t%d\t%d\t%d\t%d\t%d\n";
 
     }
@@ -635,7 +635,7 @@ if(true){
         if(i == 1){
           remove( path_asap1_largo );
         }
-        cout << patron_lectura << "\n\n";
+        //cout << patron_lectura << "\n\n";
 
         clock_t begin, end;
         double cpu_time_used;
