@@ -635,7 +635,7 @@ if(true){
         if(i == 1){
           remove( path_asap1_largo );
         }
-        //cout << patron_lectura << "\n\n";
+        cout << patron_lectura << "\n\n";
 
         clock_t begin, end;
         double cpu_time_used;
