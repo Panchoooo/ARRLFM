@@ -117,8 +117,10 @@ unsigned Asap<BitVectorClass, IntType,  WaveletClass>::rank ( unsigned position 
   int l = m->map(target);
   //cout << "l:" << l  <<" ";
   // unsigned k = (bit_vectors[l])->rank(position - 1);
+
+  cout << "Largo de la secuencia: " << (bit_vectors[l])->size() << endl;
   unsigned k = (bit_vectors[l])->rank(position);
-  //cout << "k:" << k  <<" ";
+  cout << "k:" << k  <<" ";
 
 //unsigned k = (bit_vectors[l])->rank(position+1);
   if ( m->is_singleton(l) ) return k;
