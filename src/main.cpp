@@ -548,7 +548,7 @@ int main(int argc, char *argv[]) {
 
 
 
-  if(tipo == 1000){
+  if(tipo == 1){
     char *nasap1 = "ARRLFM_S18_RLRUNS(4,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
