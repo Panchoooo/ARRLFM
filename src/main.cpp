@@ -123,7 +123,7 @@ int main(int argc, char *argv[]) {
   strcat(path_output,out_path); 
 
 
-  //char *nasap1 = "ARRLFM_SD_INT";
+  //char *nasap1 = "A_SD_INT";
   //strcpy(path_asap1,path_output);
   //strcat(path_asap1,nasap1); 
   //strcat(path_asap1,separate2); 
@@ -138,7 +138,7 @@ int main(int argc, char *argv[]) {
   //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
 
   if(tipo == 200){
-    char *nasap1 = "ARRLFM_AP(RLMN)";
+    char *nasap1 = "A_AP(RLMN)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -163,7 +163,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   /*if(tipo == 201){
-    char *nasap1 = "ARRLFM_AP(RLRUNS)";
+    char *nasap1 = "A_AP(RLRUNS)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -188,7 +188,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }*/
   if(tipo == 202){
-    char *nasap1 = "ARRLFM_RLMN(AP)";
+    char *nasap1 = "A_RLMN(AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -213,7 +213,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   /*if(tipo == 203){
-    char *nasap1 = "ARRLFM_RLMN(RLRUNS)";
+    char *nasap1 = "A_RLMN(RLRUNS)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -242,7 +242,7 @@ int main(int argc, char *argv[]) {
   // BASELINE - RLRUNS -----------------
 
   if(tipo == 204){
-    char *nasap1 = "ARRLFM_RLRUNS(4,AP)";
+    char *nasap1 = "A_RLRUNS(4,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -267,7 +267,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 205){
-    char *nasap1 = "ARRLFM_RLRUNS(16,AP)";
+    char *nasap1 = "A_RLRUNS(16,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -292,7 +292,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 206){
-    char *nasap1 = "ARRLFM_RLRUNS(32,AP)";
+    char *nasap1 = "A_RLRUNS(32,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -318,7 +318,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 207){
-    char *nasap1 = "ARRLFM_RLRUNS(4,GMR)";
+    char *nasap1 = "A_RLRUNS(4,GMR)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -343,7 +343,7 @@ int main(int argc, char *argv[]) {
      myfile2 << TWA.size();
   } 
   if(tipo == 208){
-    char *nasap1 = "ARRLFM_RLRUNS(16,GMR)";
+    char *nasap1 = "A_RLRUNS(16,GMR)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -368,7 +368,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 209){
-    char *nasap1 = "ARRLFM_RLRUNS(32,GMR)";
+    char *nasap1 = "A_RLRUNS(32,GMR)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -396,7 +396,7 @@ int main(int argc, char *argv[]) {
   // ARRLFM --------------------------------------------------------
   // S18 || RLMN
   if(tipo == 100){
-    char *nasap1 = "ARRLFM_S18_RLMN(INT)";
+    char *nasap1 = "A_S18_RLMN(INT)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -422,7 +422,7 @@ int main(int argc, char *argv[]) {
 
 
   if(tipo == 101){
-    char *nasap1 = "ARRLFM_S18_AP(RLMN)";
+    char *nasap1 = "A_S18_AP(RLMN)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -446,7 +446,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   /*if(tipo == 102){
-    char *nasap1 = "ARRLFM_S18_AP(RLRUNS)";
+    char *nasap1 = "A_S18_AP(RLRUNS)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -471,7 +471,7 @@ int main(int argc, char *argv[]) {
   }
 */
   if(tipo == 103){
-    char *nasap1 = "ARRLFM_S18_RLMN(AP)";
+    char *nasap1 = "A_S18_RLMN(AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -495,7 +495,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   /*if(tipo == 104){
-    char *nasap1 = "ARRLFM_S18_RLMN(RLRUNS)";
+    char *nasap1 = "A_S18_RLMN(RLRUNS)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -522,7 +522,7 @@ int main(int argc, char *argv[]) {
 
   // RLE || RLMN
   if(tipo == 300){
-    char *nasap1 = "ARRLFM_RLE_RLMN(INT)";
+    char *nasap1 = "A_RLE_RLMN(INT)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -548,8 +548,8 @@ int main(int argc, char *argv[]) {
 
 
 
-  if(tipo == 1){
-    const char *nasap1 = "ARRLFM_S18_RLRUNS(4,AP)";
+  if(tipo == 1000){
+    const char *nasap1 = "A_S18_RLRUNS(4,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -576,7 +576,7 @@ int main(int argc, char *argv[]) {
     // myfile2 << TWA.size();
   } 
   if(tipo == 1001){
-    char *nasap1 = "ARRLFM_S18_RLRUNS(16,AP)";
+    char *nasap1 = "A_S18_RLRUNS(16,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -602,7 +602,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1002){
-    char *nasap1 = "ARRLFM_S18_RLRUNS(32,AP)";
+    char *nasap1 = "A_S18_RLRUNS(32,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -628,7 +628,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1003){
-    char *nasap1 = "ARRLFM_S18_RLRUNS(4,GMR)";
+    char *nasap1 = "A_S18_RLRUNS(4,GMR)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -654,7 +654,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1004){
-    char *nasap1 = "ARRLFM_S18_RLRUNS(16,GMR)";
+    char *nasap1 = "A_S18_RLRUNS(16,GMR)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -679,7 +679,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 1005){
-    char *nasap1 = "ARRLFM_S18_RLRUNS(32,GMR)";
+    char *nasap1 = "A_S18_RLRUNS(32,GMR)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -706,7 +706,7 @@ int main(int argc, char *argv[]) {
 
 
   if(tipo == 1006){
-    char *nasap1 = "ARRLFM_RLE_RLRUNS(4,AP)";
+    char *nasap1 = "A_RLE_RLRUNS(4,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -732,7 +732,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1007){
-    char *nasap1 = "ARRLFM_RLE_RLRUNS(16,AP)";
+    char *nasap1 = "A_RLE_RLRUNS(16,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -757,7 +757,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 1008){
-    char *nasap1 = "ARRLFM_RLE_RLRUNS(32,AP)";
+    char *nasap1 = "A_RLE_RLRUNS(32,AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -782,7 +782,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 1009){
-    char *nasap1 = "ARRLFM_RLE_RLRUNS(4,GMR)";
+    char *nasap1 = "A_RLE_RLRUNS(4,GMR)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -807,7 +807,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   } 
   if(tipo == 1010){
-    char *nasap1 = "ARRLFM_RLE_RLRUNS(16,GMR)";
+    char *nasap1 = "A_RLE_RLRUNS(16,GMR)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -833,7 +833,7 @@ int main(int argc, char *argv[]) {
   } 
 
   if(tipo == 1011){
-    char *nasap1 = "ARRLFM_RLE_RLRUNS(32,GMR)";
+    char *nasap1 = "A_RLE_RLRUNS(32,GMR)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
