@@ -287,8 +287,8 @@ unsigned Arrlfm<Estructura>::countbyIntVectorSave (int_vector<> patron,char* out
     uint64_t c = patron[patron.size()-1];
     uint64_t b = C[c];
     uint64_t e = C[c+1];
-    //cout << "c: " << c << endl;
-    //cout << "b:" << b << "  e:" << e << endl;
+    cout << "c: " << c << endl;
+    cout << "b:" << b << "  e:" << e << endl;
 
     if( patron.size() > 1){
         for ( long int  i = patron.size() - 2 ; i >= 0 ; i = i - 1) { // long int porque al llegar a 0 y hace el -1 se rompe 
@@ -297,12 +297,12 @@ unsigned Arrlfm<Estructura>::countbyIntVectorSave (int_vector<> patron,char* out
             }
             c = patron[i];
             
-            //cout << "\n" <<  "c: " << c << endl;
-            //cout << "b:" << b << "  e:" << e << endl;
+            cout << "\n" <<  "c: " << c << endl;
+            cout << "b:" << b << "  e:" << e << endl;
             b = C[c] + AWT->rank(b,c);
-            //cout << "bn: "<< b << endl;
+            cout << "bn: "<< b << endl;
             e = C[c] + AWT->rank(e,c);
-            //cout << "en: "<< e << endl;
+            cout << "en: "<< e << endl;
         }
     }
     //end = clock();
