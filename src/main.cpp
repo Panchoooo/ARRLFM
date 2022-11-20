@@ -138,7 +138,7 @@ int main(int argc, char *argv[]) {
   //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,0);  
 
   if(tipo == 200){
-    char *nasap1 = "B_AP(RLMN)";
+    char *nasap1 = "BASELINE_AP(RLMN)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -188,7 +188,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }*/
   if(tipo == 202){
-    char *nasap1 = "B_RLMN(AP)";
+    char *nasap1 = "BASELINE_RLMN(AP)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 

@@ -195,9 +195,11 @@ run:
 	./$(EXEC) einstein.en.txt 100
 	./$(EXEC) einstein.en.txt 101
 	./$(EXEC) einstein.en.txt 102
+
 	./$(EXEC) einstein.en.txt 300
 	./$(EXEC) einstein.en.txt 301
 	./$(EXEC) einstein.en.txt 302
+	
 #	./$(EXEC) einstein.en.txt -1
 #	./$(EXEC) einstein.en.txt 0
 #	./$(EXEC) einstein.en.txt 1
@@ -223,24 +225,11 @@ run:
 
 
 
+
+
+
+
 #	RL RUNS AP Y GMR
-
-#	./$(EXEC) einstein.de.txt 200
-
-#	./$(EXEC) einstein.de.txt 1000
-#	./$(EXEC) einstein.de.txt 1001
-#	./$(EXEC) einstein.de.txt 1002
-#	./$(EXEC) einstein.de.txt 1003
-#	./$(EXEC) einstein.de.txt 1004
-#	./$(EXEC) einstein.de.txt 1005
-#	./$(EXEC) einstein.de.txt 1006
-#	./$(EXEC) einstein.de.txt 1007
-#	./$(EXEC) einstein.de.txt 1008
-#	./$(EXEC) einstein.de.txt 1009
-#	./$(EXEC) einstein.de.txt 1010
-#	./$(EXEC) einstein.de.txt 1011
-
-
 #--------------------------------------------------------------
 
 #	./$(EXEC) coreutils 1000 
