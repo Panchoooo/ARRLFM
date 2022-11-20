@@ -445,7 +445,7 @@ int main(int argc, char *argv[]) {
     ofstream myfile2 (path_mem);
     myfile2 << TWA.size();
   }
-  /*if(tipo == 102){
+  if(tipo == 102){
     char *nasap1 = "A_S18_AP(RLRUNS)";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
