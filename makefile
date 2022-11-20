@@ -61,15 +61,15 @@ run:
 #	./$(EXEC) coreutils -1
 #	./$(EXEC) coreutils 0
 
-	./$(EXEC) coreutils 200
-	./$(EXEC) coreutils 201
-	./$(EXEC) coreutils 100
-	./$(EXEC) coreutils 101
-	./$(EXEC) coreutils 102
-	./$(EXEC) coreutils 300
-	./$(EXEC) coreutils 301
-	./$(EXEC) coreutils 302
-
+#	./$(EXEC) coreutils 200
+#	./$(EXEC) coreutils 201
+#	./$(EXEC) coreutils 100
+#	./$(EXEC) coreutils 101
+#	./$(EXEC) coreutils 102
+#	./$(EXEC) coreutils 300
+#	./$(EXEC) coreutils 301
+#	./$(EXEC) coreutils 302
+#
 #	./$(EXEC) coreutils 1
 #	./$(EXEC) coreutils 2
 #	./$(EXEC) coreutils 11
@@ -94,15 +94,15 @@ run:
 
 #	english.001.2 | listo
 
-
-	./$(EXEC) english.001.2 200
-	./$(EXEC) english.001.2 202
-	./$(EXEC) english.001.2 100
-	./$(EXEC) english.001.2 101
-	./$(EXEC) english.001.2 102
-	./$(EXEC) english.001.2 300
-	./$(EXEC) english.001.2 301
-	./$(EXEC) english.001.2 302
+#
+#	./$(EXEC) english.001.2 200
+#	./$(EXEC) english.001.2 202
+#	./$(EXEC) english.001.2 100
+#	./$(EXEC) english.001.2 101
+#	./$(EXEC) english.001.2 102
+#	./$(EXEC) english.001.2 300
+#	./$(EXEC) english.001.2 301
+#	./$(EXEC) english.001.2 302
 #	./$(EXEC) english.001.2 -1
 #	./$(EXEC) english.001.2 0
 #	./$(EXEC) english.001.2 1
@@ -129,15 +129,15 @@ run:
 
 #	world_leaders | 
 
-
-	./$(EXEC) world_leaders 200
-	./$(EXEC) world_leaders 202
-	./$(EXEC) world_leaders 100
-	./$(EXEC) world_leaders 101
-	./$(EXEC) world_leaders 102
-	./$(EXEC) world_leaders 300
-	./$(EXEC) world_leaders 301
-	./$(EXEC) world_leaders 302
+#
+#	./$(EXEC) world_leaders 200
+#	./$(EXEC) world_leaders 202
+#	./$(EXEC) world_leaders 100
+#	./$(EXEC) world_leaders 101
+#	./$(EXEC) world_leaders 102
+#	./$(EXEC) world_leaders 300
+#	./$(EXEC) world_leaders 301
+#	./$(EXEC) world_leaders 302
 #	./$(EXEC) world_leaders -1
 #	./$(EXEC) world_leaders 0
 #	./$(EXEC) world_leaders 1
@@ -164,12 +164,14 @@ run:
 
 #	einstein.de.txt
 
-#	./$(EXEC) einstein.de.txt 100
-#	./$(EXEC) einstein.de.txt 101
-#	./$(EXEC) einstein.de.txt 102
-#	./$(EXEC) einstein.de.txt 300
-#	./$(EXEC) einstein.de.txt 301
-#	./$(EXEC) einstein.de.txt 302
+	./$(EXEC) einstein.de.txt 200
+	./$(EXEC) einstein.de.txt 202
+	./$(EXEC) einstein.de.txt 100
+	./$(EXEC) einstein.de.txt 101
+	./$(EXEC) einstein.de.txt 102
+	./$(EXEC) einstein.de.txt 300
+	./$(EXEC) einstein.de.txt 301
+	./$(EXEC) einstein.de.txt 302
 
 
 #	./$(EXEC) einstein.de.txt -1
@@ -198,15 +200,15 @@ run:
 
 #	einstein.en.txt | listo
 
-	./$(EXEC) einstein.en.txt 200
-	./$(EXEC) einstein.en.txt 202
-	./$(EXEC) einstein.en.txt 100
-	./$(EXEC) einstein.en.txt 101
-	./$(EXEC) einstein.en.txt 102
-
-	./$(EXEC) einstein.en.txt 300
-	./$(EXEC) einstein.en.txt 301
-	./$(EXEC) einstein.en.txt 302
+#	./$(EXEC) einstein.en.txt 200
+#	./$(EXEC) einstein.en.txt 202
+#	./$(EXEC) einstein.en.txt 100
+#	./$(EXEC) einstein.en.txt 101
+#	./$(EXEC) einstein.en.txt 102
+#
+#	./$(EXEC) einstein.en.txt 300
+#	./$(EXEC) einstein.en.txt 301
+#	./$(EXEC) einstein.en.txt 302
 	
 #	./$(EXEC) einstein.en.txt -1
 #	./$(EXEC) einstein.en.txt 0
