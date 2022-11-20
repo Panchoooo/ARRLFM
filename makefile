@@ -259,15 +259,15 @@ run:
 #	./$(EXEC) einstein.en.txt 1010
 #	./$(EXEC) einstein.en.txt 1011
 
-	./$(EXEC) einstein.de.txt 1000
-	./$(EXEC) einstein.de.txt 1001
-	./$(EXEC) einstein.de.txt 1002
+#	./$(EXEC) einstein.de.txt 1000
+#	./$(EXEC) einstein.de.txt 1001
+#	./$(EXEC) einstein.de.txt 1002
 #	./$(EXEC) einstein.de.txt 1003
 #	./$(EXEC) einstein.de.txt 1004
 #	./$(EXEC) einstein.de.txt 1005
-	./$(EXEC) einstein.de.txt 1006
-	./$(EXEC) einstein.de.txt 1007
-	./$(EXEC) einstein.de.txt 1008
+#	./$(EXEC) einstein.de.txt 1006
+#	./$(EXEC) einstein.de.txt 1007
+#	./$(EXEC) einstein.de.txt 1008
 #	./$(EXEC) einstein.de.txt 1009
 #	./$(EXEC) einstein.de.txt 1010
 #	./$(EXEC) einstein.de.txt 1011
