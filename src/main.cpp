@@ -455,7 +455,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_ap<rl_runs< 64 >,rl_runs<64> > > >  TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,rl_runs<32 >   > > >  TWA(path_bin,bwt,civ,0);  
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
