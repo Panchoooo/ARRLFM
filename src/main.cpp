@@ -471,7 +471,7 @@ int main(int argc, char *argv[]) {
 
   // RLE || RLMN
   if(tipo == 300){
-    char *nasap1 = "ARRLFM_RLE_RLMN(INT)_freq";
+    char *nasap1 = "ARRLFM_RLE_RLMN(INT)f";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
