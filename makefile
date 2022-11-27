@@ -62,11 +62,11 @@ run:
 #	./$(EXEC) coreutils 0
 
 #	./$(EXEC) coreutils 200
-	./$(EXEC) coreutils 202
+#	./$(EXEC) coreutils 202
 #	./$(EXEC) coreutils 100
 #	./$(EXEC) coreutils 101
 #	./$(EXEC) coreutils 102
-#	./$(EXEC) coreutils 300
+	./$(EXEC) coreutils 300
 #	./$(EXEC) coreutils 301
 #	./$(EXEC) coreutils 302
 #
@@ -100,7 +100,7 @@ run:
 #	./$(EXEC) english.001.2 100
 #	./$(EXEC) english.001.2 101
 #	./$(EXEC) english.001.2 102
-#	./$(EXEC) english.001.2 300
+	./$(EXEC) english.001.2 300
 #	./$(EXEC) english.001.2 301
 #	./$(EXEC) english.001.2 302
 #	./$(EXEC) english.001.2 -1
@@ -135,7 +135,7 @@ run:
 #	./$(EXEC) world_leaders 100
 #	./$(EXEC) world_leaders 101
 #	./$(EXEC) world_leaders 102
-#	./$(EXEC) world_leaders 300
+	./$(EXEC) world_leaders 300
 #	./$(EXEC) world_leaders 301
 #	./$(EXEC) world_leaders 302
 #	./$(EXEC) world_leaders -1
@@ -206,7 +206,7 @@ run:
 #	./$(EXEC) einstein.en.txt 101
 #	./$(EXEC) einstein.en.txt 102
 #
-#	./$(EXEC) einstein.en.txt 300
+	./$(EXEC) einstein.en.txt 300
 #	./$(EXEC) einstein.en.txt 301
 #	./$(EXEC) einstein.en.txt 302
 	
