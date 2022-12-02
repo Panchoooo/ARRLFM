@@ -396,7 +396,7 @@ int main(int argc, char *argv[]) {
   // ARRLFM --------------------------------------------------------
   // S18 || RLMN
   if(tipo == 100){
-    char *nasap1 = "ARRLFM_S18_RLMN(INT)";
+    char *nasap1 = "ARRLFM_S18_RLMN(INT)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -405,7 +405,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,2);  
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
@@ -420,7 +420,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   if(tipo == 101){
-    char *nasap1 = "ARRLFM_S18_AP(RLMN)";
+    char *nasap1 = "ARRLFM_S18_AP(RLMN)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -429,7 +429,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_ap<wt_rlmn<>,wt_rlmn<>>> >  TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_ap<wt_rlmn<>,wt_rlmn<>>> >  TWA(path_bin,bwt,civ,2);  
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
@@ -445,7 +445,7 @@ int main(int argc, char *argv[]) {
   }
 
   if(tipo == 102){
-    char *nasap1 = "ARRLFM_S18_RLMN(AP)";
+    char *nasap1 = "ARRLFM_S18_RLMN(AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -454,7 +454,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>>, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,2);  
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
@@ -471,7 +471,7 @@ int main(int argc, char *argv[]) {
 
   // RLE || RLMN
   if(tipo == 300){
-    char *nasap1 = "ARRLFM_RLE_RLMN(INT)f";
+    char *nasap1 = "ARRLFM_RLE_RLMN(INT)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -480,7 +480,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap<BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,1);  
+    Arrlfm< Asap<BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >  > > TWA(path_bin,bwt,civ,2);  
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
@@ -495,7 +495,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   if(tipo == 301){
-    char *nasap1 = "ARRLFM_RLE_AP(RLMN)";
+    char *nasap1 = "ARRLFM_RLE_AP(RLMN)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -504,7 +504,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap<  BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> >, uint64_t ,wt_ap<wt_rlmn<>,wt_rlmn<>>> >  TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap<  BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> >, uint64_t ,wt_ap<wt_rlmn<>,wt_rlmn<>>> >  TWA(path_bin,bwt,civ,2);  
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
@@ -519,7 +519,7 @@ int main(int argc, char *argv[]) {
     myfile2 << TWA.size();
   }
   if(tipo == 302){
-    char *nasap1 = "ARRLFM_RLE_RLMN(AP)";
+    char *nasap1 = "ARRLFM_RLE_RLMN(AP)s";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -528,7 +528,7 @@ int main(int argc, char *argv[]) {
     strcat(path_asapfolder,nasap1); 
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
-    Arrlfm< Asap< BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,0);  
+    Arrlfm< Asap< BVTtipo1<sdsl::rle_vector<32>, sdsl::rank_support_rle<1,32> , sdsl::select_support_rle<32> >, uint64_t ,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_ap<>   >  > > TWA(path_bin,bwt,civ,2);  
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
