@@ -657,7 +657,7 @@ if(true){
             cpu_time_used = ((double) (end - begin)) / CLOCKS_PER_SEC;
             myfile2 << r << " " << cpu_time_used <<   "\n";
         }
-        catch (int myNum) {
+        catch (std::exception& e)
             cout << "Error al leer el patron: "<< patron_lectura << endl;
         }
     }
