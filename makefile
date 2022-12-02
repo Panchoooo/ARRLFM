@@ -63,12 +63,14 @@ run:
 
 #	./$(EXEC) coreutils 200
 #	./$(EXEC) coreutils 202
-#	./$(EXEC) coreutils 100
+
+#	./$(EXEC) coreutils 100 # listo
 #	./$(EXEC) coreutils 101
-#	./$(EXEC) coreutils 102
-	./$(EXEC) coreutils 300
-	./$(EXEC) coreutils 301
-	./$(EXEC) coreutils 302
+#	./$(EXEC) coreutils 102 # listo
+#	./$(EXEC) coreutils 300 # listo
+#	./$(EXEC) coreutils 301 # listo
+#	./$(EXEC) coreutils 302 # listo
+
 #
 #	./$(EXEC) coreutils 1
 #	./$(EXEC) coreutils 2
@@ -97,12 +99,12 @@ run:
 #
 #	./$(EXEC) english.001.2 200
 #	./$(EXEC) english.001.2 202
-#	./$(EXEC) english.001.2 100
-#	./$(EXEC) english.001.2 101
-#	./$(EXEC) english.001.2 102
-#	./$(EXEC) english.001.2 300
-#	./$(EXEC) english.001.2 301
-#	./$(EXEC) english.001.2 302
+	./$(EXEC) english.001.2 100
+	./$(EXEC) english.001.2 101
+	./$(EXEC) english.001.2 102
+	./$(EXEC) english.001.2 300
+	./$(EXEC) english.001.2 301
+	./$(EXEC) english.001.2 302
 #	./$(EXEC) english.001.2 -1
 #	./$(EXEC) english.001.2 0
 #	./$(EXEC) english.001.2 1
