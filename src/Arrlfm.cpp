@@ -491,7 +491,7 @@ void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) {
   int largo_patroncito = 4;
   FILE *fichero;
   unsigned int i, x1, x2, x3, x4, x5, x6 , x7, x8, x9, x10 , x11, x12, x13, x14 , x15, x16;
-  uint32_t cantidad_patrones = 50000;
+  uint32_t cantidad_patrones = 30000;
   char *largo, path_out_patron ;
   char* lectura_patron;
 
