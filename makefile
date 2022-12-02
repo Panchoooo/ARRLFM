@@ -64,12 +64,12 @@ run:
 #	./$(EXEC) coreutils 200
 #	./$(EXEC) coreutils 202
 
-#	./$(EXEC) coreutils 100 # listo
-#	./$(EXEC) coreutils 101
-#	./$(EXEC) coreutils 102 # listo
-#	./$(EXEC) coreutils 300 # listo
-#	./$(EXEC) coreutils 301 # listo
-#	./$(EXEC) coreutils 302 # listo
+	./$(EXEC) coreutils 100
+#	./$(EXEC) coreutils 101	
+	./$(EXEC) coreutils 102
+	./$(EXEC) coreutils 300
+	./$(EXEC) coreutils 301
+	./$(EXEC) coreutils 302
 
 #
 #	./$(EXEC) coreutils 1
