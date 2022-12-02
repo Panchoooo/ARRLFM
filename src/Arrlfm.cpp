@@ -645,7 +645,7 @@ if(true){
         if(i == 1){
           remove( path_asap1_largo );
         }
-        cout << "\n\n" << patron_lectura << "\n\n";
+        cout << "\n\n"<<i<<" | " << patron_lectura << "\n\n";
 
         try{
             clock_t begin, end;
