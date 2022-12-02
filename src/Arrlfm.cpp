@@ -572,7 +572,7 @@ void Arrlfm<Estructura>::testing (char* file,char* nasap1, char *lectura_path) {
 if(true){
 
 // PATRONES 
-  for(int lp = 8 ; lp < 17 ; lp=lp*2){
+  for(int lp = 16 ; lp < 17 ; lp=lp*2){
       
     largo_patroncito = lp;
 
