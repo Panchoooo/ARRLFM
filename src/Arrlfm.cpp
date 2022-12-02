@@ -659,6 +659,7 @@ if(true){
             myfile2 << r << " " << cpu_time_used <<   "\n";
         }
         catch (int myNum) {
+            cout << "Error al leer el patron: "<< patron_lectura << endl;
         }
     }
 
