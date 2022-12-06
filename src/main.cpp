@@ -138,7 +138,7 @@ int main(int argc, char *argv[]) {
   //Arrlfm< Asap< BVTtipo2<sdsl::s18::vector<8>, sdsl::s18::rank_support<1,8> , sdsl::s18::select_support<1,8>> , uint64_t ,wt_int<>> >  TWA(path_bin,bwt,civ,2);  
 
   if(tipo == 200){
-    char *nasap1 = "BASELINE_AP(RLMN)";
+    char *nasap1 = "BASELINE_AP(RLMN)i";
     strcpy(path_asap1,path_output);
     strcat(path_asap1,nasap1); 
     strcat(path_asap1,separate2); 
@@ -148,7 +148,7 @@ int main(int argc, char *argv[]) {
     cout << path_bin << "\n";
     fs::create_directories(path_asapfolder); // Crear carpeta si no existe
     //Baseline< wt_ap<>  >  TWA(path_bin,bwt,civ); 
-    Baseline< wt_ap<wt_rlmn<>,wt_rlmn<>>  >  TWA(path_bin,bwt,civ); 
+    Baseline< wt_ap<wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   >,wt_rlmn<sd_vector<>,sd_vector<>::rank_1_type,sd_vector<>::select_1_type,wt_int<>   > >  >  TWA(path_bin,bwt,civ); 
     // Tiempos
     TWA.testing(file,nasap1,lectura_path);
     // Memoria 
