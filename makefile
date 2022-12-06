@@ -61,7 +61,7 @@ run:
 #	./$(EXEC) coreutils -1
 #	./$(EXEC) coreutils 0
 
-#	./$(EXEC) coreutils 200
+	./$(EXEC) coreutils 200
 #	./$(EXEC) coreutils 202
 
 #	./$(EXEC) coreutils 100
@@ -97,7 +97,7 @@ run:
 #	english.001.2 | listo
 
 #
-	./$(EXEC) english.001.2 200
+#	./$(EXEC) english.001.2 200
 #	./$(EXEC) english.001.2 202
 #	./$(EXEC) english.001.2 100
 #	./$(EXEC) english.001.2 101
@@ -132,7 +132,7 @@ run:
 #	world_leaders | 
 
 #
-	./$(EXEC) world_leaders 200
+#	./$(EXEC) world_leaders 200
 #	./$(EXEC) world_leaders 202
 
 #	./$(EXEC) world_leaders 100
@@ -206,7 +206,7 @@ run:
 
 #	einstein.en.txt | listo
 
-	./$(EXEC) einstein.en.txt 200
+#	./$(EXEC) einstein.en.txt 200
 #	./$(EXEC) einstein.en.txt 202
 
 #	./$(EXEC) einstein.en.txt 100
