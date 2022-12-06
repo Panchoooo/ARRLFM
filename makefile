@@ -174,7 +174,7 @@ run:
 #	./$(EXEC) einstein.de.txt 100
 #	./$(EXEC) einstein.de.txt 101
 #	./$(EXEC) einstein.de.txt 102
-	./$(EXEC) einstein.de.txt 103
+	./$(EXEC) einstein.de.txt 200
 #	./$(EXEC) einstein.de.txt 300
 #	./$(EXEC) einstein.de.txt 301
 #	./$(EXEC) einstein.de.txt 302
