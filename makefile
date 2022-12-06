@@ -61,7 +61,7 @@ run:
 #	./$(EXEC) coreutils -1
 #	./$(EXEC) coreutils 0
 
-	./$(EXEC) coreutils 200
+#	./$(EXEC) coreutils 200
 #	./$(EXEC) coreutils 202
 
 #	./$(EXEC) coreutils 100
