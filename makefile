@@ -174,7 +174,7 @@ run:
 #	./$(EXEC) einstein.de.txt 100
 #	./$(EXEC) einstein.de.txt 101
 #	./$(EXEC) einstein.de.txt 102
-#	./$(EXEC) einstein.de.txt 103
+	./$(EXEC) einstein.de.txt 103
 #	./$(EXEC) einstein.de.txt 300
 #	./$(EXEC) einstein.de.txt 301
 #	./$(EXEC) einstein.de.txt 302
@@ -212,7 +212,7 @@ run:
 #	./$(EXEC) einstein.en.txt 100
 #	./$(EXEC) einstein.en.txt 101
 #	./$(EXEC) einstein.en.txt 102
-	./$(EXEC) einstein.en.txt 103
+#	./$(EXEC) einstein.en.txt 103
 #	./$(EXEC) einstein.en.txt 300
 #	./$(EXEC) einstein.en.txt 301
 #	./$(EXEC) einstein.en.txt 302
