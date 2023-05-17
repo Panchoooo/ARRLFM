@@ -58,7 +58,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
       const auto& wt = tree.second;
 
       // Obtener la cantidad de runs en el árbol wavelet
-      unsigned treeRuns = sdsl::runs(wt);
+      unsigned treeRuns = runs(wt);
 
       // Sumar los runs del árbol actual al total
       totalRuns += treeRuns;
