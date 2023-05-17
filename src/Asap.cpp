@@ -64,7 +64,8 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
     if ( ! m->is_singleton(x.first) )
         construct_im(s_wt_trees[x.first], x.second, 0);
 
-    for (auto& x : s_vectors) {
+  unsigned totalRuns = 0;
+  for (auto& x : s_vectors) {
         if (!m->is_singleton(x.first)) {
             construct_im(s_wt_trees[x.first], x.second, 0);
         }
