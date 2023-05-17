@@ -82,17 +82,15 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
 
 
   // Obtener el nombre del archivo de salida
-  std::string outputFileName = base_path + input_file + "_runs_si.txt";
+  std::string outputFileName = "base_path" + input_file + "_runs_si.txt";
     // Crear el archivo de salida
   std::ofstream outputFile(outputFileName);
-  unsigned totalRuns = 0;
   for (auto& tree : s_vectors) {        
     // Contar los runs y calcular el largo promedio
     RunStats treeStats = countRuns(tree.second);
     // Hacer algo con `treeStats.count` (cantidad de runs) y `treeStats.totalLength` (suma de las longitudes de los runs)
     // Calcular el largo promedio
     double avgLength = static_cast<double>(treeStats.totalLength) / treeStats.count;
-    totalRuns += treeRuns;
 
     outputFile <<  treeStats.count << "," << avgLength<< std::endl;
 
