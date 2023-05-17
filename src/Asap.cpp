@@ -64,7 +64,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
 
   unsigned totalRuns = 0;
   for (auto& tree : s_vectors) {
-      unsigned treeRuns = countRuns(x.second);
+      unsigned treeRuns = countRuns(tree.second);
       totalRuns += treeRuns;
   }
   //uint64_t contador = 0;
