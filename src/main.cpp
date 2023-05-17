@@ -49,10 +49,19 @@ namespace fs = std::experimental::filesystem;
 using namespace std;
 using namespace sdsl;
 
-
+#include <sdsl/int_vector.hpp>
 
 int main(int argc, char *argv[]) {
 
+  sdsl::int_vector<> wt = {1, 1, 0, 0, 1, 1, 1, 0, 0, 0};
+
+  // Calculate the number of runs
+  unsigned treeRuns = sdsl::runs(wt);
+
+  // Print the result
+  std::cout << "Number of runs: " << treeRuns << std::endl;
+
+  
   char* file = argv[1];
   int tipo = stoi(argv[2]);
 
