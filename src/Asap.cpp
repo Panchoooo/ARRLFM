@@ -49,7 +49,21 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
 
   for ( auto &x: s_vectors )
     if ( ! m->is_singleton(x.first) )
-      construct_im(s_wt_trees[x.first], x.second, 0);
+        construct_im(s_wt_trees[x.first], x.second, 0);
+
+  unsigned totalRuns = 0;
+  for (auto& tree : s_wt_trees) {
+      // Obtener la estructura de árbol wavelet de `tree` (depende de la implementación)
+      // Supongamos que se accede al árbol wavelet a través de `tree.second` (valor del unordered_map)
+      const auto& wt = tree.second;
+
+      // Obtener la cantidad de runs en el árbol wavelet
+      unsigned treeRuns = sdsl::runs(wt);
+
+      // Sumar los runs del árbol actual al total
+      totalRuns += treeRuns;
+  }
+
 
   //uint64_t contador = 0;
   //ofstream myfile ("/data/pizzachili/Resultados/BV_einstein_en.dat",ios::binary);
