@@ -83,7 +83,7 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
   unsigned totalRuns = 0;
   for (auto& tree : s_vectors) {        
     // Contar los runs y calcular el largo promedio
-    RunStats treeStats = countRuns(vec);
+    RunStats treeStats = countRuns(tree.second);
     // Hacer algo con `treeStats.count` (cantidad de runs) y `treeStats.totalLength` (suma de las longitudes de los runs)
     // Calcular el largo promedio
     double avgLength = static_cast<double>(treeStats.totalLength) / treeStats.count;
