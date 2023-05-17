@@ -16,7 +16,6 @@
 
 using namespace std;
 using namespace sdsl;
-
 // Función para contar los runs en un vector de enteros
 unsigned countRuns(const sdsl::int_vector<>& vec) {
     unsigned count = 0;
@@ -29,7 +28,6 @@ unsigned countRuns(const sdsl::int_vector<>& vec) {
     }
     return count;
 }
-
 template<class BitVectorClass, class IntType, class WaveletClass>
 Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned method ) {
   IntType* s;
@@ -66,11 +64,11 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
 
   unsigned totalRuns = 0;
     for (auto& tree : s_wt_trees) {
-        // Obtener el bit vector subyacente del árbol wavelet
-        const sdsl::bit_vector& bv = tree.second.get_bv();
+        // Obtener el vector de enteros subyacente del árbol wavelet
+        const sdsl::int_vector<>& vec = tree.second;
 
-        // Contar los runs en el bit vector
-        unsigned treeRuns = countRuns(bv);
+        // Contar los runs en el vector de enteros
+        unsigned treeRuns = countRuns(vec);
 
         // Hacer algo con `treeRuns`, como imprimirlo o almacenarlo
         // ...
