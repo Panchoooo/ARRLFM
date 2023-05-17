@@ -16,18 +16,36 @@
 
 using namespace std;
 using namespace sdsl;
-// Función para contar los runs en un vector de enteros
-unsigned countRuns(const sdsl::int_vector<>& vec) {
-    unsigned count = 0;
+
+struct RunStats {
+    unsigned count;    // Cantidad de runs
+    unsigned totalLength;    // Suma de las longitudes de los runs
+};
+
+// Función para contar los runs y calcular el largo promedio
+RunStats countRuns(const sdsl::int_vector<>& vec) {
+    RunStats stats;
+    stats.count = 0;
+    stats.totalLength = 0;
+
     int prevValue = vec[0];
+    unsigned runLength = 1;
+
     for (size_t i = 1; i < vec.size(); ++i) {
         if (vec[i] != prevValue) {
-            ++count;
+            ++stats.count;
+            stats.totalLength += runLength;
             prevValue = vec[i];
+            runLength = 1;
+        } else {
+            ++runLength;
         }
     }
-    return count;
+
+    return stats;
 }
+
+
 template<class BitVectorClass, class IntType, class WaveletClass>
 Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned method ) {
   IntType* s;
@@ -63,9 +81,13 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
         construct_im(s_wt_trees[x.first], x.second, 0);
 
   unsigned totalRuns = 0;
-  for (auto& tree : s_vectors) {
-      unsigned treeRuns = countRuns(tree.second);
-      totalRuns += treeRuns;
+  for (auto& tree : s_vectors) {        
+    // Contar los runs y calcular el largo promedio
+    RunStats treeStats = countRuns(vec);
+    // Hacer algo con `treeStats.count` (cantidad de runs) y `treeStats.totalLength` (suma de las longitudes de los runs)
+    // Calcular el largo promedio
+    double avgLength = static_cast<double>(treeStats.totalLength) / treeStats.count;
+    totalRuns += treeRuns;
   }
   //uint64_t contador = 0;
   //ofstream myfile ("/data/pizzachili/Resultados/BV_einstein_en.dat",ios::binary);
