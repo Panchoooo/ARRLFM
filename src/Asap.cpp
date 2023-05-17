@@ -63,19 +63,10 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
         construct_im(s_wt_trees[x.first], x.second, 0);
 
   unsigned totalRuns = 0;
-    for (auto& tree : s_wt_trees) {
-        // Obtener el vector de enteros subyacente del árbol wavelet
-        const sdsl::int_vector<>& vec = tree.second;
-
-        // Contar los runs en el vector de enteros
-        unsigned treeRuns = countRuns(vec);
-
-        // Hacer algo con `treeRuns`, como imprimirlo o almacenarlo
-        // ...
-
-        // Si deseas contar los runs totales, puedes sumarlos a una variable acumulativa
-        totalRuns += treeRuns;
-    }
+  for (auto& tree : s_vectors) {
+      unsigned treeRuns = countRuns(x.second);
+      totalRuns += treeRuns;
+  }
   //uint64_t contador = 0;
   //ofstream myfile ("/data/pizzachili/Resultados/BV_einstein_en.dat",ios::binary);
   //for ( auto &y: temp_bit_vectors ){
