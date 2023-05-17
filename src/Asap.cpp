@@ -80,6 +80,11 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
     if ( ! m->is_singleton(x.first) )
         construct_im(s_wt_trees[x.first], x.second, 0);
 
+
+  // Obtener el nombre del archivo de salida
+  std::string outputFileName = base_path + input_file + "_runs_si.txt";
+    // Crear el archivo de salida
+  std::ofstream outputFile(outputFileName);
   unsigned totalRuns = 0;
   for (auto& tree : s_vectors) {        
     // Contar los runs y calcular el largo promedio
@@ -88,7 +93,13 @@ Asap<BitVectorClass, IntType, WaveletClass>::Asap ( string input_file, unsigned 
     // Calcular el largo promedio
     double avgLength = static_cast<double>(treeStats.totalLength) / treeStats.count;
     totalRuns += treeRuns;
+
+    outputFile <<  treeStats.count << "," << avgLength<< std::endl;
+
   }
+  // Cerrar el archivo de salida
+  outputFile.close();
+
   //uint64_t contador = 0;
   //ofstream myfile ("/data/pizzachili/Resultados/BV_einstein_en.dat",ios::binary);
   //for ( auto &y: temp_bit_vectors ){
